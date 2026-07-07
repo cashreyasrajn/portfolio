@@ -15,12 +15,12 @@ import {
   FormLabel,
   FormMessage,
 } from "@/app/components/ui/form";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Loader2, AlertTriangle } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
+  phone: z.string().optional(),
   company: z.string().optional(),
   service: z.enum([
     "tax-advisory",
@@ -51,6 +51,8 @@ const serviceOptions = [
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -64,8 +66,31 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(_values: FormValues) {
-    setSubmitted(true);
+  async function onSubmit(values: FormValues) {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+
+      const json = await res.json();
+
+      if (!res.ok) {
+        throw new Error(json.error || "Something went wrong. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Something went wrong. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -126,7 +151,7 @@ export function ContactForm() {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Phone Number *</FormLabel>
+                <FormLabel>Phone Number</FormLabel>
                 <FormControl>
                   <Input placeholder="+91 98765 43210" type="tel" {...field} />
                 </FormControl>
@@ -190,8 +215,22 @@ export function ContactForm() {
           )}
         />
 
-        <Button type="submit" variant="primary" size="lg">
-          Submit Enquiry
+        {error && (
+          <div className="flex items-start gap-3 rounded-sm border border-red-200 bg-red-50 p-4">
+            <AlertTriangle className="mt-0.5 h-4 w-4 flex-shrink-0 text-red-600" />
+            <p className="font-body text-[13px] text-red-700">{error}</p>
+          </div>
+        )}
+
+        <Button type="submit" variant="primary" size="lg" disabled={loading}>
+          {loading ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Sending...
+            </>
+          ) : (
+            "Submit Enquiry"
+          )}
         </Button>
       </form>
     </Form>
