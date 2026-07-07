@@ -10,31 +10,37 @@ export default function Image() {
     (
       <div
         style={{
-          background: "#012d1d",
+          background: "#0b1e3d",
           width: "100%",
           height: "100%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          fontFamily: "Playfair Display, serif",
+          fontFamily: "Cormorant Garamond, serif",
           color: "#ffffff",
           padding: 80,
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 24,
+          }}
+        >
           <div
             style={{
               width: 80,
               height: 80,
               borderRadius: "50%",
-              border: "3px solid #d4af37",
+              border: "3px solid #b8966e",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               fontSize: 32,
               fontWeight: 700,
-              color: "#d4af37",
+              color: "#b8966e",
             }}
           >
             SR
@@ -42,23 +48,24 @@ export default function Image() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div
               style={{
-                fontSize: 48,
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
+                fontSize: 52,
+                fontWeight: 600,
+                letterSpacing: "-0.01em",
                 color: "#ffffff",
               }}
             >
-              Shreyas Raj & Co.
+              CA Shreyas Raj
             </div>
             <div
               style={{
-                fontSize: 24,
+                fontSize: 22,
                 fontWeight: 400,
-                color: "#a5d0b9",
+                color: "#b8966e",
                 marginTop: 8,
+                fontFamily: "DM Sans, sans-serif",
               }}
             >
-              Chartered Accountants | Bengaluru, India
+              Chartered Accountant · Bengaluru, India
             </div>
           </div>
         </div>
@@ -66,14 +73,14 @@ export default function Image() {
           style={{
             marginTop: 60,
             paddingTop: 32,
-            borderTop: "2px solid rgba(212, 175, 55, 0.3)",
-            fontSize: 20,
-            color: "#86af99",
+            borderTop: "2px solid rgba(184, 150, 110, 0.3)",
+            fontSize: 18,
+            color: "rgba(255,255,255,0.7)",
             textAlign: "center",
+            fontFamily: "DM Sans, sans-serif",
           }}
         >
-          Tax Advisory &bull; Audit &amp; Assurance &bull; GST Compliance &bull;
-          MSME Consulting
+          Tax · GST · Audit · Compliance
         </div>
       </div>
     ),

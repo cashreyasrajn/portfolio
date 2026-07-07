@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { SiteHeader } from "@/app/components/site-header";
 import { SiteFooter } from "@/app/components/site-footer";
 import { siteConfig } from "@/app/components/content/site";
 import "./globals.css";
 
-const headlineFont = Playfair_Display({
+const headlineFont = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["600", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-headline",
   display: "swap",
 });
 
-const bodyFont = Inter({
+const bodyFont = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
   display: "swap",
 });
@@ -22,7 +22,7 @@ const bodyFont = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Chartered Accountants | Bengaluru, India`,
+    default: `${siteConfig.name} — Chartered Accountant | Bengaluru`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -51,20 +51,13 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — Chartered Accountants | Bengaluru, India`,
+    title: `${siteConfig.name} — Chartered Accountant | Bengaluru, India`,
     description: siteConfig.description,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
+    images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — Chartered Accountants`,
+    title: `${siteConfig.name} — Chartered Accountant`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
@@ -93,10 +86,7 @@ const jsonLd = {
   telephone: siteConfig.schema.telephone,
   email: siteConfig.schema.email,
   foundingDate: siteConfig.schema.foundingDate,
-  memberOf: {
-    "@type": "Organization",
-    name: siteConfig.schema.memberOf,
-  },
+  memberOf: { "@type": "Organization", name: siteConfig.schema.memberOf },
   address: {
     "@type": "PostalAddress",
     streetAddress: siteConfig.schema.address.streetAddress,
@@ -114,7 +104,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <head>
         <link
           rel="stylesheet"
@@ -122,13 +112,11 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body
-        className={`${headlineFont.variable} ${bodyFont.variable} flex min-h-screen flex-col bg-background pt-20 text-on-surface antialiased`}
+        className={`${headlineFont.variable} ${bodyFont.variable} flex min-h-screen flex-col bg-cream pt-[72px] text-navy antialiased`}
       >
         <SiteHeader />
         <main className="flex-grow">{children}</main>

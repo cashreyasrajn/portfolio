@@ -21,21 +21,21 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-primary py-24 text-white md:py-32">
+      <section className="relative overflow-hidden bg-navy py-24 text-white md:py-32">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-white/70">
-              <span className="material-symbols-outlined text-[14px] text-secondary-container">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
+              <span className="material-symbols-outlined text-[14px] text-gold">
                 design_services
               </span>
               Our Services
             </p>
-            <h1 className="mb-5 font-headline text-[38px] font-bold leading-[1.1] tracking-tight md:text-[52px]">
-              Everything your business needs to stay compliant
+            <h1 className="mb-5 font-headline text-[40px] font-semibold leading-[1.1] tracking-tight md:text-[56px]">
+              Everything you need to stay compliant
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Six focused practice areas, one point of contact. Whether you are
-              an individual, a startup, or a growing company — we've got it
+              Six focused practice areas, one point of contact. Whether you're
+              an individual, a startup, or a growing company — I've got it
               covered.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function ServicesPage() {
       <section className="mx-auto max-w-[1280px] px-6 py-24 md:px-12 md:py-32">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <h2 className="mb-10 font-headline text-[28px] font-semibold tracking-tight text-primary">
+            <h2 className="mb-10 font-headline text-[28px] font-semibold tracking-tight text-navy">
               All Services
             </h2>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -55,17 +55,17 @@ export default function ServicesPage() {
             </div>
 
             <div className="mt-20">
-              <h3 className="mb-3 font-headline text-[24px] font-semibold tracking-tight text-primary">
+              <h3 className="mb-3 font-headline text-[24px] font-semibold tracking-tight text-navy">
                 Service details
               </h3>
-              <p className="mb-8 max-w-lg font-body text-[14px] leading-relaxed text-on-surface-variant/60">
-                Open any service to see everything that's included in the
-                engagement.
+              <p className="mb-8 max-w-lg font-body text-[14px] leading-relaxed text-navy/70">
+                Open any service to see everything that's included when you work
+                with me.
               </p>
               <Accordion
                 type="single"
                 collapsible
-                className="w-full overflow-hidden rounded-lg border border-primary/10 bg-white"
+                className="w-full overflow-hidden rounded-sm border border-navy/8 bg-white"
               >
                 {serviceDetails.map((sd) => (
                   <AccordionItem key={sd.slug} value={sd.slug}>
@@ -73,16 +73,16 @@ export default function ServicesPage() {
                       {sd.title}
                     </AccordionTrigger>
                     <AccordionContent className="px-6">
-                      <p className="mb-5 text-[14px] leading-relaxed text-on-surface-variant/70">
+                      <p className="mb-5 text-[14px] leading-relaxed text-navy/60">
                         {sd.description}
                       </p>
                       <ul className="grid grid-cols-1 gap-2.5 md:grid-cols-2">
                         {sd.bulletPoints.map((bp) => (
                           <li
                             key={bp}
-                            className="flex items-start gap-2.5 text-[14px] text-on-surface-variant/70"
+                            className="flex items-start gap-2.5 text-[14px] text-navy/60"
                           >
-                            <span className="material-symbols-outlined mt-0.5 text-[16px] text-secondary/70">
+                            <span className="material-symbols-outlined mt-0.5 text-[16px] text-gold">
                               check
                             </span>
                             {bp}
@@ -96,7 +96,7 @@ export default function ServicesPage() {
               <div className="mt-8">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-primary/85 active:scale-[0.97]"
+                  className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
                 >
                   <span className="material-symbols-outlined text-[18px]">
                     forum

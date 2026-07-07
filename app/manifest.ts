@@ -4,12 +4,12 @@ import { siteConfig } from "@/app/components/content/site";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.name,
-    short_name: "Shreyas Raj & Co.",
+    short_name: "CA Shreyas Raj",
     description: siteConfig.description,
     start_url: "/",
     display: "browser",
-    background_color: "#f8f9fa",
-    theme_color: "#012d1d",
+    background_color: "#f7f5f0",
+    theme_color: "#0b1e3d",
     icons: [
       {
         src: "/icon.png",

@@ -89,7 +89,7 @@ export const serviceDetails: ServiceDetail[] = [
     slug: "gst",
     title: "GST Compliance",
     description:
-      "GST done end-to-end — registration, monthly returns, reconciliation, audit, and refunds. We keep your input credit clean and your filings on time.",
+      "GST done end-to-end — registration, monthly returns, reconciliation, audit, and refunds. I keep your input credit clean and your filings on time.",
     bulletPoints: [
       "New GST registration & amendment",
       "GSTR-1, 3B filing — monthly & quarterly",

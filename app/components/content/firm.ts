@@ -8,8 +8,8 @@ export const firm = {
     title: "FCA, DISA",
     designation: "Proprietor",
     membershipNo: "XXXXXX",
-    portrait: "/shreyas-portrait.svg",
-    bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been in practice for over four years, helping small businesses, professionals and families get their tax and compliance right — without the stress.",
+    portrait: "/shreyas-raj.jpg",
+    bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been helping small businesses, professionals and families get their tax and compliance right — without the stress.",
     bioExtended: [
       "My work covers the everyday things that keep a business running smoothly: income tax filings, GST returns, statutory and tax audits, and ROC compliances. I also help new founders pick the right structure and get registered.",
       "I believe good advice is plain and practical. You won't get walls of jargon from me — just clear answers to your questions, filings done before the deadline, and a number you can call when something comes up.",
@@ -54,19 +54,19 @@ export const values = [
     icon: "handshake",
     title: "Plain-Speak Advice",
     description:
-      "We explain things in plain language. You'll understand what we're filing and why — before you sign.",
+      "I explain things in plain language. You'll understand what I'm filing and why — before you sign.",
   },
   {
-    icon: "locks",
+    icon: "lock",
     title: "Your Data Stays Private",
     description:
-      "Your financials are confidential. We never share client information, ever. Discretion is non-negotiable.",
+      "Your financials are confidential. I never share client information, ever. Discretion is non-negotiable.",
   },
   {
-    icon: "diversity_3",
+    icon: "call",
     title: "Pick Up The Phone",
     description:
-      "When you call with a question, a real person answers. No call centres, no waiting for days.",
+      "When you call with a question, I answer. No call centres, no waiting for days.",
   },
 ];
 
@@ -86,8 +86,8 @@ export const process = [
   {
     step: "03",
     icon: "folder_shared",
-    title: "We Do The Work",
-    description: "We collect documents, prepare filings, and handle every detail end-to-end.",
+    title: "I Do The Work",
+    description: "I collect documents, prepare filings, and handle every detail end-to-end.",
   },
   {
     step: "04",

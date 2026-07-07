@@ -17,21 +17,21 @@ function PlusIcon() {
 export function CredentialsSidebar() {
   return (
     <aside className="flex flex-col gap-8">
-      <div className="rounded-lg border border-primary/10 bg-white p-8">
-        <h4 className="mb-5 pb-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40 border-b border-primary/8">
-          Firm Credentials
+      <div className="rounded-sm border border-navy/8 bg-white p-8">
+        <h4 className="mb-5 border-b border-navy/8 pb-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-navy/55">
+          Credentials
         </h4>
         <ul className="space-y-5">
           {credentials.map((c) => (
             <li key={c.title} className="flex items-start gap-3">
-              <span className="text-secondary/70">
+              <span className="text-gold">
                 <PlusIcon />
               </span>
               <div>
-                <p className="font-body text-[15px] font-semibold text-primary">
+                <p className="font-body text-[15px] font-semibold text-navy">
                   {c.title}
                 </p>
-                <p className="mt-0.5 font-body text-[13px] text-on-surface-variant/60">
+                <p className="mt-0.5 font-body text-[13px] text-navy/70">
                   {c.subtitle}
                 </p>
               </div>
@@ -40,17 +40,17 @@ export function CredentialsSidebar() {
         </ul>
       </div>
 
-      <div className="rounded-lg bg-primary p-8 text-white">
-        <h4 className="mb-5 pb-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-secondary-container/80 border-b border-white/10">
+      <div className="rounded-sm bg-navy p-8 text-white">
+        <h4 className="mb-5 border-b border-white/10 pb-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/80">
           {whyChooseUs.headline}
         </h4>
-        <p className="mb-6 font-body text-[15px] leading-relaxed text-white/80">
+        <p className="mb-6 font-body text-[15px] leading-relaxed text-white/70">
           {whyChooseUs.description}
         </p>
         <ul className="space-y-3.5">
           {whyChooseUs.pillars.map((p) => (
             <li key={p} className="flex items-center gap-3 font-body text-[14px] text-white/80">
-              <span className="material-symbols-outlined text-[18px] text-secondary-container">
+              <span className="material-symbols-outlined text-[18px] text-gold">
                 verified
               </span>
               {p}

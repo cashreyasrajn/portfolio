@@ -40,12 +40,12 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const serviceOptions = [
-  { value: "tax-advisory", label: "Tax Advisory" },
+  { value: "tax-advisory", label: "Income Tax" },
   { value: "audit-assurance", label: "Audit & Assurance" },
   { value: "gst-compliance", label: "GST Compliance" },
-  { value: "msme-consulting", label: "MSME Business Consulting" },
-  { value: "roc-compliance", label: "ROC & Corporate Compliance" },
-  { value: "nri-taxation", label: "NRI Taxation & FEMA Advisory" },
+  { value: "msme-consulting", label: "Business Setup" },
+  { value: "roc-compliance", label: "Corporate Compliance" },
+  { value: "nri-taxation", label: "NRI & FEMA" },
   { value: "other", label: "Other / General Enquiry" },
 ];
 
@@ -65,22 +65,21 @@ export function ContactForm() {
   });
 
   function onSubmit(_values: FormValues) {
-    // TODO: wire submission to Vercel serverless route or Resend/Formspree
     setSubmitted(true);
   }
 
   if (submitted) {
     return (
-      <div className="mx-auto max-w-2xl text-center">
-        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-fixed/30">
-          <CheckCircle className="h-10 w-10 text-primary" />
+      <div className="text-center">
+        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-gold/10">
+          <CheckCircle className="h-10 w-10 text-gold" />
         </div>
-        <h1 className="mb-stack-md font-headline text-display-lg-mobile text-primary md:text-display-lg">
+        <h3 className="mb-3 font-headline text-[26px] font-semibold text-navy">
           Thank You
-        </h1>
-        <p className="mb-stack-lg font-body text-body-lg text-on-surface-variant">
-          Your consultation request has been received. A senior partner will
-          review your requirements and reach out within one business day.
+        </h3>
+        <p className="mb-8 font-body text-[15px] text-navy/60">
+          Your consultation request has been received. I'll review your
+          requirements and reach out within one business day.
         </p>
         <Button variant="primary" onClick={() => setSubmitted(false)}>
           Submit Another Enquiry
@@ -91,7 +90,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <FormField
             control={form.control}
@@ -129,7 +128,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Phone Number *</FormLabel>
                 <FormControl>
-                  <Input placeholder="+91 xxxxx xxxxx" type="tel" {...field} />
+                  <Input placeholder="+91 98765 43210" type="tel" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -158,7 +157,7 @@ export function ContactForm() {
               <FormLabel>Service Required *</FormLabel>
               <FormControl>
                 <select
-                  className="flex h-10 w-full border-b border-outline-variant bg-transparent px-1 py-2 font-body text-body-md text-on-surface focus-visible:border-primary focus-visible:outline-none"
+                  className="flex h-12 w-full rounded-sm border border-navy/12 bg-white px-4 py-2 font-body text-[14px] text-navy focus-visible:border-gold focus-visible:outline-none"
                   {...field}
                 >
                   {serviceOptions.map((opt) => (
@@ -182,7 +181,7 @@ export function ContactForm() {
               <FormControl>
                 <Textarea
                   placeholder="Describe your requirements in brief..."
-                  className="min-h-[160px]"
+                  className="min-h-[140px]"
                   {...field}
                 />
               </FormControl>

@@ -4,46 +4,59 @@
 
 @layer base {
   :root {
-    --background: #f8f9fa;
-    --foreground: #191c1d;
-    --card: #ffffff;
-    --card-foreground: #191c1d;
-    --popover: #ffffff;
-    --popover-foreground: #191c1d;
-    --primary: #012d1d;
-    --primary-foreground: #ffffff;
-    --secondary: #735c00;
-    --secondary-foreground: #ffffff;
-    --muted: #edeeef;
-    --muted-foreground: #414844;
-    --accent: #fed65b;
-    --accent-foreground: #745c00;
-    --destructive: #ba1a1a;
-    --destructive-foreground: #ffffff;
-    --border: #c1c8c2;
-    --input: #c1c8c2;
-    --ring: #012d1d;
-    --radius: 0.25rem;
+    --navy: #0b1e3d;
+    --navy-light: #152d57;
+    --navy-dark: #070f1e;
+    --gold: #b8966e;
+    --gold-light: #d4b485;
+    --gold-dark: #8f7149;
+    --cream: #f7f5f0;
 
-    --gold-fade: rgba(212, 175, 55, 0.2);
+    --background: #f7f5f0;
+    --foreground: #0b1e3d;
+    --card: #ffffff;
+    --card-foreground: #0b1e3d;
+    --popover: #ffffff;
+    --popover-foreground: #0b1e3d;
+    --primary: #0b1e3d;
+    --primary-foreground: #ffffff;
+    --secondary: #b8966e;
+    --secondary-foreground: #0b1e3d;
+    --muted: #ede9e0;
+    --muted-foreground: rgba(11, 30, 61, 0.6);
+    --accent: #b8966e;
+    --accent-foreground: #0b1e3d;
+    --destructive: #b91c1c;
+    --destructive-foreground: #ffffff;
+    --border: rgba(11, 30, 61, 0.1);
+    --input: rgba(11, 30, 61, 0.12);
+    --ring: #b8966e;
+    --radius: 0.25rem;
   }
 
   * {
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-body), Inter, sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body), "DM Sans", system-ui, sans-serif;
   }
 
   h1, h2, h3, h4 {
-    font-family: var(--font-headline), "Playfair Display", serif;
+    font-family: var(--font-headline), "Cormorant Garamond", Georgia, serif;
   }
 }
 
 @layer utilities {
-  .glass-panel {
-    @apply bg-surface/80 backdrop-blur-md;
+  .font-headline {
+    font-family: var(--font-headline), "Cormorant Garamond", Georgia, serif;
+  }
+  .font-body {
+    font-family: var(--font-body), "DM Sans", system-ui, sans-serif;
   }
 }

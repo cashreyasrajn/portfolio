@@ -1,31 +1,32 @@
+import { firm } from "@/app/components/content/firm";
+
 export const siteConfig = {
-  name: "Shreyas Raj & Co.",
+  name: "CA Shreyas Raj",
   description:
-    "Shreyas Raj & Co. — Chartered Accountants based in Bengaluru, India. Specialized tax advisory, audit & assurance, GST compliance, MSME consulting, and NRI taxation services with 20+ years of institutional trust.",
-  url:
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://shreyasraj.vercel.app",
+    "CA Shreyas Raj — Chartered Accountant based in Bengaluru, India. Practical tax advisory, audit & assurance, GST compliance, MSME consulting, and NRI taxation services for individuals and small businesses.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://shreyasraj.vercel.app",
   ogImage: "/og-image.png",
   links: {
-    email: "mailto:shreyasraj.ca@gmail.com",
-    linkedin: "https://linkedin.com/in/shreyasraj-ca",
-    phone: "tel:+919876543210",
+    email: `mailto:${firm.contact.gmail}`,
+    linkedin: firm.contact.linkedin,
+    phone: `tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`,
   },
   locale: "en_IN",
   schema: {
     type: "ProfessionalService",
-    name: "Shreyas Raj & Co.",
+    name: "CA Shreyas Raj",
     description:
-      "Chartered Accountancy firm providing tax advisory, audit, GST compliance, and MSME consulting services in Bengaluru, India.",
+      "Chartered Accountant providing tax advisory, audit, GST compliance, and MSME consulting services in Bengaluru, India.",
     address: {
-      streetAddress: "No. 42, 3rd Floor, Prestige Chambers, MG Road, Ashok Nagar",
-      addressLocality: "Bengaluru",
-      addressRegion: "Karnataka",
-      postalCode: "560001",
-      addressCountry: "IN",
+      streetAddress: `${firm.address.line1}, ${firm.address.line2}`,
+      addressLocality: firm.address.city,
+      addressRegion: firm.address.state,
+      postalCode: firm.address.pincode,
+      addressCountry: firm.address.country,
     },
-    telephone: "+91-80-4123-5678",
-    email: "contact@shreyasraj.co.in",
-    foundingDate: "2002",
+    telephone: firm.contact.phone,
+    email: firm.contact.gmail,
+    foundingDate: firm.founded.toString(),
     memberOf: "Institute of Chartered Accountants of India (ICAI)",
   },
 };

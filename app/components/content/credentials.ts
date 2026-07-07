@@ -23,9 +23,9 @@ export const credentials: Credential[] = [
 ];
 
 export const whyChooseUs = {
-  headline: "Working with us",
+  headline: "Working with me",
   description:
-    "We focus on the basics done right — accurate filings, clear communication, and being available when you need us.",
+    "I focus on the basics done right — accurate filings, clear communication, and being available when you need me.",
   pillars: [
     "Timely filings, every time",
     "Clear, jargon-free advice",
