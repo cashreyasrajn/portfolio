@@ -45,9 +45,9 @@ const config: Config = {
           dark: "#070f1e",
         },
         gold: {
-          DEFAULT: "#b8966e",
-          light: "#d4b485",
-          dark: "#8f7149",
+          DEFAULT: "#6d8a9e",
+          light: "#8ba3b5",
+          dark: "#507080",
         },
         cream: "#f7f5f0",
       },
@@ -57,8 +57,9 @@ const config: Config = {
         xl: "0.5rem",
       },
       fontFamily: {
-        headline: ["var(--font-headline)", "Cormorant Garamond", "Georgia", "serif"],
-        body: ["var(--font-body)", "DM Sans", "system-ui", "sans-serif"],
+        headline: ["var(--font-headline)", "Cormorant Garamond", "Times New Roman", "serif"],
+        body: ["var(--font-body)", "DM Sans", "-apple-system", "Segoe UI", "system-ui", "sans-serif"],
+        brand: ["var(--font-brand)", "Trajan Pro", "Cormorant Garamond", "Times New Roman", "serif"],
       },
       keyframes: {
         "accordion-down": {

@@ -7,10 +7,11 @@
     --navy: #0b1e3d;
     --navy-light: #152d57;
     --navy-dark: #070f1e;
-    --gold: #b8966e;
-    --gold-light: #d4b485;
-    --gold-dark: #8f7149;
+    --gold: #6d8a9e;
+    --gold-light: #8ba3b5;
+    --gold-dark: #507080;
     --cream: #f7f5f0;
+    --font-brand: "Trajan Pro", "Cormorant Garamond", "Times New Roman", serif;
 
     --background: #f7f5f0;
     --foreground: #0b1e3d;
@@ -20,17 +21,17 @@
     --popover-foreground: #0b1e3d;
     --primary: #0b1e3d;
     --primary-foreground: #ffffff;
-    --secondary: #b8966e;
-    --secondary-foreground: #0b1e3d;
+    --secondary: #6d8a9e;
+    --secondary-foreground: #ffffff;
     --muted: #ede9e0;
     --muted-foreground: rgba(11, 30, 61, 0.6);
-    --accent: #b8966e;
-    --accent-foreground: #0b1e3d;
+    --accent: #6d8a9e;
+    --accent-foreground: #ffffff;
     --destructive: #b91c1c;
     --destructive-foreground: #ffffff;
     --border: rgba(11, 30, 61, 0.1);
     --input: rgba(11, 30, 61, 0.12);
-    --ring: #b8966e;
+    --ring: #6d8a9e;
     --radius: 0.25rem;
   }
 
@@ -44,19 +45,25 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: var(--font-body), "DM Sans", system-ui, sans-serif;
+    font-family: var(--font-body), "DM Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
   }
 
   h1, h2, h3, h4 {
-    font-family: var(--font-headline), "Cormorant Garamond", Georgia, serif;
+    font-family: var(--font-headline), "Cormorant Garamond", "Times New Roman", serif;
   }
 }
 
 @layer utilities {
   .font-headline {
-    font-family: var(--font-headline), "Cormorant Garamond", Georgia, serif;
+    font-family: var(--font-headline), "Cormorant Garamond", "Times New Roman", serif;
   }
   .font-body {
-    font-family: var(--font-body), "DM Sans", system-ui, sans-serif;
+    font-family: var(--font-body), "DM Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
+  }
+  .font-brand {
+    font-family: var(--font-brand), "Trajan Pro", "Cormorant Garamond", "Times New Roman", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
   }
 }

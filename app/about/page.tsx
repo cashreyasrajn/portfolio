@@ -35,62 +35,40 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <div className="mb-14 grid grid-cols-2 gap-4 md:grid-cols-4">
-              {[
-                { icon: "calendar_month", label: "In practice since", value: firm.founded.toString() },
-                { icon: "badge", label: "ICAI Membership", value: firm.founder.membershipNo },
-                { icon: "location_on", label: "Based in", value: firm.address.city },
-                { icon: "language", label: "Reach", value: "PAN India" },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-sm border border-navy/8 bg-white p-6"
-                >
-                  <span className="material-symbols-outlined mb-3 block text-[24px] text-gold">
-                    {item.icon}
-                  </span>
-                  <p className="font-headline text-[24px] font-semibold text-navy">
-                    {item.value}
-                  </p>
-                  <p className="mt-1 font-body text-[11px] font-semibold uppercase tracking-[0.1em] text-navy/55">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
+
             </div>
 
             <p className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.2em] text-gold-dark">
               The Principal
             </p>
-            <h2 className="mb-10 font-headline text-[32px] font-semibold tracking-tight text-navy">
-              Meet {firm.founder.name}
-            </h2>
 
-            <div className="mb-12 flex flex-col gap-8 md:flex-row">
-              <div className="relative flex-shrink-0">
-                <div className="absolute -right-3 -top-3 h-14 w-14 rounded-sm border-2 border-gold/40" />
-                <div className="absolute -bottom-3 -left-3 h-14 w-14 rounded-sm border-2 border-gold/40" />
-                <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-lg">
-                  <Image
-                    src={firm.founder.portrait}
-                    alt={firm.founder.name}
-                    fill
-                    sizes="180px"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div>
-                <p className="font-headline text-[28px] font-semibold tracking-tight text-navy">
-                  {firm.founder.name}
-                </p>
-                <p className="mt-1 font-body text-[14px] font-semibold text-gold-dark">
-                  {firm.founder.title} · {firm.founder.designation}
-                </p>
-                <p className="mt-5 font-body text-[15px] leading-relaxed text-navy/60">
-                  {firm.founder.bio}
-                </p>
-              </div>
-            </div>
+            <div className="mb-14 flex flex-col items-center gap-10 md:flex-row md:items-start">
+  <div className="relative flex-shrink-0">
+    <div className="absolute -right-4 -top-4 h-16 w-16 rounded-sm border-2 border-gold/40" />
+    <div className="absolute -bottom-4 -left-4 h-16 w-16 rounded-sm border-2 border-gold/40" />
+    <div className="relative h-[280px] w-[220px] overflow-hidden rounded-sm shadow-lg">
+      <Image
+        src={firm.founder.portrait}
+        alt={firm.founder.name}
+        fill
+        sizes="220px"
+        className="object-cover"
+      />
+    </div>
+  </div>
+
+  <div className="text-center md:text-left">
+    <p className="font-headline text-[28px] font-semibold tracking-tight text-navy">
+      {firm.founder.name}
+    </p>
+    <p className="mt-1 font-body text-[14px] font-semibold text-gold-dark">
+      {firm.founder.title} · {firm.founder.designation}
+    </p>
+    <p className="mt-5 max-w-lg font-body text-[15px] leading-relaxed text-navy/60">
+      {firm.founder.bio}
+    </p>
+  </div>
+</div>
 
             <div className="space-y-5 border-l-2 border-gold/30 pl-6 font-body text-[15px] leading-relaxed text-navy/60">
               {firm.founder.bioExtended.map((para, i) => (

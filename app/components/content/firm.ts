@@ -7,7 +7,6 @@ export const firm = {
     name: "CA Shreyas Raj",
     title: "FCA, DISA",
     designation: "Proprietor",
-    membershipNo: "XXXXXX",
     portrait: "/shreyas-raj.jpg",
     bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been helping small businesses, professionals and families get their tax and compliance right — without the stress.",
     bioExtended: [
@@ -15,7 +14,7 @@ export const firm = {
       "I believe good advice is plain and practical. You won't get walls of jargon from me — just clear answers to your questions, filings done before the deadline, and a number you can call when something comes up.",
       "When I'm not working, you'll find me at ICAI study circles, mentoring articled assistants, or volunteering at the local Tax Bar Association.",
     ],
-    qualifications: ["FCA — Fellow, ICAI", "DISA — Information Systems Audit (ICAI)", "B.Com — Mangalore University"],
+    qualifications: ["FCA — Fellow, ICAI",  "B.Com — Mangalore University"],
     specializations: ["Direct Tax", "Statutory & Tax Audit", "GST", "Corporate Compliances"],
   },
   firmProfile:

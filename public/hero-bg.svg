@@ -6,8 +6,8 @@
       <stop offset="100%" stop-color="#152d57"/>
     </linearGradient>
     <radialGradient id="glow" cx="80%" cy="20%" r="50%">
-      <stop offset="0%" stop-color="#b8966e" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#b8966e" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#6d8a9e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6d8a9e" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
       <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
@@ -16,7 +16,7 @@
   <rect width="1600" height="900" fill="url(#heroGrad)"/>
   <rect width="1600" height="900" fill="url(#grid)"/>
   <rect width="1600" height="900" fill="url(#glow)"/>
-  <circle cx="200" cy="700" r="300" fill="#b8966e" opacity="0.04"/>
+  <circle cx="200" cy="700" r="300" fill="#6d8a9e" opacity="0.04"/>
   <circle cx="1400" cy="150" r="250" fill="#ffffff" opacity="0.03"/>
   <path d="M0 800 Q 400 700 800 800 T 1600 800 L 1600 900 L 0 900 Z" fill="#070f1e" opacity="0.3"/>
 </svg>

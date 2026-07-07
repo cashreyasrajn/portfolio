@@ -24,7 +24,7 @@ export function SiteHeader() {
             priority
           />
           <div className="flex flex-col leading-tight">
-            <span className="font-headline text-[20px] font-semibold tracking-tight text-navy md:text-[22px]">
+            <span className="font-brand text-[20px] tracking-[0.15em] text-navy md:text-[22px]">
               Shreyas Raj
             </span>
             <span className="font-body text-[10px] font-semibold uppercase tracking-[0.12em] text-gold md:text-[11px]">

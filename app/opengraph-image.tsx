@@ -34,13 +34,13 @@ export default function Image() {
               width: 80,
               height: 80,
               borderRadius: "50%",
-              border: "3px solid #b8966e",
+              border: "3px solid #6d8a9e",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               fontSize: 32,
               fontWeight: 700,
-              color: "#b8966e",
+              color: "#6d8a9e",
             }}
           >
             SR
@@ -60,7 +60,7 @@ export default function Image() {
               style={{
                 fontSize: 22,
                 fontWeight: 400,
-                color: "#b8966e",
+                color: "#6d8a9e",
                 marginTop: 8,
                 fontFamily: "DM Sans, sans-serif",
               }}

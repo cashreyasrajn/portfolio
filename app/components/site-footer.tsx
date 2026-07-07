@@ -19,7 +19,7 @@ export function SiteFooter() {
                 className="h-9 w-auto object-contain"
               />
               <div className="leading-tight">
-                <span className="block font-headline text-lg font-semibold tracking-tight text-white">
+                <span className="block font-brand text-lg tracking-[0.15em] text-white">
                   Shreyas Raj
                 </span>
                 <span className="font-body text-[10px] font-semibold uppercase tracking-[0.12em] text-gold">
