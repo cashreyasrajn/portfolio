@@ -129,7 +129,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Phone Number *</FormLabel>
                 <FormControl>
-                  <Input placeholder="+91 98765 43210" type="tel" {...field} />
+                  <Input placeholder="+91 xxxxx xxxxx" type="tel" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

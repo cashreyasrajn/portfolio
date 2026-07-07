@@ -2,24 +2,24 @@ export const firm = {
   name: "Shreyas Raj",
   firmName: "Shreyas Raj & Co.",
   tagline: "Chartered Accountants",
-  founded: 2002,
+  founded: 2024,
   founder: {
     name: "CA Shreyas Raj",
     title: "FCA, DISA",
     designation: "Proprietor",
     membershipNo: "XXXXXX",
     portrait: "/shreyas-portrait.svg",
-    bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been in practice for over twenty years, helping small businesses, professionals and families get their tax and compliance right — without the stress.",
+    bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been in practice for over four years, helping small businesses, professionals and families get their tax and compliance right — without the stress.",
     bioExtended: [
       "My work covers the everyday things that keep a business running smoothly: income tax filings, GST returns, statutory and tax audits, and ROC compliances. I also help new founders pick the right structure and get registered.",
       "I believe good advice is plain and practical. You won't get walls of jargon from me — just clear answers to your questions, filings done before the deadline, and a number you can call when something comes up.",
       "When I'm not working, you'll find me at ICAI study circles, mentoring articled assistants, or volunteering at the local Tax Bar Association.",
     ],
-    qualifications: ["FCA — Fellow, ICAI", "DISA — Information Systems Audit (ICAI)", "B.Com — Bangalore University"],
+    qualifications: ["FCA — Fellow, ICAI", "DISA — Information Systems Audit (ICAI)", "B.Com — Mangalore University"],
     specializations: ["Direct Tax", "Statutory & Tax Audit", "GST", "Corporate Compliances"],
   },
   firmProfile:
-    "Shreyas Raj & Co. is a single-proprietor chartered accountancy practice in Bengaluru. For over two decades, we've helped individuals and small businesses stay compliant and ahead of their tax obligations — one filing, one audit, one client at a time. No big-firm runaround, no surprise fees.",
+    "Shreyas Raj & Co. is a single-proprietor chartered accountancy practice in Bengaluru. we've helped individuals and small businesses stay compliant and ahead of their tax obligations — one filing, one audit, one client at a time. No big-firm runaround, no surprise fees.",
   address: {
     line1: "No. 42, 3rd Floor, Prestige Chambers",
     line2: "MG Road, Ashok Nagar",
@@ -29,22 +29,17 @@ export const firm = {
     country: "India",
   },
   contact: {
-    phone: "+91-98765-43210",
-    email: "shreyas.raj@icai.org.in",
-    gmail: "shreyasraj.ca@gmail.com",
-    linkedin: "https://linkedin.com/in/shreyasraj-ca",
+    phone: "+91 63618 90855",
+    email: "cashreyasrajn@gmail.com",
+    gmail: "cashreyasrajn@gmail.com",
+    linkedin: "https://linkedin.com/in/shreyas-raj-n-8345a8214",
   },
-  hours: [
-    { day: "Mon – Fri", time: "9:30 AM – 7:00 PM" },
-    { day: "Saturday", time: "10:00 AM – 2:00 PM" },
-    { day: "Sunday", time: "Closed" },
-  ],
 };
 
 export const firmStats = [
-  { value: "20+", label: "Years in Practice" },
-  { value: "300+", label: "Clients Served" },
-  { value: "5,000+", label: "Returns Filed" },
+  { value: "3", label: "Years in Practice" },
+  { value: "30+", label: "Clients Served" },
+  { value: "500+", label: "Returns Filed" },
   { value: "100%", label: "On-time Filings" },
 ];
 
