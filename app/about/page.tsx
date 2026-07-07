@@ -8,7 +8,7 @@ import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: "About — CA Shreyas Raj, FCA, DISA (ICAI)",
   description:
-    "Meet CA Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. 20+ years in practice helping individuals and small businesses with tax, GST, audit, and corporate compliance.",
+    "Meet CA Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. 2+ years in practice helping individuals and small businesses with tax, GST, audit, and corporate compliance.",
 };
 
 export default function AboutPage() {

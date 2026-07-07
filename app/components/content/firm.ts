@@ -5,10 +5,10 @@ export const firm = {
   founded: 2024,
   founder: {
     name: "CA Shreyas Raj",
-    title: "FCA, DISA",
+    title: "ACA",
     designation: "Proprietor",
     portrait: "/shreyas-raj.jpg",
-    bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been helping small businesses, professionals and families get their tax and compliance right — without the stress.",
+    bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been helping small businesses, professionals and families get their tax and compliance right without the stress.",
     bioExtended: [
       "My work covers the everyday things that keep a business running smoothly: income tax filings, GST returns, statutory and tax audits, and ROC compliances. I also help new founders pick the right structure and get registered.",
       "I believe good advice is plain and practical. You won't get walls of jargon from me — just clear answers to your questions, filings done before the deadline, and a number you can call when something comes up.",
@@ -20,11 +20,11 @@ export const firm = {
   firmProfile:
     "Shreyas Raj & Co. is a single-proprietor chartered accountancy practice in Bengaluru. we've helped individuals and small businesses stay compliant and ahead of their tax obligations — one filing, one audit, one client at a time. No big-firm runaround, no surprise fees.",
   address: {
-    line1: "No. 42, 3rd Floor, Prestige Chambers",
-    line2: "MG Road, Ashok Nagar",
+    line1: "247, Kasturabha, 7th Cross, Chandra Layout",
+    line2: "Benhind Chandra Layout Water Tank, Vijayanagr",
     city: "Bengaluru",
     state: "Karnataka",
-    pincode: "560001",
+    pincode: "560040",
     country: "India",
   },
   contact: {
