@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { firm } from "@/app/components/content/firm";
 
 export function Hero() {
@@ -11,8 +10,8 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/70" />
 
-      <div className="relative mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-12 px-6 py-24 md:px-12 md:py-32 lg:grid-cols-2">
-        <div>
+      <div className="relative mx-auto max-w-[1280px] px-6 py-24 md:px-12 md:py-32">
+        <div className="max-w-3xl">
           <p className="mb-4 inline-flex items-center gap-2 border-l-2 border-gold pl-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
             <span className="material-symbols-outlined text-[14px] text-gold">
               workspace_premium
@@ -20,10 +19,10 @@ export function Hero() {
             Chartered Accountants · Bangalore
           </p>
           <h1 className="mb-5 font-headline text-[42px] font-semibold leading-[1.08] tracking-tight text-white md:text-[60px]">
-            Hi, I&apos;m {firm.founder.name}
+            Tax, audit {'\u0026'} compliance<br />done properly.
           </h1>
           <p className="mb-4 max-w-lg font-body text-[16px] leading-relaxed text-white/70 md:text-[17px]">
-            {firm.founder.bio}
+            {firm.firmProfile}
           </p>
 
           <div className="mb-8 flex flex-wrap gap-2">
@@ -54,23 +53,6 @@ export function Hero() {
             >
               View Services
             </Link>
-          </div>
-        </div>
-
-        <div className="relative mx-auto w-full max-w-sm lg:ml-auto">
-          <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
-            <Image
-              src={firm.founder.portrait}
-              alt={firm.founder.name}
-              fill
-              sizes="(max-width: 768px) 100vw, 400px"
-              className="object-cover"
-              priority
-            />
-          </div>
-          <div className="absolute -bottom-5 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap bg-white px-6 py-2.5 shadow-lg">
-            <span className="material-symbols-outlined text-[20px] text-gold">verified</span>
-            <span className="font-body text-[13px] font-semibold text-navy">Member, ICAI</span>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ export const firm = {
   founder: {
     name: "CA Shreyas Raj N.",
     title: "ACA",
-    designation: "Founder & Principal",
+    designation: "Founder",
     portrait: "/shreyas-raj.jpg",
     bio: "Shreyas Raj N. is a Chartered Accountant with over five years of experience in direct taxation, cross-border transactions, regulatory compliance, and advisory. His expertise spans FEMA regulations, US taxation, and international tax matters, with a strong focus on foreign asset reporting, ESOPs, RSUs, and tax planning for individuals.",
     bioExtended: [
