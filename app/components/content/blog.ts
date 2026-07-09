@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
       "DIR-3 KYC: every director with a DIN must complete KYC by 30th September each year.",
       "ADT-1: appoint or reappoint the statutory auditor within 15 days of the first AGM, then file ADT-1.",
       "Board meetings: at least four each year, not more than 120 days apart. Minutes must be signed and maintained.",
-      "We maintain a compliance calendar for each company and send reminders before every deadline. Missed ROC deadlines cost more than the professional fee.",
+      "We maintain a compliance calendar for each company and send reminders before every deadline. Missed ROC deadlines attract escalating late fees under the Companies Act.",
     ],
     category: "Corporate Compliance",
     date: "2026-05-02",

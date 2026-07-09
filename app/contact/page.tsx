@@ -3,12 +3,12 @@ import Image from "next/image";
 import { ContactForm } from "@/app/components/sections/contact-form";
 import { CredentialsSidebar } from "@/app/components/sections/credentials-sidebar";
 import { firm } from "@/app/components/content/firm";
-import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Book a Consultation — Shreyas Raj & Co.",
   description:
-    "Get in touch for tax, GST, audit, international tax, or compliance advisory. Free 15-minute consultation. Phone, email, or fill the form.",
+    "Get in touch for tax, GST, audit, international tax, or compliance advisory. Phone, email, or fill the form.",
 };
 
 export default function ContactPage() {
@@ -22,11 +22,11 @@ export default function ContactPage() {
               Get in touch
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-semibold leading-[1.1] tracking-tight md:text-[56px]">
-              Book a free consultation
+              Book a consultation
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
               Fifteen minutes, no commitment. Tell us what you need — we'll
-              outline how we can help and what it costs. Plain answers on the
+              outline how we can help and the next steps. Plain answers on the
               first call.
             </p>
           </div>
@@ -80,19 +80,6 @@ export default function ContactPage() {
                     </p>
                   </div>
                 </a>
-                <a href={firm.contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 transition-colors hover:text-gold-dark">
-                  <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-sm bg-navy/[0.05] text-navy">
-                    <Linkedin className="h-[18px] w-[18px]" />
-                  </div>
-                  <div>
-                    <p className="font-body text-[11px] font-semibold uppercase tracking-[0.1em] text-navy/55">
-                      LinkedIn
-                    </p>
-                    <p className="font-body text-[15px] font-semibold text-navy">
-                      shreyasraj-ca
-                    </p>
-                  </div>
-                </a>
               </div>
               <div className="mt-6 border-t border-navy/8 pt-6">
                 <div className="mb-4 flex items-start gap-4">
@@ -104,11 +91,7 @@ export default function ContactPage() {
                       Office
                     </p>
                     <p className="font-body text-[14px] leading-relaxed text-navy/60">
-                      {firm.address.line1}
-                      <br />
-                      {firm.address.line2}
-                      <br />
-                      {firm.address.city}, {firm.address.state} — {firm.address.pincode}
+                      {firm.address.city}
                     </p>
                   </div>
                 </div>

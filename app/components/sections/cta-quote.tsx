@@ -13,15 +13,15 @@ export function CtaQuote() {
           Let's get your filings in order
         </h2>
         <p className="mx-auto mb-10 max-w-lg font-body text-[16px] leading-relaxed text-white/65">
-          Free fifteen-minute consultation. We'll discuss what you need,
-          how we can help, and what it costs. No strings.
+          A fifteen-minute consultation to discuss what you need, how we can
+          help, and outline the next steps. No obligation.
         </p>
         <Link
           href="/contact"
           className="inline-flex items-center gap-2  bg-gold px-8 py-3.5 font-body text-[15px] font-semibold leading-none text-navy transition-all hover:bg-gold-light active:scale-[0.97]"
         >
           <span className="material-symbols-outlined text-[18px]">call_made</span>
-          Book a Free Consultation
+          Book a Consultation
         </Link>
       </div>
     </section>

@@ -75,7 +75,7 @@ export const services: Service[] = [
     tagline: "Start to Scale",
     slug: "business-setup",
     description:
-      "From choosing the right structure to raising your first round — practical advice that gets your business off the ground properly.",
+      "From choosing the right structure to raising your first round — practical advice for setting up your business.",
     points: [
       "Pvt Ltd, LLP & OPC registration",
       "Udyam / MSME registration",
@@ -90,7 +90,7 @@ export const services: Service[] = [
     tagline: "Cross-Border Tax",
     slug: "nri-fema",
     description:
-      "Specialised support for Non-Resident Indians and foreign entities — DTAA benefits, repatriation, and FEMA compliance done right.",
+      "Specialised support for Non-Resident Indians and foreign entities — DTAA benefits, repatriation, and FEMA compliance.",
     points: [
       "NRI income tax returns",
       "DTAA & exemption claims",
@@ -102,7 +102,7 @@ export const services: Service[] = [
 ];
 
 export const servicesHero = {
-  headline: "Chartered Accountancy, done properly.",
+  headline: "Chartered accountancy services",
   subheadline:
-    "Shreyas Raj & Co. is a Bangalore-based chartered accountancy practice. We help individuals, professionals, and businesses stay on top of their tax, GST, audit, and compliance — with clear advice and no missed deadlines.",
+    "Shreyas Raj & Co. is a Bengaluru-based chartered accountancy practice. We help individuals, professionals, and businesses stay on top of their tax, GST, audit, and compliance.",
 };

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Logo } from "@/app/components/ui/logo";
 import { footerLinks } from "@/app/components/content/nav";
 import { firm } from "@/app/components/content/firm";
-import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -14,10 +14,9 @@ export function SiteFooter() {
               <Logo variant="light" />
             </div>
             <p className="mb-6 max-w-xs font-body text-[15px] leading-relaxed text-white/60">
-              Shreyas Raj {'\u0026'} Co. is a Bangalore-based chartered accountancy
+              Shreyas Raj {'\u0026'} Co. is a Bengaluru-based chartered accountancy
               practice specialising in direct taxation, international tax, FEMA,
-              and corporate compliance. Over five years of serving clients
-              across India and abroad.
+              and corporate compliance. Established in 2021.
             </p>
             <a
               href={`tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`}
@@ -40,24 +39,9 @@ export function SiteFooter() {
                 <Mail className="h-[14px] w-[14px] text-gold" />
                 Gmail
               </a>
-              <a
-                href={firm.contact.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 font-body text-[14px] text-white/60 transition-colors hover:text-gold"
-              >
-                <Linkedin className="h-[14px] w-[14px] text-gold" />
-                LinkedIn
-              </a>
               <div className="flex items-start gap-3 font-body text-[14px] text-white/60">
                 <MapPin className="mt-0.5 h-[14px] w-[14px] flex-shrink-0 text-gold" />
-                <span>
-                  {firm.address.line1}
-                  <br />
-                  {firm.address.line2}
-                  <br />
-                  {firm.address.city}, {firm.address.state} — {firm.address.pincode}
-                </span>
+                <span>Bengaluru</span>
               </div>
             </div>
           </div>
@@ -107,8 +91,7 @@ export function SiteFooter() {
         <div className="mt-16 border-t border-white/10 pt-8 text-center">
           <p className="font-body text-[13px] text-white/40">
             &copy; {new Date().getFullYear()} Shreyas Raj {'\u0026'} Co. All Rights
-            Reserved. Member of the Institute of Chartered Accountants of India
-            (ICAI).
+            Reserved.
           </p>
         </div>
       </div>

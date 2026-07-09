@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond } from "next/font/google";
 import { SiteHeader } from "@/app/components/site-header";
 import { SiteFooter } from "@/app/components/site-footer";
+import { DisclaimerPopup } from "@/app/components/sections/disclaimer-popup";
 import { siteConfig } from "@/app/components/content/site";
 import "./globals.css";
 
@@ -16,13 +17,13 @@ const headlineFont = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Chartered Accountants | Bangalore`,
+    default: `${siteConfig.name} — Chartered Accountants | Bengaluru`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
     "Chartered Accountant",
-    "CA Firm Bangalore",
+    "CA Firm Bengaluru",
     "Tax Advisory India",
     "International Taxation",
     "FEMA Advisory",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — Chartered Accountants | Bangalore, India`,
+    title: `${siteConfig.name} — Chartered Accountants | Bengaluru, India`,
     description: siteConfig.description,
     images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
@@ -118,6 +119,7 @@ export default function RootLayout({
         <SiteHeader />
         <main className="flex-grow">{children}</main>
         <SiteFooter />
+        <DisclaimerPopup />
       </body>
     </html>
   );

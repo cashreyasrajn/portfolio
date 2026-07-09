@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Shreyas Raj & Co. — Chartered Accountants, Bangalore";
+export const alt = "Shreyas Raj & Co. — Chartered Accountants, Bengaluru";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -25,48 +25,30 @@ export default function Image() {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            gap: 24,
+            gap: 8,
           }}
         >
           <div
             style={{
-              width: 80,
-              height: 80,
-              borderRadius: "50%",
-              border: "3px solid #5b7a94",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 32,
-              fontWeight: 700,
-              color: "#5b7a94",
+              fontSize: 52,
+              fontWeight: 600,
+              letterSpacing: "-0.01em",
+              color: "#ffffff",
             }}
           >
-            SR
+            Shreyas Raj & Co.
           </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div
-              style={{
-                fontSize: 52,
-                fontWeight: 600,
-                letterSpacing: "-0.01em",
-                color: "#ffffff",
-              }}
-            >
-              CA Shreyas Raj
-            </div>
-            <div
-              style={{
-                fontSize: 22,
-                fontWeight: 400,
-                color: "#5b7a94",
-                marginTop: 8,
-                fontFamily: "Segoe UI, -apple-system, sans-serif",
-              }}
-            >
-              Chartered Accountants · Bangalore, India
-            </div>
+          <div
+            style={{
+              fontSize: 22,
+              fontWeight: 400,
+              color: "#5b7a94",
+              fontFamily: "Segoe UI, -apple-system, sans-serif",
+            }}
+          >
+              Chartered Accountants · Bengaluru, India
           </div>
         </div>
         <div

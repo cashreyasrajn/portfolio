@@ -12,7 +12,6 @@ export const firm = {
     bioExtended: [
       "The practice also advises clients on tax litigation and complex compliance matters, delivering practical and commercially sound solutions in an evolving global tax landscape.",
       "We believe good advice is clear and actionable. Whether it's a routine return or a multi-jurisdictional transaction, every engagement receives the same rigour — filings completed before the deadline, and direct access to the professional handling your work.",
-      "Shreyas is actively involved with ICAI study circles, mentors articled assistants, and volunteers with the local Tax Bar Association.",
     ],
     qualifications: ["ACA — Associate, ICAI", "B.Com — Mangalore University"],
     specializations: [
@@ -23,54 +22,53 @@ export const firm = {
     ],
   },
   firmProfile:
-    "Shreyas Raj & Co. is a Bangalore-based chartered accountancy practice that helps businesses and individuals navigate tax, compliance, and regulatory matters — with precision, professionalism, and a commercial approach grounded in over five years of hands-on experience.",
+    "Shreyas Raj & Co. is a Bengaluru-based chartered accountancy practice that helps businesses and individuals navigate tax, compliance, and regulatory matters, with a commercial approach grounded in over five years of hands-on experience.",
   address: {
-    line1: "247, Kasturabha, 7th Cross, Chandra Layout",
-    line2: "Behind Chandra Layout Water Tank, Vijayanagar",
-    city: "Bangalore",
+    line1: "Bengaluru",
+    line2: "",
+    city: "Bengaluru",
     state: "Karnataka",
-    pincode: "560040",
+    pincode: "",
     country: "India",
   },
   contact: {
     phone: "+91 63618 90855",
     email: "cashreyasrajn@gmail.com",
     gmail: "cashreyasrajn@gmail.com",
-    linkedin: "https://linkedin.com/in/shreyas-raj-n-8345a8214",
   },
 };
 
 export const firmStats = [
-  { value: "5+", label: "Years in Practice" },
-  { value: "100+", label: "Clients Served" },
-  { value: "1000+", label: "Returns Filed" },
-  { value: "100%", label: "On-time Filings" },
+  { value: "2021", label: "Practice Since" },
+  { value: "ACA", label: "ICAI Qualification" },
+  { value: "Bengaluru", label: "Based In" },
+  { value: "6", label: "Practice Areas" },
 ];
 
 export const values = [
   {
     icon: "verified",
-    title: "Precision & Timeliness",
+    title: "Timeliness",
     description:
-      "Every filing goes out before the deadline — no scrambling, no late fees, no penalties. Accuracy is non-negotiable.",
+      "We plan filings in advance so they are completed before the due date, with attention to accuracy.",
   },
   {
     icon: "handshake",
-    title: "Clear, Commercial Advice",
+    title: "Clear Advice",
     description:
-      "We translate complex tax law into practical recommendations you can act on. No jargon, no ambiguity.",
+      "We explain tax and compliance matters in plain language so you can make informed decisions.",
   },
   {
     icon: "lock",
-    title: "Absolute Confidentiality",
+    title: "Confidentiality",
     description:
-      "Client data and financials are treated with the highest discretion. We never share or compromise your information.",
+      "Client data and financials are handled with discretion and not disclosed outside the engagement.",
   },
   {
     icon: "call",
     title: "Direct Access",
     description:
-      "When you have a question, you speak directly to the professional handling your work. No call centres, no runaround.",
+      "You speak directly to the professional handling your work, without intermediaries.",
   },
 ];
 
@@ -78,14 +76,14 @@ export const process = [
   {
     step: "01",
     icon: "chat",
-    title: "Free Consultation",
+    title: "Initial Consultation",
     description: "We discuss your requirements — no commitment, no jargon, fifteen minutes.",
   },
   {
     step: "02",
     icon: "checklist",
-    title: "Scope & Quote",
-    description: "You receive a clear scope of work and a fixed quote. No hourly billing surprises.",
+    title: "Scope & Engagement",
+    description: "You receive a clear scope of work and engagement terms before we proceed.",
   },
   {
     step: "03",
@@ -101,20 +99,4 @@ export const process = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote: "Shreyas Raj & Co. handled our cross-border tax structuring with precision. Their understanding of FEMA and DTAA is exceptional.",
-    author: "NRI client",
-    detail: "US-based, IT sector",
-  },
-  {
-    quote: "They managed our entire year-end audit and ROC filings without a single notice from the department. Thoroughly professional.",
-    author: "Pvt Ltd director",
-    detail: "Tech startup, Bangalore",
-  },
-  {
-    quote: "From ESOP advisory to ITR filing for our team, they've been reliable partners. Clear communication, zero drama.",
-    author: "HR Head, MNC",
-    detail: "Bangalore, since 2022",
-  },
-];
+

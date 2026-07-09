@@ -178,7 +178,7 @@ const extendedContent: Record<
     faqs: [
       {
         q: "Pvt Ltd, LLP, or OPC — which should I choose?",
-        a: "It depends on your goals. Pvt Ltd is best if you plan to raise funding, ESOPs, or scale fast. LLP has lower compliance costs and no mandatory audit below Rs 40 lakh turnover. OPC is for solo founders who want limited liability. We'll walk you through a comparison before you decide.",
+        a: "It depends on your goals. Pvt Ltd is suitable if you plan to raise funding, issue ESOPs, or scale fast. LLP has lower compliance costs and no mandatory audit below Rs 40 lakh turnover. OPC is for solo founders who want limited liability. We'll walk you through a comparison before you decide.",
       },
       {
         q: "How long does company incorporation take?",
@@ -198,7 +198,7 @@ const extendedContent: Record<
       "DTAA relief — claiming treaty benefits to avoid double taxation on the same income in India and your country of residence",
       "FEMA compliance — reporting for NRI bank accounts (NRE/NRO/FCNR), property transactions, repatriation rules",
       "Sale of Indian property — capital gains computation, TDS u/s 195, lower deduction certificate, repatriation of sale proceeds",
-      "Inheritance & succession — tax implications of inherited Indian assets, will drafting, and succession planning for NRIs",
+      "Inheritance & succession — tax implications of inherited Indian assets and succession planning advisory for NRIs",
       "Foreign company setup in India — subsidiary incorporation, FDI compliance, RBI reporting (FC-GPR, FLA returns)",
     ],
     whoFor: [
@@ -356,8 +356,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                   Ready to get started?
                 </h3>
                 <p className="mb-6 font-body text-[14px] leading-relaxed text-white/70">
-                  Free fifteen-minute call. Tell us what you need and we'll give
-                  you a clear quote.
+                  A short introductory call. Tell us what you need and we'll
+                  outline the scope and next steps.
                 </p>
                 <Link
                   href="/contact"

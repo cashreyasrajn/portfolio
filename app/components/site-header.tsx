@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { navLinks } from "@/app/components/content/nav";
 import { firm } from "@/app/components/content/firm";
 import { Sheet, SheetContent, SheetTrigger } from "@/app/components/ui/sheet";
-import { Menu, Phone, Mail, Linkedin } from "lucide-react";
+import { Menu, Phone, Mail } from "lucide-react";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -57,15 +57,6 @@ export function SiteHeader() {
           >
             <Mail className="h-4 w-4" />
           </a>
-          <a
-            href={firm.contact.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex h-9 w-9 items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold"
-            title="LinkedIn"
-          >
-            <Linkedin className="h-4 w-4" />
-          </a>
           <div className="ml-1 h-6 w-px bg-navy/10" />
           <Link
             href="/contact"
@@ -110,9 +101,6 @@ export function SiteHeader() {
                 </a>
                 <a href={`mailto:${firm.contact.gmail}`} className="flex h-[42px] w-[42px] items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
                   <Mail className="h-[17px] w-[17px]" />
-                </a>
-                <a href={firm.contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-[42px] w-[42px] items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
-                  <Linkedin className="h-[17px] w-[17px]" />
                 </a>
               </div>
               <Link

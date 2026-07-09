@@ -3,12 +3,12 @@ import Image from "next/image";
 import { firm } from "@/app/components/content/firm";
 import { CredentialsSidebar } from "@/app/components/sections/credentials-sidebar";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
-import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About — Shreyas Raj & Co., Chartered Accountants",
   description:
-    "Shreyas Raj & Co. — Chartered Accountants based in Bangalore. Over five years of experience in direct taxation, international tax, FEMA, US tax advisory, and corporate compliance.",
+    "Shreyas Raj & Co. — Chartered Accountants based in Bengaluru. Over five years of experience in direct taxation, international tax, FEMA, US tax advisory, and corporate compliance.",
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
               About Us
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-semibold leading-[1.1] tracking-tight md:text-[56px]">
-              A Bangalore practice built on expertise and integrity
+              A Bengaluru-based chartered accountancy practice
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
               {firm.firmProfile}
@@ -39,7 +39,7 @@ export default function AboutPage() {
                 { icon: "calendar_month", label: "In practice since", value: firm.founded.toString() },
                 { icon: "badge", label: "Qualification", value: firm.founder.qualifications[0].split(" — ")[0] },
                 { icon: "location_on", label: "Based in", value: firm.address.city },
-                { icon: "language", label: "Reach", value: "PAN India" },
+                { icon: "language", label: "Focus", value: "Tax & Compliance" },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -150,19 +150,9 @@ export default function AboutPage() {
                       {firm.contact.phone}
                     </a>
                   </li>
-                  <li>
-                    <a href={firm.contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2.5 transition-colors hover:text-navy">
-                      <Linkedin className="mt-0.5 h-[14px] w-[14px] flex-shrink-0 text-gold" />
-                      LinkedIn
-                    </a>
-                  </li>
                   <li className="flex items-start gap-2.5">
                     <MapPin className="mt-0.5 h-[14px] w-[14px] flex-shrink-0 text-gold" />
-                    <span>
-                      {firm.address.line1}
-                      <br />
-                      {firm.address.city} — {firm.address.pincode}
-                    </span>
+                    <span>{firm.address.city}</span>
                   </li>
                 </ul>
               </div>

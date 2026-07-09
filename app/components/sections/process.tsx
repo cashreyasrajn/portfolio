@@ -12,8 +12,7 @@ export function ProcessSection() {
             Simple, four-step process
           </h2>
           <p className="font-body text-[15px] leading-relaxed text-navy/70">
-            No retainer lock-ins, no mystery fees. Here's exactly what working
-            with us looks like, start to finish.
+            Here's exactly what working with us looks like, start to finish.
           </p>
         </div>
 

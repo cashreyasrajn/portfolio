@@ -10,7 +10,7 @@ export function StatsBar() {
               key={stat.label}
               className="flex flex-col items-center justify-center text-center"
             >
-              <p className="font-headline text-[38px] font-semibold tracking-tight text-white md:text-[48px]">
+              <p className="font-headline text-[28px] font-semibold tracking-tight text-white md:text-[34px]">
                 {stat.value}
               </p>
               <p className="mt-1 font-body text-[11px] font-semibold uppercase tracking-[0.12em] text-gold/80">

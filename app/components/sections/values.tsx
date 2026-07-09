@@ -6,10 +6,10 @@ export function ValuesSection() {
       <div className="mx-auto max-w-[1280px] px-6 md:px-12">
         <div className="mb-14 text-center">
           <p className="mb-3 font-body text-[11px] font-bold uppercase tracking-[0.2em] text-gold-dark">
-            What You Can Expect From Me
+            How We Work
           </p>
           <h2 className="mb-3 font-headline text-[32px] font-semibold tracking-tight text-navy md:text-[40px]">
-            Four things I don't compromise on
+            Principles that guide the practice
           </h2>
           <p className="mx-auto max-w-lg font-body text-[15px] leading-relaxed text-navy/70">
             The fundamentals of working with us. You'll notice them from day

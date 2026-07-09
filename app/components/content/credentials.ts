@@ -5,19 +5,19 @@ export interface Credential {
 
 export const credentials: Credential[] = [
   {
-    title: "Fellow Member, ICAI",
+    title: "Associate Member, ICAI",
     subtitle: "Institute of Chartered Accountants of India",
   },
 ];
 
 export const whyChooseUs = {
-  headline: "Working with us",
+  headline: "Our approach",
   description:
-    "We focus on the basics done right — accurate filings, clear communication, and being available when you need us.",
+    "We focus on accurate filings, clear communication, and being available when you need us.",
   pillars: [
-    "Timely filings, every time",
-    "Clear, jargon-free advice",
-    "Confidentiality guaranteed",
-    "Direct access to your CA",
+    "Timely filings",
+    "Clear advice",
+    "Confidential handling",
+    "Direct access",
   ],
 };
