@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
       "Common mistakes we see: mismatch between GSTR-1 and GSTR-3B, missing HSN summary, unclaimed input credit that got time-barred, and incorrect tax liability on advances.",
       "If you file late, you pay late fees (Rs 100 per day under each Act, capped), plus interest on any tax short-paid. More importantly, a delayed or mismatched annual return increases your chances of a department notice.",
       "We reconcile GSTR-2B/2A with the purchase register, validate HSN codes, and file only after the client approves a preview. That preview step alone catches 90% of errors.",
-      "If your books are not yet finalised for FY 2025-26, start now. The reconciliation begins with clean books — not at the GST portal.",
+      "If your books are not yet finalised for FY 2026-26, start now. The reconciliation begins with clean books — not at the GST portal.",
     ],
     category: "GST",
     date: "2026-06-20",
