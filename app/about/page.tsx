@@ -6,9 +6,9 @@ import { CtaQuote } from "@/app/components/sections/cta-quote";
 import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About — CA Shreyas Raj, FCA, DISA (ICAI)",
+  title: "About — Shreyas Raj & Co., Chartered Accountants",
   description:
-    "Meet CA Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. 2+ years in practice helping individuals and small businesses with tax, GST, audit, and corporate compliance.",
+    "Shreyas Raj & Co. — Chartered Accountants based in Bangalore. Over five years of experience in direct taxation, international tax, FEMA, US tax advisory, and corporate compliance.",
 };
 
 export default function AboutPage() {
@@ -17,12 +17,12 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-navy py-24 text-white md:py-32">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
+             <p className="mb-4 inline-flex items-center gap-2 border-l-2 border-gold pl-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
               <span className="material-symbols-outlined text-[14px] text-gold">person</span>
-              About Me
+              About Us
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-semibold leading-[1.1] tracking-tight md:text-[56px]">
-              A Bengaluru CA who believes in plain advice & quiet competence
+              A Bangalore practice built on expertise and integrity
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
               {firm.firmProfile}
@@ -35,18 +35,39 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <div className="mb-14 grid grid-cols-2 gap-4 md:grid-cols-4">
-
+              {[
+                { icon: "calendar_month", label: "In practice since", value: firm.founded.toString() },
+                { icon: "badge", label: "Qualification", value: firm.founder.qualifications[0].split(" — ")[0] },
+                { icon: "location_on", label: "Based in", value: firm.address.city },
+                { icon: "language", label: "Reach", value: "PAN India" },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="border border-navy/[0.08] bg-white p-6"
+                >
+                  <span className="material-symbols-outlined mb-3 block text-[24px] text-gold">
+                    {item.icon}
+                  </span>
+                  <p className="font-headline text-[24px] font-semibold text-navy">
+                    {item.value}
+                  </p>
+                  <p className="mt-1 font-body text-[11px] font-semibold uppercase tracking-[0.1em] text-navy/50">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
             </div>
 
             <p className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.2em] text-gold-dark">
               The Principal
             </p>
 
-            <div className="mb-14 flex flex-col items-center gap-10 md:flex-row md:items-start">
-  <div className="relative flex-shrink-0">
-    <div className="absolute -right-4 -top-4 h-16 w-16 rounded-sm border-2 border-gold/40" />
-    <div className="absolute -bottom-4 -left-4 h-16 w-16 rounded-sm border-2 border-gold/40" />
-    <div className="relative h-[280px] w-[220px] overflow-hidden rounded-sm shadow-lg">
+                        <div className="mb-14 flex flex-col items-center gap-10 md:flex-row md:items-start">
+              <div className="relative flex-shrink-0">
+                <div className="relative h-[280px] w-[220px] overflow-hidden shadow-lg">
+
+
+
       <Image
         src={firm.founder.portrait}
         alt={firm.founder.name}

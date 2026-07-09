@@ -15,15 +15,15 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="mb-14 max-w-2xl">
             <p className="mb-3 font-body text-[11px] font-bold uppercase tracking-[0.2em] text-gold-dark">
-              How I Can Help
+              How We Can Help
             </p>
             <h2 className="mb-3 font-headline text-[32px] font-semibold tracking-tight text-navy md:text-[40px]">
-              Services I offer
+              Services we offer
             </h2>
             <p className="font-body text-[15px] leading-relaxed text-navy/70">
               Whether you need a one-time return filed or a long-term compliance
-              partner, I handle the full range of tax, audit, and corporate
-              advisory work for individuals and small businesses.
+              partner, we handle the full range of tax, audit, and corporate
+              advisory work for individuals and businesses.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

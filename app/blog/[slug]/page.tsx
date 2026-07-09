@@ -47,7 +47,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </Link>
           <div className="mx-auto max-w-3xl">
             <div className="mb-5 flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.1em] text-gold/90">
+              <span className="inline-flex items-center gap-1.5 border border-gold/40 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.1em] text-gold/90">
                 <span className="material-symbols-outlined text-[13px]">label</span>
                 {post.category}
               </span>
@@ -66,7 +66,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               {post.title}
             </h1>
             <div className="flex items-center gap-3 font-body text-[13px] text-white/60">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/20 text-gold">
+              <span className="flex h-8 w-8 items-center justify-center bg-gold/20 text-gold">
                 <span className="material-symbols-outlined text-[16px]">person</span>
               </span>
               {post.author}
@@ -98,19 +98,19 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   Tagged under
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex items-center gap-1 rounded-full border border-navy/10 bg-cream px-3 py-1 font-body text-[12px] font-medium text-navy/70">
+                  <span className="inline-flex items-center gap-1 border border-navy/10 bg-cream px-3 py-1 font-body text-[12px] font-medium text-navy/70">
                     <span className="material-symbols-outlined text-[13px] text-gold">
                       label
                     </span>
                     {post.category}
                   </span>
-                  <span className="inline-flex items-center gap-1 rounded-full border border-navy/10 bg-cream px-3 py-1 font-body text-[12px] font-medium text-navy/70">
+                  <span className="inline-flex items-center gap-1 border border-navy/10 bg-cream px-3 py-1 font-body text-[12px] font-medium text-navy/70">
                     <span className="material-symbols-outlined text-[13px] text-gold">
                       label
                     </span>
                     India Tax
                   </span>
-                  <span className="inline-flex items-center gap-1 rounded-full border border-navy/10 bg-cream px-3 py-1 font-body text-[12px] font-medium text-navy/70">
+                  <span className="inline-flex items-center gap-1 border border-navy/10 bg-cream px-3 py-1 font-body text-[12px] font-medium text-navy/70">
                     <span className="material-symbols-outlined text-[13px] text-gold">
                       label
                     </span>
@@ -173,7 +173,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-gold-light"
+                  className="inline-flex w-full items-center justify-center gap-2 bg-gold px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-gold-light"
                 >
                   Get in touch
                 </Link>

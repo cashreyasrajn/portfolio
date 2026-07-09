@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="flex min-h-[80vh] items-center justify-center">
       <div className="mx-auto max-w-md px-6 text-center">
-        <div className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-full bg-navy/[0.05] ring-1 ring-navy/10">
+        <div className="mx-auto mb-8 flex h-24 w-24 items-center justify-center  bg-navy/[0.05] ring-1 ring-navy/10">
           <span className="material-symbols-outlined text-[48px] text-navy/35">
             search_off
           </span>
@@ -22,14 +22,14 @@ export default function NotFound() {
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
+            className="inline-flex items-center gap-2  bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
           >
             <span className="material-symbols-outlined text-[18px]">home</span>
             Go Home
           </Link>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 rounded-full border border-navy/15 bg-white px-6 py-3 font-body text-[14px] font-semibold text-navy transition-all hover:border-gold hover:text-gold active:scale-[0.97]"
+            className="inline-flex items-center gap-2  border border-navy/15 bg-white px-6 py-3 font-body text-[14px] font-semibold text-navy transition-all hover:border-gold hover:text-gold active:scale-[0.97]"
           >
             <span className="material-symbols-outlined text-[18px]">design_services</span>
             Our Services

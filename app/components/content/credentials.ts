@@ -11,13 +11,13 @@ export const credentials: Credential[] = [
 ];
 
 export const whyChooseUs = {
-  headline: "Working with me",
+  headline: "Working with us",
   description:
-    "I focus on the basics done right — accurate filings, clear communication, and being available when you need me.",
+    "We focus on the basics done right — accurate filings, clear communication, and being available when you need us.",
   pillars: [
     "Timely filings, every time",
     "Clear, jargon-free advice",
     "Confidentiality guaranteed",
-    "Direct access to the CA",
+    "Direct access to your CA",
   ],
 };

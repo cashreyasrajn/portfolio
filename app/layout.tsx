@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import { SiteHeader } from "@/app/components/site-header";
 import { SiteFooter } from "@/app/components/site-footer";
 import { siteConfig } from "@/app/components/content/site";
@@ -13,30 +13,26 @@ const headlineFont = Cormorant_Garamond({
   display: "swap",
 });
 
-const bodyFont = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-body",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Chartered Accountant | Bengaluru`,
+    default: `${siteConfig.name} — Chartered Accountants | Bangalore`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
     "Chartered Accountant",
-    "CA Firm Bengaluru",
+    "CA Firm Bangalore",
     "Tax Advisory India",
-    "GST Compliance",
-    "MSME Consulting",
+    "International Taxation",
+    "FEMA Advisory",
+    "US Tax Compliance",
+    "Cross-Border Tax",
     "NRI Taxation",
+    "GST Compliance",
     "ICAI Member",
     "Income Tax Filing",
-    "Audit & Assurance",
+    "Corporate Compliance",
     "Shreyas Raj",
   ],
   authors: [{ name: "Shreyas Raj & Co." }],
@@ -52,7 +48,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — Chartered Accountant | Bengaluru, India`,
+    title: `${siteConfig.name} — Chartered Accountants | Bangalore, India`,
     description: siteConfig.description,
     images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
@@ -117,7 +113,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${headlineFont.variable} ${bodyFont.variable} flex min-h-screen flex-col bg-cream pt-[72px] text-navy antialiased`}
+        className={`${headlineFont.variable} flex min-h-screen flex-col bg-cream pt-[72px] text-navy antialiased`}
       >
         <SiteHeader />
         <main className="flex-grow">{children}</main>

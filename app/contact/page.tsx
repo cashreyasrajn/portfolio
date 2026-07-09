@@ -8,7 +8,7 @@ import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: "Book a Consultation — Shreyas Raj & Co.",
   description:
-    "Get in touch for tax, GST, audit, or compliance help. Free 15-minute consultation. Phone, email, or fill the form.",
+    "Get in touch for tax, GST, audit, international tax, or compliance advisory. Free 15-minute consultation. Phone, email, or fill the form.",
 };
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
       <section className="bg-navy py-24 text-white md:py-32">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
+            <p className="mb-4 inline-flex items-center gap-2  border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
               <span className="material-symbols-outlined text-[14px] text-gold">contact_support</span>
               Get in touch
             </p>
@@ -25,8 +25,8 @@ export default function ContactPage() {
               Book a free consultation
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Fifteen minutes, no commitment. Tell me what you need — I'll tell
-              you how I can help and what it costs. Plain answers, on the
+              Fifteen minutes, no commitment. Tell us what you need — we'll
+              outline how we can help and what it costs. Plain answers on the
               first call.
             </p>
           </div>
@@ -38,10 +38,10 @@ export default function ContactPage() {
           <div className="lg:col-span-7">
             <div className="mb-10 rounded-sm border border-navy/8 bg-white p-8 md:p-10">
               <h2 className="mb-2 font-headline text-[24px] font-semibold tracking-tight text-navy">
-                Send me your details
+                Send us your details
               </h2>
               <p className="mb-8 font-body text-[14px] text-navy/70">
-                Fill this in and I'll get back within one business day.
+                Fill this in and we'll get back within one business day.
               </p>
               <ContactForm />
             </div>

@@ -21,7 +21,7 @@ export default function BlogPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/90 to-navy" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
+            <p className="mb-4 inline-flex items-center gap-2  border border-gold/30 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
               <span className="material-symbols-outlined text-[14px] text-gold">article</span>
               Knowledge Base
             </p>
@@ -68,7 +68,7 @@ export default function BlogPage() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-gold-light"
+                  className="inline-flex w-full items-center justify-center gap-2  bg-gold px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-gold-light"
                 >
                   Ask a question
                 </Link>
@@ -93,7 +93,7 @@ export default function BlogPage() {
                   </div>
                   <div className="flex flex-col p-7">
                     <div className="mb-4 flex flex-wrap items-center gap-3">
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.1em] text-gold-dark">
+                      <span className="inline-flex items-center gap-1.5  border border-gold/40 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.1em] text-gold-dark">
                         <span className="material-symbols-outlined text-[12px]">
                           label
                         </span>

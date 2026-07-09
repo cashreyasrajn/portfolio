@@ -96,14 +96,14 @@ export function ContactForm() {
   if (submitted) {
     return (
       <div className="text-center">
-        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-gold/10">
+        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center  bg-gold/10">
           <CheckCircle className="h-10 w-10 text-gold" />
         </div>
         <h3 className="mb-3 font-headline text-[26px] font-semibold text-navy">
           Thank You
         </h3>
         <p className="mb-8 font-body text-[15px] text-navy/60">
-          Your consultation request has been received. I'll review your
+          Your consultation request has been received. We'll review your
           requirements and reach out within one business day.
         </p>
         <Button variant="primary" onClick={() => setSubmitted(false)}>

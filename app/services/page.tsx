@@ -15,7 +15,7 @@ import { serviceDetails } from "@/app/components/content/articles";
 export const metadata: Metadata = {
   title: "Services — Income Tax, GST, Audit & Compliance",
   description:
-    "Six practice areas: income tax, GST, statutory and tax audit, ROC corporate compliance, business setup, and NRI / FEMA advisory. Servicing individuals and businesses across Bengaluru.",
+    "Six practice areas: income tax, GST, statutory and tax audit, ROC corporate compliance, business setup, and NRI / FEMA advisory. Servicing individuals and businesses across Bangalore.",
 };
 
 export default function ServicesPage() {
@@ -24,7 +24,7 @@ export default function ServicesPage() {
       <section className="relative overflow-hidden bg-navy py-24 text-white md:py-32">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
+            <p className="mb-4 inline-flex items-center gap-2  border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
               <span className="material-symbols-outlined text-[14px] text-gold">
                 design_services
               </span>
@@ -96,7 +96,7 @@ export default function ServicesPage() {
               <div className="mt-8">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
+                  className="inline-flex items-center gap-2  bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
                 >
                   <span className="material-symbols-outlined text-[18px]">
                     forum

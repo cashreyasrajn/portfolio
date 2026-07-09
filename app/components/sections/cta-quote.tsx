@@ -4,7 +4,7 @@ export function CtaQuote() {
   return (
     <section className="bg-navy py-24 text-white md:py-32">
       <div className="mx-auto max-w-[1280px] px-6 text-center md:px-12">
-        <span className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 ring-1 ring-gold/30">
+        <span className="mx-auto mb-6 flex h-16 w-16 items-center justify-center  bg-gold/10 ring-1 ring-gold/30">
           <span className="material-symbols-outlined text-[32px] text-gold">
             mark_email_read
           </span>
@@ -13,12 +13,12 @@ export function CtaQuote() {
           Let's get your filings in order
         </h2>
         <p className="mx-auto mb-10 max-w-lg font-body text-[16px] leading-relaxed text-white/65">
-          Free fifteen-minute consultation. I'll talk through what you need,
-          what it costs, and how soon it can be done. No strings.
+          Free fifteen-minute consultation. We'll discuss what you need,
+          how we can help, and what it costs. No strings.
         </p>
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-3.5 font-body text-[15px] font-semibold leading-none text-navy transition-all hover:bg-gold-light active:scale-[0.97]"
+          className="inline-flex items-center gap-2  bg-gold px-8 py-3.5 font-body text-[15px] font-semibold leading-none text-navy transition-all hover:bg-gold-light active:scale-[0.97]"
         >
           <span className="material-symbols-outlined text-[18px]">call_made</span>
           Book a Free Consultation

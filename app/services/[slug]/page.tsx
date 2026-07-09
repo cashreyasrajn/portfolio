@@ -244,7 +244,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             All Services
           </Link>
           <div className="max-w-3xl">
-            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
+            <p className="mb-5 inline-flex items-center gap-2 border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
               <span className="material-symbols-outlined text-[14px] text-gold">
                 {service.icon}
               </span>
@@ -269,7 +269,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <ul className="space-y-6">
               {detail.whatWeDo.map((item, i) => (
                 <li key={i} className="flex gap-4">
-                  <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-navy/[0.06]">
+                  <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center bg-navy/[0.06]">
                     <span className="material-symbols-outlined text-[16px] text-gold">
                       check
                     </span>
@@ -322,7 +322,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <div className="mt-12">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-navy px-7 py-3.5 font-body text-[15px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
+                  className="inline-flex items-center gap-2 bg-navy px-7 py-3.5 font-body text-[15px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
                 >
                   <span className="material-symbols-outlined text-[18px]">forum</span>
                   Talk to me about {service.title.toLowerCase()}
@@ -361,7 +361,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 font-body text-[14px] font-semibold text-navy transition-all hover:bg-gold-light active:scale-[0.97]"
+                  className="inline-flex w-full items-center justify-center gap-2 bg-gold px-6 py-3 font-body text-[14px] font-semibold text-navy transition-all hover:bg-gold-light active:scale-[0.97]"
                 >
                   <span className="material-symbols-outlined text-[18px]">call_made</span>
                   Book a Consultation

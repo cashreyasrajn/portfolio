@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Shreyas Raj & Co. — Chartered Accountants, Bengaluru";
+export const alt = "Shreyas Raj & Co. — Chartered Accountants, Bangalore";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -34,13 +34,13 @@ export default function Image() {
               width: 80,
               height: 80,
               borderRadius: "50%",
-              border: "3px solid #6d8a9e",
+              border: "3px solid #5b7a94",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               fontSize: 32,
               fontWeight: 700,
-              color: "#6d8a9e",
+              color: "#5b7a94",
             }}
           >
             SR
@@ -60,12 +60,12 @@ export default function Image() {
               style={{
                 fontSize: 22,
                 fontWeight: 400,
-                color: "#6d8a9e",
+                color: "#5b7a94",
                 marginTop: 8,
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Segoe UI, -apple-system, sans-serif",
               }}
             >
-              Chartered Accountant · Bengaluru, India
+              Chartered Accountants · Bangalore, India
             </div>
           </div>
         </div>

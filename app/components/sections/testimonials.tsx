@@ -33,7 +33,7 @@ export function TestimonialsSection() {
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex items-center gap-3 border-t border-primary/8 pt-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
+                <div className="flex h-10 w-10 items-center justify-center  bg-primary text-white">
                   <span className="material-symbols-outlined text-[20px]">
                     account_circle
                   </span>

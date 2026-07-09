@@ -104,5 +104,5 @@ export const services: Service[] = [
 export const servicesHero = {
   headline: "Chartered Accountancy, done properly.",
   subheadline:
-    "I'm Shreyas Raj, a Bengaluru-based Chartered Accountant. I help individuals, professionals, and small businesses stay on top of their tax, GST, audit, and compliance — with plain advice and no missed deadlines.",
+    "Shreyas Raj & Co. is a Bangalore-based chartered accountancy practice. We help individuals, professionals, and businesses stay on top of their tax, GST, audit, and compliance — with clear advice and no missed deadlines.",
 };

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { Logo } from "@/app/components/ui/logo";
 import { footerLinks } from "@/app/components/content/nav";
 import { firm } from "@/app/components/content/firm";
 import { Phone, Mail, Linkedin, MapPin } from "lucide-react";
@@ -10,27 +10,14 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1280px] px-6 py-20 md:px-12">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
-            <div className="mb-4 flex items-center gap-3">
-              <Image
-                src="/ca-logo.png"
-                alt="CA Institute Logo"
-                width={38}
-                height={38}
-                className="h-9 w-auto object-contain"
-              />
-              <div className="leading-tight">
-                <span className="block font-brand text-lg tracking-[0.15em] text-white">
-                  Shreyas Raj
-                </span>
-                <span className="font-body text-[10px] font-semibold uppercase tracking-[0.12em] text-gold">
-                  &amp; Co.
-                </span>
-              </div>
+            <div className="mb-4">
+              <Logo variant="light" />
             </div>
             <p className="mb-6 max-w-xs font-body text-[15px] leading-relaxed text-white/60">
-              I'm Shreyas Raj, a Bengaluru-based Chartered Accountant. I help
-              individuals and small businesses with tax, GST, audit and
-              compliance — explained in plain language.
+              Shreyas Raj {'\u0026'} Co. is a Bangalore-based chartered accountancy
+              practice specialising in direct taxation, international tax, FEMA,
+              and corporate compliance. Over five years of serving clients
+              across India and abroad.
             </p>
             <a
               href={`tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`}
@@ -119,7 +106,7 @@ export function SiteFooter() {
 
         <div className="mt-16 border-t border-white/10 pt-8 text-center">
           <p className="font-body text-[13px] text-white/40">
-            &copy; {new Date().getFullYear()} Shreyas Raj &amp; Co. All Rights
+            &copy; {new Date().getFullYear()} Shreyas Raj {'\u0026'} Co. All Rights
             Reserved. Member of the Institute of Chartered Accountants of India
             (ICAI).
           </p>

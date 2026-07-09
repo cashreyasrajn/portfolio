@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { Logo } from "@/app/components/ui/logo";
 import { usePathname } from "next/navigation";
 import { navLinks } from "@/app/components/content/nav";
 import { firm } from "@/app/components/content/firm";
@@ -14,23 +14,8 @@ export function SiteHeader() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-navy/8 bg-white/95 backdrop-blur-xl">
       <nav className="mx-auto flex h-[72px] max-w-[1280px] items-center justify-between px-6 md:px-12">
-        <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/ca-logo.png"
-            alt="CA Institute Logo"
-            width={40}
-            height={40}
-            className="h-10 w-auto object-contain"
-            priority
-          />
-          <div className="flex flex-col leading-tight">
-            <span className="font-brand text-[20px] tracking-[0.15em] text-navy md:text-[22px]">
-              Shreyas Raj
-            </span>
-            <span className="font-body text-[10px] font-semibold uppercase tracking-[0.12em] text-gold md:text-[11px]">
-              Chartered Accountant · Bengaluru
-            </span>
-          </div>
+        <Link href="/" className="flex items-center">
+          <Logo variant="dark" />
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -50,7 +35,7 @@ export function SiteHeader() {
               >
                 {link.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-1/2 h-0.5 w-5 -translate-x-1/2 rounded-full bg-gold" />
+                  <span className="absolute bottom-0 left-1/2 h-0.5 w-5 -translate-x-1/2  bg-gold" />
                 )}
               </Link>
             );
@@ -60,14 +45,14 @@ export function SiteHeader() {
         <div className="hidden items-center gap-3 md:flex">
           <a
             href={`tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold"
+            className="flex h-9 w-9 items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold"
             title="Call"
           >
             <Phone className="h-4 w-4" />
           </a>
           <a
             href={`mailto:${firm.contact.gmail}`}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold"
+            className="flex h-9 w-9 items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold"
             title="Gmail"
           >
             <Mail className="h-4 w-4" />
@@ -76,7 +61,7 @@ export function SiteHeader() {
             href={firm.contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold"
+            className="flex h-9 w-9 items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold"
             title="LinkedIn"
           >
             <Linkedin className="h-4 w-4" />
@@ -84,7 +69,7 @@ export function SiteHeader() {
           <div className="ml-1 h-6 w-px bg-navy/10" />
           <Link
             href="/contact"
-            className="rounded-full bg-navy px-6 py-2.5 font-body text-[13px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
+            className=" bg-navy px-6 py-2.5 font-body text-[13px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
           >
             Contact us
           </Link>
@@ -120,19 +105,19 @@ export function SiteHeader() {
             </nav>
             <div className="mt-auto border-t border-navy/8 pt-6">
               <div className="mb-5 flex items-center justify-center gap-4">
-                <a href={`tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`} className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
+                <a href={`tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`} className="flex h-[42px] w-[42px] items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
                   <Phone className="h-[17px] w-[17px]" />
                 </a>
-                <a href={`mailto:${firm.contact.gmail}`} className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
+                <a href={`mailto:${firm.contact.gmail}`} className="flex h-[42px] w-[42px] items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
                   <Mail className="h-[17px] w-[17px]" />
                 </a>
-                <a href={firm.contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
+                <a href={firm.contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-[42px] w-[42px] items-center justify-center  border border-navy/10 text-navy/55 transition-all hover:border-gold hover:text-gold">
                   <Linkedin className="h-[17px] w-[17px]" />
                 </a>
               </div>
               <Link
                 href="/contact"
-                className="flex w-full items-center justify-center rounded-full bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
+                className="flex w-full items-center justify-center  bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
               >
                 Contact us
               </Link>

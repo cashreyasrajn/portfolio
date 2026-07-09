@@ -10,7 +10,7 @@ export function ServiceCard({ service }: { service: Service }) {
             {service.icon}
           </span>
         </div>
-        <span className="rounded-full border border-gold/40 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.1em] text-gold-dark">
+        <span className=" border border-gold/40 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.1em] text-gold-dark">
           {service.tagline}
         </span>
       </div>

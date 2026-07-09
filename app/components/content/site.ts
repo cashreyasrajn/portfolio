@@ -1,9 +1,9 @@
 import { firm } from "@/app/components/content/firm";
 
 export const siteConfig = {
-  name: "CA Shreyas Raj",
+  name: "Shreyas Raj & Co.",
   description:
-    "CA Shreyas Raj — Chartered Accountant based in Bengaluru, India. Practical tax advisory, audit & assurance, GST compliance, MSME consulting, and NRI taxation services for individuals and small businesses.",
+    "Shreyas Raj & Co. — Chartered Accountants based in Bangalore, India. Specialising in direct taxation, international tax, FEMA, US tax advisory, cross-border transactions, and corporate compliance for businesses and individuals.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://shreyasraj.vercel.app",
   ogImage: "/og-image.png",
   links: {
@@ -14,9 +14,9 @@ export const siteConfig = {
   locale: "en_IN",
   schema: {
     type: "ProfessionalService",
-    name: "CA Shreyas Raj",
+    name: "Shreyas Raj & Co.",
     description:
-      "Chartered Accountant providing tax advisory, audit, GST compliance, and MSME consulting services in Bengaluru, India.",
+      "Chartered Accountants providing direct taxation, international tax, FEMA advisory, US tax compliance, and corporate compliance services in Bangalore, India.",
     address: {
       streetAddress: `${firm.address.line1}, ${firm.address.line2}`,
       addressLocality: firm.address.city,

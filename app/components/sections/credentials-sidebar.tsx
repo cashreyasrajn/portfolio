@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { credentials, whyChooseUs } from "@/app/components/content/credentials";
 
 function PlusIcon() {
@@ -21,6 +22,15 @@ export function CredentialsSidebar() {
         <h4 className="mb-5 border-b border-navy/8 pb-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-navy/55">
           Credentials
         </h4>
+        <div className="mb-5 flex justify-start">
+          <Image
+            src="/ca-logo.png"
+            alt="Institute of Chartered Accountants of India"
+            width={80}
+            height={80}
+            className="h-16 w-auto object-contain"
+          />
+        </div>
         <ul className="space-y-5">
           {credentials.map((c) => (
             <li key={c.title} className="flex items-start gap-3">

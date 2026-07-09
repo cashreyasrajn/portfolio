@@ -14,7 +14,7 @@ export default function ExpertiseHubPage() {
       <section className="bg-navy py-24 text-white md:py-32">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
+            <p className="mb-4 inline-flex items-center gap-2  border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
               <span className="material-symbols-outlined text-[14px] text-gold">menu_book</span>
               Knowledge Centre
             </p>
@@ -37,7 +37,7 @@ export default function ExpertiseHubPage() {
               className="group flex flex-col rounded-sm border border-navy/8 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 hover:shadow-lg hover:shadow-navy/[0.04]"
             >
               <div className="mb-4 flex items-center justify-between">
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.1em] text-gold-dark">
+                <span className="inline-flex items-center gap-1.5  border border-gold/40 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.1em] text-gold-dark">
                   <span className="material-symbols-outlined text-[13px]">label</span>
                   {article.category}
                 </span>

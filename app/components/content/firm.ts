@@ -2,27 +2,32 @@ export const firm = {
   name: "Shreyas Raj",
   firmName: "Shreyas Raj & Co.",
   tagline: "Chartered Accountants",
-  founded: 2024,
+  founded: 2021,
   founder: {
-    name: "CA Shreyas Raj",
+    name: "CA Shreyas Raj N.",
     title: "ACA",
-    designation: "Proprietor",
+    designation: "Founder & Principal",
     portrait: "/shreyas-raj.jpg",
-    bio: "I'm Shreyas Raj, a Fellow Chartered Accountant based in Bengaluru. I've been helping small businesses, professionals and families get their tax and compliance right without the stress.",
+    bio: "Shreyas Raj N. is a Chartered Accountant with over five years of experience in direct taxation, cross-border transactions, regulatory compliance, and advisory. His expertise spans FEMA regulations, US taxation, and international tax matters, with a strong focus on foreign asset reporting, ESOPs, RSUs, and tax planning for individuals.",
     bioExtended: [
-      "My work covers the everyday things that keep a business running smoothly: income tax filings, GST returns, statutory and tax audits, and ROC compliances. I also help new founders pick the right structure and get registered.",
-      "I believe good advice is plain and practical. You won't get walls of jargon from me — just clear answers to your questions, filings done before the deadline, and a number you can call when something comes up.",
-      "When I'm not working, you'll find me at ICAI study circles, mentoring articled assistants, or volunteering at the local Tax Bar Association.",
+      "The practice also advises clients on tax litigation and complex compliance matters, delivering practical and commercially sound solutions in an evolving global tax landscape.",
+      "We believe good advice is clear and actionable. Whether it's a routine return or a multi-jurisdictional transaction, every engagement receives the same rigour — filings completed before the deadline, and direct access to the professional handling your work.",
+      "Shreyas is actively involved with ICAI study circles, mentors articled assistants, and volunteers with the local Tax Bar Association.",
     ],
-    qualifications: ["FCA — Fellow, ICAI",  "B.Com — Mangalore University"],
-    specializations: ["Direct Tax", "Statutory & Tax Audit", "GST", "Corporate Compliances"],
+    qualifications: ["ACA — Associate, ICAI", "B.Com — Mangalore University"],
+    specializations: [
+      "Direct Taxation",
+      "International Tax & FEMA",
+      "US Tax Advisory",
+      "Corporate Compliance",
+    ],
   },
   firmProfile:
-    "Shreyas Raj & Co. is a single-proprietor chartered accountancy practice in Bengaluru. we've helped individuals and small businesses stay compliant and ahead of their tax obligations — one filing, one audit, one client at a time. No big-firm runaround, no surprise fees.",
+    "Shreyas Raj & Co. is a Bangalore-based chartered accountancy practice that helps businesses and individuals navigate tax, compliance, and regulatory matters — with precision, professionalism, and a commercial approach grounded in over five years of hands-on experience.",
   address: {
     line1: "247, Kasturabha, 7th Cross, Chandra Layout",
-    line2: "Benhind Chandra Layout Water Tank, Vijayanagr",
-    city: "Bengaluru",
+    line2: "Behind Chandra Layout Water Tank, Vijayanagar",
+    city: "Bangalore",
     state: "Karnataka",
     pincode: "560040",
     country: "India",
@@ -36,36 +41,36 @@ export const firm = {
 };
 
 export const firmStats = [
-  { value: "3", label: "Years in Practice" },
-  { value: "30+", label: "Clients Served" },
-  { value: "500+", label: "Returns Filed" },
+  { value: "5+", label: "Years in Practice" },
+  { value: "100+", label: "Clients Served" },
+  { value: "1000+", label: "Returns Filed" },
   { value: "100%", label: "On-time Filings" },
 ];
 
 export const values = [
   {
     icon: "verified",
-    title: "Done Right, On Time",
+    title: "Precision & Timeliness",
     description:
-      "Every filing goes out before the deadline — no scrambling, no late fees, no penalties.",
+      "Every filing goes out before the deadline — no scrambling, no late fees, no penalties. Accuracy is non-negotiable.",
   },
   {
     icon: "handshake",
-    title: "Plain-Speak Advice",
+    title: "Clear, Commercial Advice",
     description:
-      "I explain things in plain language. You'll understand what I'm filing and why — before you sign.",
+      "We translate complex tax law into practical recommendations you can act on. No jargon, no ambiguity.",
   },
   {
     icon: "lock",
-    title: "Your Data Stays Private",
+    title: "Absolute Confidentiality",
     description:
-      "Your financials are confidential. I never share client information, ever. Discretion is non-negotiable.",
+      "Client data and financials are treated with the highest discretion. We never share or compromise your information.",
   },
   {
     icon: "call",
-    title: "Pick Up The Phone",
+    title: "Direct Access",
     description:
-      "When you call with a question, I answer. No call centres, no waiting for days.",
+      "When you have a question, you speak directly to the professional handling your work. No call centres, no runaround.",
   },
 ];
 
@@ -74,42 +79,42 @@ export const process = [
     step: "01",
     icon: "chat",
     title: "Free Consultation",
-    description: "We talk through what you need — no commitment, no jargon, fifteen minutes.",
+    description: "We discuss your requirements — no commitment, no jargon, fifteen minutes.",
   },
   {
     step: "02",
     icon: "checklist",
     title: "Scope & Quote",
-    description: "You get a clear scope of work and a fixed quote. No hourly surprises.",
+    description: "You receive a clear scope of work and a fixed quote. No hourly billing surprises.",
   },
   {
     step: "03",
     icon: "folder_shared",
-    title: "I Do The Work",
-    description: "I collect documents, prepare filings, and handle every detail end-to-end.",
+    title: "We Execute",
+    description: "Our team prepares filings, reviews documentation, and handles every detail end-to-end.",
   },
   {
     step: "04",
     icon: "task_alt",
-    title: "Filed & Done",
-    description: "You get confirmation, acknowledgement receipts, and a clean record with the department.",
+    title: "Filed & Confirmed",
+    description: "You get confirmation, acknowledgement receipts, and a clean compliance record.",
   },
 ];
 
 export const testimonials = [
   {
-    quote: "Shreyas handled our GST migration and the first year of returns. Zero notices, zero late fees. Couldn't ask for better.",
-    author: "Manufacturing client",
-    detail: "Bengaluru, since 2018",
+    quote: "Shreyas Raj & Co. handled our cross-border tax structuring with precision. Their understanding of FEMA and DTAA is exceptional.",
+    author: "NRI client",
+    detail: "US-based, IT sector",
   },
   {
-    quote: "Honestly the only CA who actually picks up the phone. Got my ITR sorted in one sitting and explained every deduction.",
-    author: "Salaried professional",
-    detail: "IT sector, Bengaluru",
-  },
-  {
-    quote: "They did our statutory audit with zero drama. Clear report, on time, no follow-up needed from our side.",
+    quote: "They managed our entire year-end audit and ROC filings without a single notice from the department. Thoroughly professional.",
     author: "Pvt Ltd director",
-    detail: "Tech startup, Bengaluru",
+    detail: "Tech startup, Bangalore",
+  },
+  {
+    quote: "From ESOP advisory to ITR filing for our team, they've been reliable partners. Clear communication, zero drama.",
+    author: "HR Head, MNC",
+    detail: "Bangalore, since 2022",
   },
 ];
