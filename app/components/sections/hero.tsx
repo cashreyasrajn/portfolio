@@ -39,7 +39,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 bg-gold px-7 py-3.5 font-body text-[14px] font-semibold text-navy transition-all hover:bg-gold-light"
             >
               <span className="material-symbols-outlined text-[18px]">forum</span>
-              Book a Consultation
+              Contact us
             </Link>
             <Link
               href="/services"

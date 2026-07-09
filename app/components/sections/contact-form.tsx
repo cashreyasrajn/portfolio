@@ -103,8 +103,8 @@ export function ContactForm() {
           Thank You
         </h3>
         <p className="mb-8 font-body text-[15px] text-navy/60">
-          Your consultation request has been received. We'll review your
-          requirements and reach out within one business day.
+          Your message has been received. We'll review your requirements and
+          reach out within one business day.
         </p>
         <Button variant="primary" onClick={() => setSubmitted(false)}>
           Submit Another Enquiry

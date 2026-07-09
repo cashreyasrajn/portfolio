@@ -364,7 +364,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                   className="inline-flex w-full items-center justify-center gap-2 bg-gold px-6 py-3 font-body text-[14px] font-semibold text-navy transition-all hover:bg-gold-light active:scale-[0.97]"
                 >
                   <span className="material-symbols-outlined text-[18px]">call_made</span>
-                  Book a Consultation
+                  Contact us
                 </Link>
               </div>
             </div>

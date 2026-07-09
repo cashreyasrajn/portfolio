@@ -76,7 +76,7 @@ export const process = [
   {
     step: "01",
     icon: "chat",
-    title: "Initial Consultation",
+    title: "Initial Discussion",
     description: "We discuss your requirements — no commitment, no jargon, fifteen minutes.",
   },
   {

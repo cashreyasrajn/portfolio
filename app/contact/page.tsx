@@ -6,7 +6,7 @@ import { firm } from "@/app/components/content/firm";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Book a Consultation — Shreyas Raj & Co.",
+  title: "Contact Us — Shreyas Raj & Co.",
   description:
     "Get in touch for tax, GST, audit, international tax, or compliance advisory. Phone, email, or fill the form.",
 };
@@ -22,12 +22,11 @@ export default function ContactPage() {
               Get in touch
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-semibold leading-[1.1] tracking-tight md:text-[56px]">
-              Book a consultation
+              Contact us
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Fifteen minutes, no commitment. Tell us what you need — we'll
-              outline how we can help and the next steps. Plain answers on the
-              first call.
+              Tell us what you need — we'll outline how we can help and the
+              next steps. Plain answers on the first response.
             </p>
           </div>
         </div>
