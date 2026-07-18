@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
         <Image
           src="/images/bengaluru-high-court.jpg"
-          alt="The High Court of Karnataka (Attara Kacheri), Bengaluru"
+          alt="The High Court of Karnataka, Attara Kacheri"
           fill
           priority
           sizes="100vw"
@@ -30,7 +30,7 @@ export default function AboutPage() {
               About us
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-medium leading-[1.08] tracking-[-0.02em] md:text-[56px]">
-              A Bengaluru-based chartered accountancy practice
+              About the practice
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
               {firm.firmProfile}

@@ -24,7 +24,7 @@ export const firm = {
     ],
   },
   firmProfile:
-    "Shreyas Raj & Co. is a Chartered Accountancy firm committed to delivering practical, reliable, and value-driven professional services to businesses and individuals. We specialize in Direct Tax, GST, Accounting and Assurance, Corporate Compliance, Financial Reporting, and Business Advisory, offering solutions that are tailored to the unique needs of each client. Our approach combines technical expertise with a deep understanding of regulatory requirements to help clients achieve compliance, improve financial efficiency, and make informed business decisions. At Shreyas Raj & Co., we believe in building long-term relationships founded on integrity, professionalism, responsiveness, and a commitment to delivering exceptional service.",
+    "Shreyas Raj & Co. is a Chartered Accountancy firm specialising in Direct Tax, GST, Audit and Assurance, Corporate Compliance, and Business Advisory. Our approach combines technical expertise with a practical understanding of client needs to help businesses achieve compliance, improve financial efficiency, and make informed decisions.",
   address: {
     line1: "Bengaluru",
     line2: "",
@@ -98,8 +98,8 @@ export const process = [
   {
     step: "04",
     icon: "task_alt",
-    title: "Filed & Confirmed",
-    description: "You get confirmation, acknowledgement receipts, and a clean compliance record.",
+    title: "Delivery",
+    description: "You receive confirmed filings, acknowledgement receipts, and a clean compliance record on time.",
   },
 ];
 

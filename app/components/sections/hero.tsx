@@ -6,10 +6,9 @@ import { Phone, MessageCircle, Mail } from "lucide-react";
 export function Hero() {
   return (
     <section className="grain relative overflow-hidden bg-navy">
-      {/* Bengaluru, Vidhana Soudha at night, monochrome */}
       <Image
         src="/images/bengaluru-vidhana-soudha-night.jpg"
-        alt="Vidhana Soudha, Bengaluru, illuminated at night"
+        alt="Vidhana Soudha, illuminated at night"
         fill
         priority
         sizes="100vw"
@@ -23,8 +22,6 @@ export function Hero() {
           <p className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-[12px] font-semibold uppercase tracking-[0.2em] text-white/60">
             <span className="inline-block h-1.5 w-1.5 bg-white/70" />
             Chartered Accountants
-            <span className="text-white/30">/</span>
-            Bengaluru, Karnataka
           </p>
 
           <h1 className="mb-6 font-headline text-[44px] font-medium leading-[1.04] tracking-[-0.02em] text-white md:text-[68px]">
@@ -62,11 +59,11 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-white/15 pt-6">
+          <div className="flex flex-wrap items-center gap-2 border-t border-white/15 pt-6">
             {firm.founder.specializations.map((s) => (
               <span
                 key={s}
-                className="font-body text-[11px] font-semibold uppercase tracking-[0.14em] text-white/55"
+                className="inline-flex items-center border border-white/15 bg-white/5 px-3.5 py-1.5 font-body text-[11px] font-medium uppercase tracking-[0.06em] text-white/70 backdrop-blur-sm"
               >
                 {s}
               </span>

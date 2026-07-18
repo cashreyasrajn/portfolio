@@ -14,7 +14,7 @@ export function SiteFooter() {
               <Logo variant="light" />
             </div>
             <p className="mb-6 max-w-xs font-body text-[15px] leading-relaxed text-white/60">
-              Shreyas Raj {'\u0026'} Co. is a Bengaluru-based Chartered
+              Shreyas Raj {'\u0026'} Co. is a Chartered
               Accountancy firm specialising in Direct Tax, GST, Audit, Corporate
               Compliance, and Business Advisory. Established in 2025.
             </p>

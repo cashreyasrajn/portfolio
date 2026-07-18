@@ -2,7 +2,6 @@ import { services } from "@/app/components/content/services";
 import { Hero } from "@/app/components/sections/hero";
 import { ServiceCard } from "@/app/components/sections/service-card";
 import { ProcessSection } from "@/app/components/sections/process";
-import { ValuesSection } from "@/app/components/sections/values";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export default function HomePage() {
@@ -39,7 +38,6 @@ export default function HomePage() {
       </section>
 
       <ProcessSection />
-      <ValuesSection />
       <CtaQuote />
     </>
   );

@@ -16,7 +16,7 @@ export default function BlogPage() {
       <section className="grain relative overflow-hidden bg-navy py-24 md:py-32">
         <Image
           src="/images/work-desk.jpg"
-          alt="An accountant's workspace, laptop and calculator on a desk"
+          alt="Accountant's workspace"
           fill
           priority
           sizes="100vw"
@@ -83,7 +83,7 @@ export default function BlogPage() {
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-sm border border-navy/8 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-gold/50 hover:shadow-md md:flex-row"
+                   className="group flex flex-col overflow-hidden rounded-sm border border-navy/8 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-gold/50 hover:shadow-md md:flex-row"
                 >
                   <div className="relative w-full flex-shrink-0 overflow-hidden bg-navy md:w-[240px]">
                     <Image

@@ -238,7 +238,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
         <Image
           src="/images/work-desk.jpg"
-          alt="An accountant's desk with laptop and calculator"
+          alt="Accountant's desk with laptop and calculator"
           fill
           priority
           sizes="100vw"

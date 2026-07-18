@@ -41,7 +41,7 @@ export default function ContactPage() {
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
         <Image
           src="/images/bengaluru-ub-city.jpg"
-          alt="The UB City towers, central Bengaluru"
+          alt="UB City towers, Bengaluru"
           fill
           priority
           sizes="100vw"
@@ -77,26 +77,6 @@ export default function ContactPage() {
               </p>
               <ContactForm />
             </div>
-
-            <figure>
-              <div className="relative aspect-[16/7] overflow-hidden border border-navy/10">
-                <Image
-                  src="/images/work-signing.jpg"
-                  alt="Signing an engagement document"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 58vw"
-                  className="object-cover"
-                />
-              </div>
-              <figcaption className="mt-3 flex items-baseline justify-between border-t border-navy/10 pt-3">
-                <span className="font-body text-[13px] font-semibold text-navy">
-                  Every engagement, confirmed in writing
-                </span>
-                <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-navy/45">
-                  Scope before start
-                </span>
-              </figcaption>
-            </figure>
           </div>
 
           <div className="lg:col-span-5">
