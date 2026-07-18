@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Fraunces, Archivo, IBM_Plex_Mono } from "next/font/google";
 import { SiteHeader } from "@/app/components/site-header";
 import { SiteFooter } from "@/app/components/site-footer";
 import { DisclaimerPopup } from "@/app/components/sections/disclaimer-popup";
+import { QuickContact } from "@/app/components/sections/quick-contact";
 import { siteConfig } from "@/app/components/content/site";
 import "./globals.css";
 
-const headlineFont = Cormorant_Garamond({
+const headlineFont = Fraunces({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
@@ -14,10 +15,24 @@ const headlineFont = Cormorant_Garamond({
   display: "swap",
 });
 
+const bodyFont = Archivo({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const monoFont = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Chartered Accountants | Bengaluru`,
+    default: `${siteConfig.name} ,  Chartered Accountants | Bengaluru`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -49,13 +64,13 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — Chartered Accountants | Bengaluru, India`,
+    title: `${siteConfig.name} ,  Chartered Accountants | Bengaluru, India`,
     description: siteConfig.description,
     images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — Chartered Accountant`,
+    title: `${siteConfig.name} ,  Chartered Accountant`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
@@ -114,12 +129,13 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${headlineFont.variable} flex min-h-screen flex-col bg-cream pt-[72px] text-navy antialiased`}
+        className={`${headlineFont.variable} ${bodyFont.variable} ${monoFont.variable} flex min-h-screen flex-col bg-cream pt-[72px] text-navy antialiased`}
       >
         <SiteHeader />
         <main className="flex-grow">{children}</main>
         <SiteFooter />
         <DisclaimerPopup />
+        <QuickContact />
       </body>
     </html>
   );

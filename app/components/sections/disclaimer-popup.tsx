@@ -52,7 +52,7 @@ export function DisclaimerPopup() {
         <div className="mt-10 flex flex-col items-center gap-4">
           <button
             onClick={handleAccept}
-            className="inline-flex items-center gap-2 bg-gold px-8 py-3.5 font-body text-[14px] font-semibold text-navy transition-all hover:bg-gold-light active:scale-[0.97]"
+            className="inline-flex items-center gap-2 bg-white px-8 py-3.5 font-body text-[14px] font-semibold text-navy transition-all hover:bg-white/85 active:scale-[0.97]"
           >
             I agree
           </button>

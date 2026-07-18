@@ -18,8 +18,8 @@ function PlusIcon() {
 export function CredentialsSidebar() {
   return (
     <aside className="flex flex-col gap-8">
-      <div className="rounded-sm border border-navy/8 bg-white p-8">
-        <h4 className="mb-5 border-b border-navy/8 pb-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-navy/55">
+      <div className="border border-navy/8 bg-white p-8">
+        <h4 className="mb-5 border-b border-navy/8 pb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-navy/55">
           Credentials
         </h4>
         <div className="mb-5 flex justify-start">
@@ -34,7 +34,7 @@ export function CredentialsSidebar() {
         <ul className="space-y-5">
           {credentials.map((c) => (
             <li key={c.title} className="flex items-start gap-3">
-              <span className="text-gold">
+              <span className="text-navy">
                 <PlusIcon />
               </span>
               <div>
@@ -50,8 +50,8 @@ export function CredentialsSidebar() {
         </ul>
       </div>
 
-      <div className="rounded-sm bg-navy p-8 text-white">
-        <h4 className="mb-5 border-b border-white/10 pb-3 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/80">
+      <div className="bg-navy p-8 text-white">
+        <h4 className="mb-5 border-b border-white/10 pb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-white/45">
           {whyChooseUs.headline}
         </h4>
         <p className="mb-6 font-body text-[15px] leading-relaxed text-white/70">
@@ -60,7 +60,7 @@ export function CredentialsSidebar() {
         <ul className="space-y-3.5">
           {whyChooseUs.pillars.map((p) => (
             <li key={p} className="flex items-center gap-3 font-body text-[14px] text-white/80">
-              <span className="material-symbols-outlined text-[18px] text-gold">
+              <span className="material-symbols-outlined text-[18px] text-white/60">
                 verified
               </span>
               {p}

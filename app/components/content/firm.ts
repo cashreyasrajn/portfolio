@@ -11,9 +11,9 @@ export const firm = {
     bio: "Shreyas Raj N. is a Chartered Accountant with over five years of experience in direct taxation, cross-border transactions, regulatory compliance, and advisory. His expertise spans FEMA regulations, US taxation, and international tax matters, with a strong focus on foreign asset reporting, ESOPs, RSUs, and tax planning for individuals.",
     bioExtended: [
       "The practice also advises clients on tax litigation and complex compliance matters, delivering practical and commercially sound solutions in an evolving global tax landscape.",
-      "We believe good advice is clear and actionable. Whether it's a routine return or a multi-jurisdictional transaction, every engagement receives the same rigour — filings completed before the deadline, and direct access to the professional handling your work.",
+      "We believe good advice is clear and actionable. Whether it's a routine return or a multi-jurisdictional transaction, every engagement receives the same rigour ,  filings completed before the deadline, and direct access to the professional handling your work.",
     ],
-    qualifications: ["ACA — Associate, ICAI", "B.Com — Mangalore University"],
+    qualifications: ["ACA ,  Associate, ICAI", "B.Com ,  Mangalore University"],
     specializations: [
       "Direct Taxation",
       "International Tax & FEMA",
@@ -33,6 +33,9 @@ export const firm = {
   },
   contact: {
     phone: "+91 63618 90855",
+    phoneHref: "tel:+916361890855",
+    whatsapp:
+      "https://wa.me/916361890855?text=Hello%20Shreyas%2C%20I%27d%20like%20to%20discuss%20a%20tax%20%2F%20compliance%20matter.",
     email: "cashreyasrajn@gmail.com",
     gmail: "cashreyasrajn@gmail.com",
   },
@@ -77,7 +80,7 @@ export const process = [
     step: "01",
     icon: "chat",
     title: "Initial Discussion",
-    description: "We discuss your requirements — no commitment, no jargon, fifteen minutes.",
+    description: "We discuss your requirements ,  no commitment, no jargon, fifteen minutes.",
   },
   {
     step: "02",

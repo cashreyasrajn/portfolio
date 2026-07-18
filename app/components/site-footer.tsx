@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Logo } from "@/app/components/ui/logo";
 import { footerLinks } from "@/app/components/content/nav";
 import { firm } from "@/app/components/content/firm";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -19,35 +19,44 @@ export function SiteFooter() {
               and corporate compliance. Established in 2021.
             </p>
             <a
-              href={`tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`}
-              className="inline-flex items-center gap-3 font-body text-[14px] text-white/70 transition-colors hover:text-gold"
+              href={firm.contact.phoneHref}
+              className="inline-flex items-center gap-3 font-body text-[15px] font-semibold text-white transition-colors hover:text-white/70"
             >
-              <Phone className="h-[14px] w-[14px] text-gold" />
+              <Phone className="h-[15px] w-[15px] text-white/60" />
               {firm.contact.phone}
             </a>
           </div>
 
           <div>
-            <p className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.12em] text-gold/80">
-              Contact
+            <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/45">
+              Reach us
             </p>
             <div className="space-y-3">
               <a
-                href={`mailto:${firm.contact.gmail}`}
-                className="flex items-center gap-3 font-body text-[14px] text-white/60 transition-colors hover:text-gold"
+                href={firm.contact.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 font-body text-[14px] text-white/60 transition-colors hover:text-white"
               >
-                <Mail className="h-[14px] w-[14px] text-gold" />
-                Gmail
+                <MessageCircle className="h-[14px] w-[14px] text-white/50" />
+                WhatsApp
+              </a>
+              <a
+                href={`mailto:${firm.contact.gmail}`}
+                className="flex items-center gap-3 break-all font-body text-[14px] text-white/60 transition-colors hover:text-white"
+              >
+                <Mail className="h-[14px] w-[14px] flex-shrink-0 text-white/50" />
+                {firm.contact.gmail}
               </a>
               <div className="flex items-start gap-3 font-body text-[14px] text-white/60">
-                <MapPin className="mt-0.5 h-[14px] w-[14px] flex-shrink-0 text-gold" />
-                <span>Bengaluru</span>
+                <MapPin className="mt-0.5 h-[14px] w-[14px] flex-shrink-0 text-white/50" />
+                <span>Bengaluru, Karnataka</span>
               </div>
             </div>
           </div>
 
           <div>
-            <p className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.12em] text-gold/80">
+            <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/45">
               Services
             </p>
             <div className="space-y-2.5">
@@ -62,7 +71,7 @@ export function SiteFooter() {
                 <Link
                   key={s}
                   href="/services"
-                  className="block font-body text-[14px] text-white/60 transition-colors hover:text-gold"
+                  className="block font-body text-[14px] text-white/60 transition-colors hover:text-white"
                 >
                   {s}
                 </Link>
@@ -71,7 +80,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.12em] text-gold/80">
+            <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/45">
               Links
             </p>
             <div className="space-y-2.5">
@@ -79,7 +88,7 @@ export function SiteFooter() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="block font-body text-[14px] text-white/60 transition-colors hover:text-gold"
+                  className="block font-body text-[14px] text-white/60 transition-colors hover:text-white"
                 >
                   {link.label}
                 </Link>
@@ -88,10 +97,13 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-16 border-t border-white/10 pt-8 text-center">
+        <div className="mt-16 flex flex-col items-center gap-3 border-t border-white/10 pt-8 md:flex-row md:justify-between">
           <p className="font-body text-[13px] text-white/40">
             &copy; {new Date().getFullYear()} Shreyas Raj {'\u0026'} Co. All Rights
             Reserved.
+          </p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/35">
+            Bengaluru ,  12.9716° N, 77.5946° E
           </p>
         </div>
       </div>

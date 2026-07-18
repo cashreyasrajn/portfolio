@@ -5,7 +5,7 @@ import { blogPosts, blogCategories } from "@/app/components/content/blog";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
-  title: "Blog — Practical Tax & Compliance Insights",
+  title: "Blog ,  Practical Tax & Compliance Insights",
   description:
     "Plain-English articles on income tax, GST, audit, corporate compliance, business setup, and NRI taxation from CA Shreyas Raj.",
 };
@@ -13,20 +13,23 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-navy py-24 md:py-32">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
-          style={{ backgroundImage: "url('/blog-bg.svg')" }}
+      <section className="grain relative overflow-hidden bg-navy py-24 md:py-32">
+        <Image
+          src="/images/work-desk.jpg"
+          alt="An accountant's workspace ,  laptop and calculator on a desk"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/90 to-navy" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/90 to-navy" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2  border border-gold/30 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
-              <span className="material-symbols-outlined text-[14px] text-gold">article</span>
-              Knowledge Base
+            <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
+              Knowledge base
             </p>
-            <h1 className="mb-5 font-headline text-[40px] font-semibold leading-[1.1] tracking-tight text-white md:text-[56px]">
-              Notes on tax & compliance
+            <h1 className="mb-5 font-headline text-[40px] font-medium leading-[1.08] tracking-[-0.02em] text-white md:text-[56px]">
+              Notes on tax {'\u0026'} compliance
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
               A growing collection of plain-English articles on the things I get
@@ -68,7 +71,7 @@ export default function BlogPage() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2  bg-gold px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-gold-light"
+                  className="inline-flex w-full items-center justify-center gap-2 bg-white px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-white/85"
                 >
                   Ask a question
                 </Link>

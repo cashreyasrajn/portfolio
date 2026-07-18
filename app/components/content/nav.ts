@@ -11,9 +11,9 @@ export const navLinks: NavLink[] = [
 ];
 
 export const footerLinks: NavLink[] = [
-  { label: "Terms of Service", href: "#" },
-  { label: "Privacy Policy", href: "#" },
-  { label: "ICAI Disclaimer", href: "#" },
+  { label: "Terms of Service", href: "/terms" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "ICAI Disclaimer", href: "/disclaimer" },
   { label: "Contact Us", href: "/contact" },
-  { label: "Sitemap", href: "#" },
+  { label: "Sitemap", href: "/sitemap.xml" },
 ];

@@ -182,7 +182,7 @@ export function ContactForm() {
               <FormLabel>Service Required *</FormLabel>
               <FormControl>
                 <select
-                  className="flex h-12 w-full rounded-sm border border-navy/12 bg-white px-4 py-2 font-body text-[14px] text-navy focus-visible:border-gold focus-visible:outline-none"
+                  className="flex h-12 w-full rounded-sm border border-navy/12 bg-white px-4 py-2 font-body text-[14px] text-navy focus-visible:border-navy focus-visible:outline-none"
                   {...field}
                 >
                   {serviceOptions.map((opt) => (

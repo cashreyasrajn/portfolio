@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-export const alt = "Shreyas Raj & Co. — Chartered Accountants, Bengaluru";
+export const alt = "Shreyas Raj & Co. ,  Chartered Accountants, Bengaluru";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -10,14 +9,14 @@ export default function Image() {
     (
       <div
         style={{
-          background: "#0b1e3d",
+          background: "#131313",
           width: "100%",
           height: "100%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          fontFamily: "Cormorant Garamond, serif",
+          fontFamily: "Georgia, serif",
           color: "#ffffff",
           padding: 80,
         }}
@@ -44,22 +43,22 @@ export default function Image() {
             style={{
               fontSize: 22,
               fontWeight: 400,
-              color: "#5b7a94",
+              color: "#a3a3a3",
               fontFamily: "Segoe UI, -apple-system, sans-serif",
             }}
           >
-              Chartered Accountants · Bengaluru, India
+            Chartered Accountants · Bengaluru, India
           </div>
         </div>
         <div
           style={{
             marginTop: 60,
             paddingTop: 32,
-            borderTop: "2px solid rgba(184, 150, 110, 0.3)",
+            borderTop: "2px solid rgba(255, 255, 255, 0.15)",
             fontSize: 18,
             color: "rgba(255,255,255,0.7)",
             textAlign: "center",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Segoe UI, sans-serif",
           }}
         >
           Tax · GST · Audit · Compliance

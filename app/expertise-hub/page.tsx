@@ -1,28 +1,37 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { articles } from "@/app/components/content/articles";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
-  title: "Expertise Hub — Insights & Updates",
+  title: "Expertise Hub ,  Insights & Updates",
   description:
-    "Plain-English briefings on income tax, GST, audit, MSME registration and more — written for clients, not accountants.",
+    "Plain-English briefings on income tax, GST, audit, MSME registration and more ,  written for clients, not accountants.",
 };
 
 export default function ExpertiseHubPage() {
   return (
     <>
-      <section className="bg-navy py-24 text-white md:py-32">
-        <div className="mx-auto max-w-[1280px] px-6 md:px-12">
+      <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
+        <Image
+          src="/images/work-contract.jpg"
+          alt="Legal contract under a spotlight on a desk"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-22"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/50" />
+        <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex items-center gap-2  border border-white/15 bg-white/5 px-4 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
-              <span className="material-symbols-outlined text-[14px] text-gold">menu_book</span>
-              Knowledge Centre
+            <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
+              Knowledge centre
             </p>
-            <h1 className="mb-5 font-headline text-[40px] font-semibold leading-[1.1] tracking-tight md:text-[52px]">
-              Expertise Hub — written for you, not for accountants
+            <h1 className="mb-5 font-headline text-[40px] font-medium leading-[1.08] tracking-[-0.02em] md:text-[52px]">
+              Expertise Hub ,  written for you, not for accountants
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Plain briefings on the things we get asked about most — deadlines,
+              Plain briefings on the things we get asked about most ,  deadlines,
               form changes, common mistakes. Updated through the year.
             </p>
           </div>

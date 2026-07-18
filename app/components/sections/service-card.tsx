@@ -3,30 +3,28 @@ import type { Service } from "@/app/components/content/services";
 
 export function ServiceCard({ service }: { service: Service }) {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-sm border border-navy/8 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg hover:shadow-navy/[0.05]">
-      <div className="mb-5 flex items-start justify-between">
-        <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-navy/[0.04] text-gold transition-all duration-300 group-hover:bg-navy group-hover:text-white">
-          <span className="material-symbols-outlined text-[28px]">
-            {service.icon}
-          </span>
-        </div>
-        <span className=" border border-gold/40 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.1em] text-gold-dark">
+    <div className="group relative flex flex-col border border-navy/8 bg-white p-8 transition-all duration-300 hover:border-navy hover:bg-navy">
+      <div className="mb-6 flex items-start justify-between gap-4">
+        <span className="material-symbols-outlined text-[30px] text-navy transition-colors duration-300 group-hover:text-white">
+          {service.icon}
+        </span>
+        <span className="border border-navy/15 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.12em] text-navy/60 transition-colors duration-300 group-hover:border-white/25 group-hover:text-white/60">
           {service.tagline}
         </span>
       </div>
-      <h3 className="mb-2 font-headline text-[24px] font-semibold tracking-tight text-navy">
+      <h3 className="mb-2 font-headline text-[24px] font-medium tracking-[-0.01em] text-navy transition-colors duration-300 group-hover:text-white">
         {service.title}
       </h3>
-      <p className="mb-5 font-body text-[14px] leading-relaxed text-navy/70">
+      <p className="mb-5 font-body text-[14px] leading-relaxed text-navy/65 transition-colors duration-300 group-hover:text-white/65">
         {service.description}
       </p>
-      <ul className="mb-6 mt-auto space-y-2 border-t border-navy/8 pt-5">
+      <ul className="mb-6 mt-auto space-y-2 border-t border-navy/8 pt-5 transition-colors duration-300 group-hover:border-white/15">
         {service.points.slice(0, 4).map((p) => (
           <li
             key={p}
-            className="flex items-center gap-2 font-body text-[13px] text-navy/70"
+            className="flex items-center gap-2 font-body text-[13px] text-navy/70 transition-colors duration-300 group-hover:text-white/70"
           >
-            <span className="material-symbols-outlined text-[15px] text-gold">
+            <span className="material-symbols-outlined text-[15px] text-navy/50 transition-colors duration-300 group-hover:text-white/70">
               check
             </span>
             {p}
@@ -35,9 +33,9 @@ export function ServiceCard({ service }: { service: Service }) {
       </ul>
       <Link
         href={service.href}
-        className="inline-flex items-center gap-1.5 font-body text-[14px] font-semibold text-navy transition-all group-hover:gap-2.5 group-hover:text-gold-dark"
+        className="inline-flex items-center gap-1.5 font-body text-[14px] font-semibold text-navy transition-all duration-300 group-hover:gap-2.5 group-hover:text-white"
       >
-        Learn More
+        Learn more
         <span className="material-symbols-outlined text-[16px]">
           arrow_forward
         </span>

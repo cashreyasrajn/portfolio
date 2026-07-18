@@ -40,16 +40,22 @@ const config: Config = {
         input: "var(--input)",
         ring: "var(--ring)",
         navy: {
-          DEFAULT: "#0b1e3d",
-          light: "#152d57",
-          dark: "#070f1e",
+          DEFAULT: "#131313",
+          light: "#262626",
+          dark: "#050505",
         },
         gold: {
-          DEFAULT: "#5b7a94",
-          light: "#7a9ab0",
-          dark: "#3d5a70",
+          DEFAULT: "#a3a3a3",
+          light: "#d4d4d4",
+          dark: "#525252",
         },
-        cream: "#f1f3f5",
+        cream: "#f6f6f4",
+        ink: {
+          DEFAULT: "#131313",
+          light: "#262626",
+          dark: "#050505",
+        },
+        paper: "#f6f6f4",
       },
       borderRadius: {
         DEFAULT: "0",
@@ -59,9 +65,10 @@ const config: Config = {
         xl: "8px",
       },
       fontFamily: {
-        headline: ["var(--font-headline)", "Cormorant Garamond", "Times New Roman", "serif"],
-        body: ["Segoe UI", "-apple-system", "system-ui", "sans-serif"],
-        brand: ["var(--font-brand)", "Trajan Pro", "Cormorant Garamond", "Times New Roman", "serif"],
+        headline: ["var(--font-headline)", "Fraunces", "Georgia", "serif"],
+        body: ["var(--font-body)", "Archivo", "-apple-system", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "IBM Plex Mono", "monospace"],
+        brand: ["var(--font-headline)", "Fraunces", "Georgia", "serif"],
       },
       keyframes: {
         "accordion-down": {

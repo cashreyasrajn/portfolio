@@ -15,7 +15,7 @@ interface LogoProps {
 }
 
 export function Logo({ variant = "dark", subtitle = "Chartered Accountants" }: LogoProps) {
-  const colorClass = variant === "dark" ? "text-[#0B4F84]" : "text-white";
+  const colorClass = variant === "dark" ? "text-navy" : "text-white";
 
   return (
     <div

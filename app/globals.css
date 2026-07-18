@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    --navy: #0b1e3d;
-    --navy-light: #152d57;
-    --navy-dark: #070f1e;
-    --gold: #5b7a94;
-    --gold-light: #7a9ab0;
-    --gold-dark: #3d5a70;
-    --cream: #f1f3f5;
-    --font-brand: "Trajan Pro", "Cormorant Garamond", "Times New Roman", serif;
+    --navy: #131313;
+    --navy-light: #262626;
+    --navy-dark: #050505;
+    --gold: #a3a3a3;
+    --gold-light: #d4d4d4;
+    --gold-dark: #525252;
+    --cream: #f6f6f4;
+    --font-brand: "Fraunces", "Georgia", serif;
 
-    --background: #ffffff;
-    --foreground: #0b1e3d;
+    --background: #f6f6f4;
+    --foreground: #131313;
     --card: #ffffff;
-    --card-foreground: #0b1e3d;
+    --card-foreground: #131313;
     --popover: #ffffff;
-    --popover-foreground: #0b1e3d;
-    --primary: #0b1e3d;
+    --popover-foreground: #131313;
+    --primary: #131313;
     --primary-foreground: #ffffff;
-    --secondary: #5b7a94;
+    --secondary: #525252;
     --secondary-foreground: #ffffff;
-    --muted: #f1f3f5;
-    --muted-foreground: rgba(11, 30, 61, 0.65);
-    --accent: #5b7a94;
+    --muted: #f6f6f4;
+    --muted-foreground: rgba(19, 19, 19, 0.65);
+    --accent: #525252;
     --accent-foreground: #ffffff;
     --destructive: #b91c1c;
     --destructive-foreground: #ffffff;
-    --border: rgba(11, 30, 61, 0.12);
-    --input: rgba(11, 30, 61, 0.12);
-    --ring: #5b7a94;
+    --border: rgba(19, 19, 19, 0.12);
+    --input: rgba(19, 19, 19, 0.12);
+    --ring: #525252;
     --radius: 0;
   }
 
@@ -45,25 +45,60 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    font-family: var(--font-body), "Archivo", -apple-system, system-ui, sans-serif;
   }
 
   h1, h2, h3, h4 {
-    font-family: var(--font-headline), "Cormorant Garamond", "Times New Roman", serif;
+    font-family: var(--font-headline), "Fraunces", "Georgia", serif;
+  }
+
+  ::selection {
+    background: #131313;
+    color: #f6f6f4;
   }
 }
 
 @layer utilities {
   .font-headline {
-    font-family: var(--font-headline), "Cormorant Garamond", "Times New Roman", serif;
+    font-family: var(--font-headline), "Fraunces", "Georgia", serif;
   }
   .font-body {
-    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    font-family: var(--font-body), "Archivo", -apple-system, system-ui, sans-serif;
+  }
+  .font-mono {
+    font-family: var(--font-mono), "IBM Plex Mono", monospace;
   }
   .font-brand {
-    font-family: var(--font-brand), "Trajan Pro", "Cormorant Garamond", "Times New Roman", serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
+    font-family: var(--font-headline), "Fraunces", "Georgia", serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  /* Film grain overlay for dark photographic sections */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+  }
+
+  /* Fine dotted paper texture for light sections */
+  .paper-dots {
+    background-image: radial-gradient(rgba(19, 19, 19, 0.055) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Outlined display numeral */
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(19, 19, 19, 0.22);
+    color: transparent;
+  }
+  .text-outline-light {
+    -webkit-text-stroke: 1px rgba(246, 246, 244, 0.28);
+    color: transparent;
   }
 }

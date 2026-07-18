@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/app/components/content/blog";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
@@ -31,10 +32,14 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-navy py-20 md:py-28">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-          style={{ backgroundImage: "url('/blog-bg.svg')" }}
+      <section className="grain relative overflow-hidden bg-navy py-20 md:py-28">
+        <Image
+          src="/images/work-contract.jpg"
+          alt="Legal contract and pen on a desk"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/90 to-navy" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
@@ -173,7 +178,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2 bg-gold px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-gold-light"
+                  className="inline-flex w-full items-center justify-center gap-2 bg-white px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-white/85"
                 >
                   Get in touch
                 </Link>

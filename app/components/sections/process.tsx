@@ -5,11 +5,11 @@ export function ProcessSection() {
     <section className="bg-white py-24 md:py-32">
       <div className="mx-auto max-w-[1280px] px-6 md:px-12">
         <div className="mb-16 max-w-2xl">
-          <p className="mb-3 font-body text-[11px] font-bold uppercase tracking-[0.2em] text-gold-dark">
-            How We'll Work Together
+          <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-gold-dark">
+            How we'll work together
           </p>
-          <h2 className="mb-3 font-headline text-[32px] font-semibold tracking-tight text-navy md:text-[40px]">
-            Simple, four-step process
+          <h2 className="mb-3 font-headline text-[32px] font-medium leading-[1.1] tracking-[-0.02em] text-navy md:text-[40px]">
+            A simple, <em className="font-light italic">four-step</em> process
           </h2>
           <p className="font-body text-[15px] leading-relaxed text-navy/70">
             Here's exactly what working with us looks like, start to finish.
@@ -20,25 +20,21 @@ export function ProcessSection() {
           {process.map((item, i) => (
             <div key={item.step} className="relative">
               {i < process.length - 1 && (
-                <div className="absolute left-12 top-12 hidden h-px w-full bg-gold/20 lg:block" />
+                <div className="absolute -right-3 top-14 hidden h-px w-6 bg-navy/15 lg:block" />
               )}
-              <div className="relative z-10 rounded-sm border border-navy/8 bg-cream p-7 transition-all hover:border-gold/40 hover:shadow-md">
-                <div className="mb-5 flex items-center justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-navy text-white">
-                    <span className="material-symbols-outlined text-[24px]">
-                      {item.icon}
-                    </span>
-                  </div>
-                  <span className="font-headline text-[28px] font-bold text-gold/30">
-                    {item.step}
-                  </span>
-                </div>
-                <h3 className="mb-2 font-headline text-[20px] font-semibold tracking-tight text-navy">
+              <div className="group relative z-10 flex h-full flex-col border border-navy/8 bg-cream p-7 transition-all duration-300 hover:border-navy hover:bg-white">
+                <span className="text-outline mb-8 font-headline text-[56px] font-semibold leading-none transition-all duration-300 group-hover:text-navy">
+                  {item.step}
+                </span>
+                <h3 className="mb-2 font-headline text-[20px] font-medium tracking-[-0.01em] text-navy">
                   {item.title}
                 </h3>
-                <p className="font-body text-[13px] leading-relaxed text-navy/70">
+                <p className="font-body text-[13px] leading-relaxed text-navy/65">
                   {item.description}
                 </p>
+                <span className="material-symbols-outlined mt-auto block pt-6 text-[20px] text-navy/30 transition-colors group-hover:text-navy">
+                  {item.icon}
+                </span>
               </div>
             </div>
           ))}
