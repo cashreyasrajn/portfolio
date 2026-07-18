@@ -14,9 +14,9 @@ export function SiteFooter() {
               <Logo variant="light" />
             </div>
             <p className="mb-6 max-w-xs font-body text-[15px] leading-relaxed text-white/60">
-              Shreyas Raj {'\u0026'} Co. is a Bengaluru-based chartered accountancy
-              practice specialising in direct taxation, international tax, FEMA,
-              and corporate compliance. Established in 2021.
+              Shreyas Raj {'\u0026'} Co. is a Bengaluru-based Chartered
+              Accountancy firm specialising in Direct Tax, GST, Audit, Corporate
+              Compliance, and Business Advisory. Established in 2025.
             </p>
             <a
               href={firm.contact.phoneHref}
@@ -103,7 +103,7 @@ export function SiteFooter() {
             Reserved.
           </p>
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/35">
-            Bengaluru ,  12.9716° N, 77.5946° E
+            Bengaluru · 12.9716° N, 77.5946° E
           </p>
         </div>
       </div>

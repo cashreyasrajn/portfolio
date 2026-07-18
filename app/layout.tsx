@@ -32,7 +32,7 @@ const monoFont = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} ,  Chartered Accountants | Bengaluru`,
+    default: `${siteConfig.name} | Chartered Accountants, Bengaluru`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -64,13 +64,13 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} ,  Chartered Accountants | Bengaluru, India`,
+    title: `${siteConfig.name} | Chartered Accountants, Bengaluru, India`,
     description: siteConfig.description,
     images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} ,  Chartered Accountant`,
+    title: `${siteConfig.name} | Chartered Accountants`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },

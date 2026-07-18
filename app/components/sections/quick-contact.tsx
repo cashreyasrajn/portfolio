@@ -5,7 +5,7 @@ import { firm } from "@/app/components/content/firm";
 import { Phone, MessageCircle } from "lucide-react";
 
 /**
- * Sticky reach-out bar ,  mobile only. Appears after a short scroll so the
+ * Sticky reach-out bar, mobile only. Appears after a short scroll so the
  * fastest ways to reach the practice are always one tap away.
  */
 export function QuickContact() {

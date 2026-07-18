@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { credentials, whyChooseUs } from "@/app/components/content/credentials";
+import { credentials } from "@/app/components/content/credentials";
 
 function PlusIcon() {
   return (
@@ -45,25 +45,6 @@ export function CredentialsSidebar() {
                   {c.subtitle}
                 </p>
               </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="bg-navy p-8 text-white">
-        <h4 className="mb-5 border-b border-white/10 pb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-white/45">
-          {whyChooseUs.headline}
-        </h4>
-        <p className="mb-6 font-body text-[15px] leading-relaxed text-white/70">
-          {whyChooseUs.description}
-        </p>
-        <ul className="space-y-3.5">
-          {whyChooseUs.pillars.map((p) => (
-            <li key={p} className="flex items-center gap-3 font-body text-[14px] text-white/80">
-              <span className="material-symbols-outlined text-[18px] text-white/60">
-                verified
-              </span>
-              {p}
             </li>
           ))}
         </ul>

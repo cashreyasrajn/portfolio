@@ -6,7 +6,7 @@ import { Phone, MessageCircle, Mail } from "lucide-react";
 export function Hero() {
   return (
     <section className="grain relative overflow-hidden bg-navy">
-      {/* Bengaluru ,  Vidhana Soudha at night, monochrome */}
+      {/* Bengaluru, Vidhana Soudha at night, monochrome */}
       <Image
         src="/images/bengaluru-vidhana-soudha-night.jpg"
         alt="Vidhana Soudha, Bengaluru, illuminated at night"
@@ -20,7 +20,7 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-[1280px] px-6 pb-20 pt-24 md:px-12 md:pb-28 md:pt-36">
         <div className="max-w-3xl">
-          <p className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[11px] uppercase tracking-[0.22em] text-white/60">
+          <p className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-[12px] font-semibold uppercase tracking-[0.2em] text-white/60">
             <span className="inline-block h-1.5 w-1.5 bg-white/70" />
             Chartered Accountants
             <span className="text-white/30">/</span>
@@ -28,16 +28,14 @@ export function Hero() {
           </p>
 
           <h1 className="mb-6 font-headline text-[44px] font-medium leading-[1.04] tracking-[-0.02em] text-white md:text-[68px]">
-            Tax, audit {'\u0026'} compliance,
-            <br />
-            handled with <em className="font-light italic text-white">rigour</em>.
+            Advisory, Business Consultancy and Tax
           </h1>
 
           <p className="mb-10 max-w-xl font-body text-[16px] leading-relaxed text-white/70 md:text-[17px]">
             {firm.firmProfile}
           </p>
 
-          {/* Reach out ,  the three fastest ways, one tap each */}
+          {/* Reach out, the three fastest ways, one tap each */}
           <div className="mb-10 flex flex-wrap items-stretch gap-3">
             <a
               href={firm.contact.phoneHref}
@@ -68,7 +66,7 @@ export function Hero() {
             {firm.founder.specializations.map((s) => (
               <span
                 key={s}
-                className="font-mono text-[11px] uppercase tracking-[0.14em] text-white/55"
+                className="font-body text-[11px] font-semibold uppercase tracking-[0.14em] text-white/55"
               >
                 {s}
               </span>

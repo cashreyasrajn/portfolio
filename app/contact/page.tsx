@@ -6,9 +6,9 @@ import { firm } from "@/app/components/content/firm";
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us ,  Shreyas Raj & Co.",
+  title: "Contact Us",
   description:
-    "Get in touch for tax, GST, audit, international tax, or compliance advisory. Call, WhatsApp, email, or fill the form ,  replies within one business day.",
+    "Get in touch for tax, GST, audit, international tax, or compliance advisory. Call, WhatsApp, email, or fill the form, replies within one business day.",
 };
 
 const channels = [
@@ -58,7 +58,7 @@ export default function ContactPage() {
               is <em className="font-light italic">the way you prefer</em>
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Call, WhatsApp, email, or the form below ,  whichever is easiest
+              Call, WhatsApp, email, or the form below, whichever is easiest
               for you. Plain answers on the first response.
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function ContactPage() {
                       Response time
                     </p>
                     <p className="font-body text-[14px] leading-relaxed text-navy/70">
-                      Within one business day ,  usually sooner on WhatsApp
+                      Within one business day, usually sooner on WhatsApp
                     </p>
                   </div>
                 </div>

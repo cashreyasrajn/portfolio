@@ -6,7 +6,7 @@ import { CredentialsSidebar } from "@/app/components/sections/credentials-sideba
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
-  title: "Services ,  Income Tax, GST, Audit & Compliance",
+  title: "Services, Income Tax, GST, Audit & Compliance",
   description:
     "Six practice areas: income tax, GST, statutory and tax audit, ROC corporate compliance, business setup, and NRI / FEMA advisory. Servicing individuals and businesses across Bengaluru.",
 };
@@ -34,7 +34,7 @@ export default function ServicesPage() {
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
               Six focused practice areas, one point of contact. Whether you're
-              an individual, a startup, or a growing company ,  I've got it
+              an individual, a startup, or a growing company, I've got it
               covered.
             </p>
           </div>
@@ -48,8 +48,8 @@ export default function ServicesPage() {
               All Services
             </h2>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {services.map((service) => (
-                <ServiceCard key={service.title} service={service} />
+              {services.map((service, i) => (
+                <ServiceCard key={service.title} service={service} index={i} />
               ))}
             </div>
 

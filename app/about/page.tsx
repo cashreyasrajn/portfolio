@@ -6,9 +6,9 @@ import { CtaQuote } from "@/app/components/sections/cta-quote";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About ,  Shreyas Raj & Co., Chartered Accountants",
+  title: "About | Shreyas Raj & Co., Chartered Accountants",
   description:
-    "Shreyas Raj & Co. ,  Chartered Accountants based in Bengaluru. Over five years of experience in direct taxation, international tax, FEMA, US tax advisory, and corporate compliance.",
+    "Shreyas Raj & Co., Chartered Accountants based in Bengaluru. Over five years of experience in direct taxation, international tax, FEMA, US tax advisory, and corporate compliance.",
 };
 
 export default function AboutPage() {
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <div className="mb-14 grid grid-cols-2 gap-px border border-navy/8 bg-navy/8 md:grid-cols-4">
               {[
                 { icon: "calendar_month", label: "In practice since", value: firm.founded.toString() },
-                { icon: "badge", label: "Qualification", value: firm.founder.qualifications[0].split(" ,  ")[0] },
+                { icon: "tactic", label: "Practice areas", value: "6" },
                 { icon: "location_on", label: "Based in", value: firm.address.city },
                 { icon: "language", label: "Focus", value: "Tax & Compliance" },
               ].map((item) => (

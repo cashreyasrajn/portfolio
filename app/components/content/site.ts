@@ -3,7 +3,7 @@ import { firm } from "@/app/components/content/firm";
 export const siteConfig = {
   name: "Shreyas Raj & Co.",
   description:
-    "Shreyas Raj & Co. ,  Chartered Accountants based in Bengaluru, India. Specialising in direct taxation, international tax, FEMA, US tax advisory, cross-border transactions, and corporate compliance for businesses and individuals.",
+    "Shreyas Raj & Co. is a Bengaluru-based Chartered Accountancy firm specialising in Direct Tax, GST, Audit, Corporate Compliance, and Business Advisory for businesses and individuals.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://shreyasraj.vercel.app",
   ogImage: "/og-image.png",
   links: {

@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     title: "New Tax Regime vs Old: Which One Saves You More in 2026?",
     cover: "/blog/cover-tax-regime.jpg",
     excerpt:
-      "A side-by-side comparison for salaried professionals and business owners ,  with real numbers, not opinion.",
+      "A side-by-side comparison for salaried professionals and business owners, with real numbers, not opinion.",
     content: [
       "The new tax regime has lower slab rates but removes most deductions. The old regime keeps the higher rates but allows you to claim 80C, 80D, HRA, LTA, and home loan interest.",
       "For a salaried person claiming full 80C (Rs 1.5 lakh), standard deduction (Rs 50,000), and home loan interest or HRA, the old regime is usually better up to an income of around Rs 15-18 lakh.",
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
       "Common mistakes we see: mismatch between GSTR-1 and GSTR-3B, missing HSN summary, unclaimed input credit that got time-barred, and incorrect tax liability on advances.",
       "If you file late, you pay late fees (Rs 100 per day under each Act, capped), plus interest on any tax short-paid. More importantly, a delayed or mismatched annual return increases your chances of a department notice.",
       "We reconcile GSTR-2B/2A with the purchase register, validate HSN codes, and file only after the client approves a preview. That preview step alone catches 90% of errors.",
-      "If your books are not yet finalised for FY 2026-26, start now. The reconciliation begins with clean books ,  not at the GST portal.",
+      "If your books are not yet finalised for FY 2026-26, start now. The reconciliation begins with clean books, not at the GST portal.",
     ],
     category: "GST",
     date: "2026-06-20",
@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       "Private Limited Companies are better if you plan to raise venture capital, issue ESOPs, or eventually list. Investors prefer shares over LLP partnership units.",
       "LLPs are cheaper to run. There is no mandatory audit below Rs 40 lakh turnover, and compliance is lighter. They are ideal for bootstrapped service businesses and professional partnerships.",
-      "Tax rates differ too. A domestic company can opt for a 22% flat rate (25.17% with cess) under Section 115BAA, but must forgo exemptions. LLPs are taxed at normal slab rates ,  30% above Rs 1 crore profit.",
+      "Tax rates differ too. A domestic company can opt for a 22% flat rate (25.17% with cess) under Section 115BAA, but must forgo exemptions. LLPs are taxed at normal slab rates, 30% above Rs 1 crore profit.",
       "For a solo founder with no immediate fundraising plans, an OPC (One Person Company) is also worth considering, though it converts to a Pvt Ltd once paid-up capital crosses Rs 50 lakh.",
       "We help founders model the first three years under each structure before they incorporate. The right choice at the start saves lakhs later.",
     ],

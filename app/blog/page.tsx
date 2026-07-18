@@ -5,7 +5,7 @@ import { blogPosts, blogCategories } from "@/app/components/content/blog";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
-  title: "Blog ,  Practical Tax & Compliance Insights",
+  title: "Blog | Practical Tax & Compliance Insights",
   description:
     "Plain-English articles on income tax, GST, audit, corporate compliance, business setup, and NRI taxation from CA Shreyas Raj.",
 };
@@ -16,7 +16,7 @@ export default function BlogPage() {
       <section className="grain relative overflow-hidden bg-navy py-24 md:py-32">
         <Image
           src="/images/work-desk.jpg"
-          alt="An accountant's workspace ,  laptop and calculator on a desk"
+          alt="An accountant's workspace, laptop and calculator on a desk"
           fill
           priority
           sizes="100vw"

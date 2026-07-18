@@ -2,27 +2,29 @@ export const firm = {
   name: "Shreyas Raj",
   firmName: "Shreyas Raj & Co.",
   tagline: "Chartered Accountants",
-  founded: 2021,
+  founded: 2025,
   founder: {
     name: "CA Shreyas Raj N.",
     title: "ACA",
     designation: "Founder",
     portrait: "/shreyas-raj.jpg",
-    bio: "Shreyas Raj N. is a Chartered Accountant with over five years of experience in direct taxation, cross-border transactions, regulatory compliance, and advisory. His expertise spans FEMA regulations, US taxation, and international tax matters, with a strong focus on foreign asset reporting, ESOPs, RSUs, and tax planning for individuals.",
+    bio: "Shreyas Raj N is a Chartered Accountant dedicated to providing practical and result-oriented solutions in the areas of Direct Tax, GST, Accounting, Financial Reporting, Corporate Compliance, and Business Advisory. With experience in advising businesses across diverse industries, he assists clients in navigating complex regulatory and financial matters with clarity and confidence. His approach is founded on technical excellence, attention to detail, and a strong commitment to understanding each client's business objectives. Shreyas believes in building long-term professional relationships by delivering timely, reliable, and value-driven advice while upholding the highest standards of integrity, professionalism, and ethical practice.",
     bioExtended: [
-      "The practice also advises clients on tax litigation and complex compliance matters, delivering practical and commercially sound solutions in an evolving global tax landscape.",
-      "We believe good advice is clear and actionable. Whether it's a routine return or a multi-jurisdictional transaction, every engagement receives the same rigour ,  filings completed before the deadline, and direct access to the professional handling your work.",
+      "Our practice is committed to technical rigour, clear communication, and being available when you need us. Whether it's a routine filing or a complex advisory engagement, every matter receives the same attention to detail.",
+      "We believe good advice is simple and actionable. You deserve direct access to the professional handling your work, filings completed before the deadline, and plain-language explanations, not jargon.",
     ],
-    qualifications: ["ACA ,  Associate, ICAI", "B.Com ,  Mangalore University"],
+    qualifications: ["ACA, Associate, ICAI", "B.Com, Mangalore University"],
     specializations: [
       "Direct Taxation",
+      "Indirect Tax (GST)",
       "International Tax & FEMA",
       "US Tax Advisory",
+      "Audit & Assurance",
       "Corporate Compliance",
     ],
   },
   firmProfile:
-    "Shreyas Raj & Co. is a Bengaluru-based chartered accountancy practice that helps businesses and individuals navigate tax, compliance, and regulatory matters, with a commercial approach grounded in over five years of hands-on experience.",
+    "Shreyas Raj & Co. is a Chartered Accountancy firm committed to delivering practical, reliable, and value-driven professional services to businesses and individuals. We specialize in Direct Tax, GST, Accounting and Assurance, Corporate Compliance, Financial Reporting, and Business Advisory, offering solutions that are tailored to the unique needs of each client. Our approach combines technical expertise with a deep understanding of regulatory requirements to help clients achieve compliance, improve financial efficiency, and make informed business decisions. At Shreyas Raj & Co., we believe in building long-term relationships founded on integrity, professionalism, responsiveness, and a commitment to delivering exceptional service.",
   address: {
     line1: "Bengaluru",
     line2: "",
@@ -42,8 +44,7 @@ export const firm = {
 };
 
 export const firmStats = [
-  { value: "2021", label: "Practice Since" },
-  { value: "ACA", label: "ICAI Qualification" },
+  { value: "2025", label: "Practice Since" },
   { value: "Bengaluru", label: "Based In" },
   { value: "6", label: "Practice Areas" },
 ];
@@ -80,7 +81,7 @@ export const process = [
     step: "01",
     icon: "chat",
     title: "Initial Discussion",
-    description: "We discuss your requirements ,  no commitment, no jargon, fifteen minutes.",
+    description: "We discuss your requirements, no commitment, no jargon, fifteen minutes.",
   },
   {
     step: "02",

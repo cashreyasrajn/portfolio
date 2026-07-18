@@ -1,7 +1,6 @@
 import { services } from "@/app/components/content/services";
 import { Hero } from "@/app/components/sections/hero";
 import { ServiceCard } from "@/app/components/sections/service-card";
-import { StatsBar } from "@/app/components/sections/stats-bar";
 import { ProcessSection } from "@/app/components/sections/process";
 import { ValuesSection } from "@/app/components/sections/values";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
@@ -32,14 +31,13 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <ServiceCard key={service.title} service={service} />
+            {services.map((service, i) => (
+              <ServiceCard key={service.title} service={service} index={i} />
             ))}
           </div>
         </div>
       </section>
 
-      <StatsBar />
       <ProcessSection />
       <ValuesSection />
       <CtaQuote />

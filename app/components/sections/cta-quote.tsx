@@ -35,16 +35,14 @@ export function CtaQuote() {
       <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
         <div className="mb-14 max-w-2xl">
           <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/50">
-            Reach out ,  no obligation
+            Get in touch
           </p>
           <h2 className="mb-4 font-headline text-[34px] font-medium leading-[1.08] tracking-[-0.02em] md:text-[46px]">
-            Talk to the CA who will
-            <br />
-            <em className="font-light italic">actually handle your work</em>
+            Let's get your <em className="font-light italic">filings in order</em>
           </h2>
           <p className="max-w-lg font-body text-[15px] leading-relaxed text-white/65">
-            Pick whichever is easiest for you ,  a call, a message, or an email.
-            You get plain answers on the first response, not a sales pitch.
+            Call, WhatsApp, or email. You speak directly to the CA handling
+            your work, and get a clear answer on the first response.
           </p>
         </div>
 
@@ -83,7 +81,7 @@ export function CtaQuote() {
           >
             Send us your details
           </Link>{" "}
-          ,  we respond within one business day.
+          and we respond within one business day.
         </p>
       </div>
     </section>

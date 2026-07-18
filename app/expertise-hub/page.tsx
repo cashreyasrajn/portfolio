@@ -4,9 +4,9 @@ import { articles } from "@/app/components/content/articles";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
-  title: "Expertise Hub ,  Insights & Updates",
+  title: "Expertise Hub, Insights & Updates",
   description:
-    "Plain-English briefings on income tax, GST, audit, MSME registration and more ,  written for clients, not accountants.",
+    "Plain-English briefings on income tax, GST, audit, MSME registration and more, written for clients, not accountants.",
 };
 
 export default function ExpertiseHubPage() {
@@ -28,10 +28,10 @@ export default function ExpertiseHubPage() {
               Knowledge centre
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-medium leading-[1.08] tracking-[-0.02em] md:text-[52px]">
-              Expertise Hub ,  written for you, not for accountants
+              Expertise Hub, written for you, not for accountants
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Plain briefings on the things we get asked about most ,  deadlines,
+              Plain briefings on the things we get asked about most, deadlines,
               form changes, common mistakes. Updated through the year.
             </p>
           </div>

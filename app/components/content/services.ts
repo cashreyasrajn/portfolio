@@ -15,7 +15,7 @@ export const services: Service[] = [
     tagline: "Direct Tax & ITR",
     slug: "income-tax",
     description:
-      "End-to-end income tax services for individuals, firms and companies ,  from routine return filing to complex assessment representation.",
+      "End-to-end income tax services for individuals, firms and companies, from routine return filing to complex assessment representation.",
     points: [
       "ITR filing (all forms)",
       "Tax planning & advisory",
@@ -30,7 +30,7 @@ export const services: Service[] = [
     tagline: "Registration to Refunds",
     slug: "gst",
     description:
-      "Complete GST compliance made simple ,  accurate filings, timely reconciliations, and dispute resolution handled by specialists.",
+      "Complete GST compliance made simple, accurate filings, timely reconciliations, and dispute resolution handled by specialists.",
     points: [
       "GST registration",
       "Monthly & annual returns",
@@ -45,7 +45,7 @@ export const services: Service[] = [
     tagline: "Statutory & Tax Audit",
     slug: "audit-assurance",
     description:
-      "Independent audits that give your stakeholders confidence ,  conducted with the rigour expected by ICAI and the Companies Act, 2013.",
+      "Independent audits that give your stakeholders confidence, conducted with the rigour expected by ICAI and the Companies Act, 2013.",
     points: [
       "Statutory audit (u/s 139)",
       "Tax audit (u/s 44AB)",
@@ -60,7 +60,7 @@ export const services: Service[] = [
     tagline: "ROC & MCA Filings",
     slug: "corporate-compliance",
     description:
-      "Keep your company fully compliant with the MCA ,  every filing, every deadline, handled without the last-minute rush.",
+      "Keep your company fully compliant with the MCA, every filing, every deadline, handled without the last-minute rush.",
     points: [
       "Annual ROC filings (AOC-4, MGT-7)",
       "DIN, DSC & Director changes",
@@ -75,7 +75,7 @@ export const services: Service[] = [
     tagline: "Start to Scale",
     slug: "business-setup",
     description:
-      "From choosing the right structure to raising your first round ,  practical advice for setting up your business.",
+      "From choosing the right structure to raising your first round, practical advice for setting up your business.",
     points: [
       "Pvt Ltd, LLP & OPC registration",
       "Udyam / MSME registration",
@@ -90,7 +90,7 @@ export const services: Service[] = [
     tagline: "Cross-Border Tax",
     slug: "nri-fema",
     description:
-      "Specialised support for Non-Resident Indians and foreign entities ,  DTAA benefits, repatriation, and FEMA compliance.",
+      "Specialised support for Non-Resident Indians and foreign entities, DTAA benefits, repatriation, and FEMA compliance.",
     points: [
       "NRI income tax returns",
       "DTAA & exemption claims",

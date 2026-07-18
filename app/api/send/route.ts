@@ -139,7 +139,7 @@ export async function POST(request: Request) {
     const { data, error } = await resend.emails.send({
       from: `${siteConfig.name} <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
       to: [process.env.CONTACT_EMAIL || firm.contact.gmail],
-      subject: `New Enquiry from ${name} ,  ${siteConfig.name}`,
+      subject: `New Enquiry from ${name}, ${siteConfig.name}`,
       html,
       replyTo: email,
     });
