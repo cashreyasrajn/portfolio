@@ -17,15 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
-        <Image
-          src="/images/bengaluru-high-court.jpg"
-          alt="The High Court of Karnataka, Attara Kacheri"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-25"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
@@ -97,12 +89,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="space-y-5 border-l border-navy/20 pl-6 font-body text-[15px] leading-relaxed text-navy/60">
-              {firm.founder.bioExtended.map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
-            </div>
-
             <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
               <div className="border border-navy/8 bg-white p-7">
                 <p className="mb-5 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-gold-dark">
@@ -141,7 +127,7 @@ export default function AboutPage() {
               <div className="border border-navy/8 bg-white p-7">
                 <p className="mb-5 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-gold-dark">
                   <span className="material-symbols-outlined text-[16px]">contact_support</span>
-                  Get in touch
+                      Contact details
                 </p>
                 <ul className="space-y-3 font-body text-[13px] text-navy/60">
                   <li>

@@ -76,7 +76,7 @@ export const serviceDetails: ServiceDetail[] = [
     slug: "income-tax",
     title: "Income Tax Services",
     description:
-      "Everything from a single salaried ITR to a full assessment appeal. We file accurately, claim every valid deduction, and represent you before the department when needed.",
+      "This area covers salaried ITRs, assessment proceedings, deductions, and correspondence with the Income Tax Department.",
     bulletPoints: [
       "ITR-1 through ITR-7 filing",
       "Tax planning for individuals & businesses",

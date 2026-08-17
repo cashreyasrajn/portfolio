@@ -6,7 +6,7 @@ export function ValuesSection() {
       <div className="mx-auto max-w-[1280px] px-6 md:px-12">
         <div className="mb-14 text-center">
           <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-gold-dark">
-            How we'll work together
+            Practice information
           </p>
           <h2 className="mb-3 font-headline text-[32px] font-medium leading-[1.1] tracking-[-0.02em] text-navy md:text-[40px]">
             Principles that <em className="font-light italic">guide the practice</em>

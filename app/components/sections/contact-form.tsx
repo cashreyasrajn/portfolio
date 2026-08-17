@@ -103,11 +103,11 @@ export function ContactForm() {
           Thank You
         </h3>
         <p className="mb-8 font-body text-[15px] text-navy/60">
-          Your message has been received. We'll review your requirements and
-          reach out within one business day.
+          Your message has been received. It will be reviewed during office
+          hours.
         </p>
         <Button variant="primary" onClick={() => setSubmitted(false)}>
-          Submit Another Enquiry
+          Submit another form
         </Button>
       </div>
     );
@@ -229,7 +229,7 @@ export function ContactForm() {
               Sending...
             </>
           ) : (
-            "Submit Enquiry"
+            "Submit form"
           )}
         </Button>
       </form>

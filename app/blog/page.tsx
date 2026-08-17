@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { blogPosts, blogCategories } from "@/app/components/content/blog";
 import { siteConfig } from "@/app/components/content/site";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
-  title: "Blog | Practical Tax & Compliance Insights",
+  title: "Articles | Practical Tax & Compliance Insights",
   description:
     "Plain-English articles on income tax, GST, audit, corporate compliance, business setup, and NRI taxation from CA Shreyas Raj.",
   alternates: { canonical: `${siteConfig.url}/blog` },
@@ -17,26 +16,18 @@ export default function BlogPage() {
   return (
     <>
       <section className="grain relative overflow-hidden bg-navy py-24 md:py-32">
-        <Image
-          src="/images/work-desk.jpg"
-          alt="Accountant's workspace"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/90 to-navy" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
               Knowledge base
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-medium leading-[1.08] tracking-[-0.02em] text-white md:text-[56px]">
-              Notes on tax {'\u0026'} compliance
+              Articles on tax {'\u0026'} compliance
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
               A growing collection of plain-English articles on the things I get
-              asked about most. Think of it as a public notebook.
+              asked about most. Think of it as a public library.
             </p>
           </div>
         </div>
@@ -70,13 +61,14 @@ export default function BlogPage() {
                   Can't find what you need?
                 </p>
                 <p className="mb-5 font-body text-[13px] leading-relaxed text-white/60">
-                  Ask me directly. I usually respond within one business day.
+                  Correspondence can be submitted through the published contact
+                  details.
                 </p>
                 <Link
                   href="/contact"
                   className="inline-flex w-full items-center justify-center gap-2 bg-white px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-white/85"
                 >
-                  Ask a question
+                  Contact information
                 </Link>
               </div>
             </aside>
@@ -89,13 +81,9 @@ export default function BlogPage() {
                    className="group flex flex-col overflow-hidden rounded-sm border border-navy/8 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-gold/50 hover:shadow-md md:flex-row"
                 >
                   <div className="relative w-full flex-shrink-0 overflow-hidden bg-navy md:w-[240px]">
-                    <Image
-                      src={post.cover}
-                      alt={post.title}
-                      width={320}
-                      height={200}
-                      className="h-full w-full object-cover"
-                    />
+                    <div className="flex h-32 items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgba(184,146,75,0.22),transparent_32%),linear-gradient(135deg,#0b1e3d,#17365f)] px-6 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-white/60 md:h-full">
+                      {post.category}
+                    </div>
                   </div>
                   <div className="flex flex-col p-7">
                     <div className="mb-4 flex flex-wrap items-center gap-3">
@@ -123,7 +111,7 @@ export default function BlogPage() {
                       {post.excerpt}
                     </p>
                     <div className="mt-auto flex items-center gap-2 font-body text-[13px] font-semibold text-navy/70 transition-all group-hover:gap-3 group-hover:text-gold-dark">
-                      Read note
+                      Read article
                         <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </div>
                   </div>

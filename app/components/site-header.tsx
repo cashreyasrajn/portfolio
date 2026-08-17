@@ -46,7 +46,7 @@ export function SiteHeader() {
           <a
             href={firm.contact.phoneHref}
             className="flex items-center gap-2 font-mono text-[12.5px] tracking-[0.04em] text-navy/70 transition-colors hover:text-navy"
-            title="Call us directly"
+            title="Phone"
           >
             <Phone className="h-3.5 w-3.5" />
             {firm.contact.phone}
@@ -72,7 +72,7 @@ export function SiteHeader() {
             href="/contact"
             className="bg-navy px-6 py-2.5 font-body text-[13px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
           >
-            Talk to us
+            Contact details
           </Link>
         </div>
 
@@ -106,7 +106,7 @@ export function SiteHeader() {
             </nav>
             <div className="mt-auto border-t border-navy/8 pt-6">
               <div className="mb-5 flex items-center justify-center gap-4">
-                <a href={firm.contact.phoneHref} className="flex h-[42px] w-[42px] items-center justify-center border border-navy/10 text-navy/55 transition-all hover:border-navy hover:text-navy" title="Call">
+                <a href={firm.contact.phoneHref} className="flex h-[42px] w-[42px] items-center justify-center border border-navy/10 text-navy/55 transition-all hover:border-navy hover:text-navy" title="Phone">
                   <Phone className="h-[17px] w-[17px]" />
                 </a>
                 <a href={firm.contact.whatsapp} target="_blank" rel="noopener noreferrer" className="flex h-[42px] w-[42px] items-center justify-center border border-navy/10 text-navy/55 transition-all hover:border-navy hover:text-navy" title="WhatsApp">
@@ -120,7 +120,7 @@ export function SiteHeader() {
                 href="/contact"
                 className="flex w-full items-center justify-center bg-navy px-6 py-3 font-body text-[14px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
               >
-                Talk to us
+                Contact details
               </Link>
             </div>
           </SheetContent>

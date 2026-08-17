@@ -3,7 +3,6 @@ import { Fraunces, Archivo, IBM_Plex_Mono } from "next/font/google";
 import { SiteHeader } from "@/app/components/site-header";
 import { SiteFooter } from "@/app/components/site-footer";
 import { DisclaimerPopup } from "@/app/components/sections/disclaimer-popup";
-import { QuickContact } from "@/app/components/sections/quick-contact";
 import { siteConfig } from "@/app/components/content/site";
 import "./globals.css";
 
@@ -117,7 +116,6 @@ const jsonLd = {
   email: siteConfig.schema.email,
   image: siteConfig.schema.image,
   logo: siteConfig.schema.logo,
-  priceRange: siteConfig.schema.priceRange,
   foundingDate: siteConfig.schema.foundingDate,
   memberOf: { "@type": "Organization", name: siteConfig.schema.memberOf },
   address: {
@@ -159,7 +157,6 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <SiteFooter />
         <DisclaimerPopup />
-        <QuickContact />
       </body>
     </html>
   );

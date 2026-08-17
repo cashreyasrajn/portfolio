@@ -42,7 +42,7 @@ export function ServiceCard({ service, index = 0 }: ServiceCardProps) {
         href={service.href}
         className="inline-flex items-center gap-1.5 font-body text-[14px] font-semibold text-navy underline decoration-navy/25 underline-offset-4 transition-all group-hover:gap-2.5 group-hover:decoration-navy"
       >
-        Learn more
+        Details
         <ArrowRight className="h-4 w-4" aria-hidden="true" />
       </Link>
     </div>

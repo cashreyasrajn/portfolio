@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { services } from "@/app/components/content/services";
 import { siteConfig } from "@/app/components/content/site";
@@ -75,7 +74,7 @@ const extendedContent: Record<
       },
       {
         q: "What if I received a notice from the IT department?",
-        a: "Bring us the notice immediately, do not reply yourself. We'll review the grounds, prepare the reply with supporting documents, and represent you before the assessing officer.",
+        a: "The notice, grounds, supporting documents, and any response are reviewed as part of the applicable assessment or appeal process.",
       },
     ],
   },
@@ -133,7 +132,7 @@ const extendedContent: Record<
     faqs: [
       {
         q: "How long does a statutory audit take?",
-        a: "For a small private limited company with clean books, typically 2-3 weeks from document submission to final report. We'll give you a timeline after the first meeting.",
+        a: "For a small private limited company, the timeline depends on the completeness of records and documents submitted for review.",
       },
       {
         q: "Do you audit the previous year's books?",
@@ -195,11 +194,11 @@ const extendedContent: Record<
     faqs: [
       {
         q: "Pvt Ltd, LLP, or OPC, which should I choose?",
-        a: "It depends on your goals. Pvt Ltd is suitable if you plan to raise funding, issue ESOPs, or scale fast. LLP has lower compliance costs and no mandatory audit below Rs 40 lakh turnover. OPC is for solo founders who want limited liability. We'll walk you through a comparison before you decide.",
+        a: "The choice depends on the proposed activities, ownership, funding plans, liability, and applicable compliance requirements. Pvt Ltd, LLP, and OPC structures have different legal and regulatory implications.",
       },
       {
         q: "How long does company incorporation take?",
-        a: "With all documents ready, SPICe+ incorporation (Pvt Ltd) takes 5-10 working days. Name approval is the slowest step. RUN (Reserve Unique Name) takes 1-2 days. We handle the process end-to-end.",
+        a: "With all documents ready, SPICe+ incorporation (Pvt Ltd) commonly takes 5-10 working days. Name approval and document verification affect the timeline. RUN refers to the Reserve Unique Name process.",
       },
       {
         q: "Can NRIs be directors or shareholders?",
@@ -209,7 +208,7 @@ const extendedContent: Record<
   },
   "nri-fema": {
     intro:
-      "Cross-border tax is where most generalist CAs go wrong. DTAA provisions, NRI status determination, FEMA rules on property and bank accounts, these need specialist handling. We've been doing this for NRIs across the US, UK, UAE, and Singapore.",
+      "Cross-border tax involves DTAA provisions, NRI status determination, and FEMA rules on property and bank accounts. This practice area covers matters relating to NRIs and foreign entities in India.",
     whatWeDo: [
       "NRI income tax returns, ITR-2 filing for NRIs with Indian income (rent, capital gains, interest, dividends)",
       "DTAA relief, claiming treaty benefits to avoid double taxation on the same income in India and your country of residence",
@@ -236,7 +235,7 @@ const extendedContent: Record<
       },
       {
         q: "Can I sell my Indian property and take the money abroad?",
-        a: "Yes, subject to limits (USD 1 million per financial year per NRI). You'll need to pay applicable capital gains tax (20% with indexation for long-term), file the return, obtain Form 15CA/15CB from us, and then remit through your bank. We handle the entire process.",
+        a: "Yes, subject to limits including USD 1 million per financial year per NRI. Applicable capital gains tax, filing requirements, Form 15CA/15CB, and bank procedures apply before remittance.",
       },
     ],
   },
@@ -248,16 +247,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
   const detail = extendedContent[params.slug];
   if (!detail) notFound();
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: detail.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.q,
-      acceptedAnswer: { "@type": "Answer", text: faq.a },
-    })),
-  };
 
   const serviceJsonLd = {
     "@context": "https://schema.org",
@@ -279,22 +268,10 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
       />
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
-        <Image
-          src="/images/work-desk.jpg"
-          alt="Accountant's desk with laptop and calculator"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-18"
-        />
-        <div className="absolute inset-0 bg-gradient-to-tr from-navy via-navy/90 to-navy/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <Link
             href="/services"
@@ -357,34 +334,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               ))}
             </div>
 
-            <h2 className="mb-8 mt-20 font-headline text-[28px] font-semibold tracking-tight text-navy">
-              Questions we hear often
-            </h2>
-            <div className="space-y-5">
-              {detail.faqs.map((faq, i) => (
-                <div
-                  key={i}
-                  className="rounded-sm border border-navy/8 bg-white p-7"
-                >
-                  <h3 className="mb-3 font-headline text-[20px] font-semibold tracking-tight text-navy">
-                    {faq.q}
-                  </h3>
-                  <p className="font-body text-[14px] leading-relaxed text-navy/60">
-                    {faq.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-navy px-7 py-3.5 font-body text-[15px] font-semibold text-white transition-all hover:bg-navy-light active:scale-[0.97]"
-                >
-                  <span className="material-symbols-outlined text-[18px]">forum</span>
-                  Talk to me about {service.title.toLowerCase()}
-                </Link>
-            </div>
           </div>
 
           <div className="lg:col-span-1">
@@ -410,18 +359,18 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
               <div className="rounded-sm bg-navy p-7 text-white">
                 <h3 className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.15em] text-gold/90">
-                  Ready to get started?
+                  Engagement information
                 </h3>
                 <p className="mb-6 font-body text-[14px] leading-relaxed text-white/70">
-                  A short introductory call. Tell us what you need and we'll
-                  outline the scope and next steps.
+                  Scope, documentation, and engagement terms are discussed before
+                  any professional work begins.
                 </p>
                 <Link
                   href="/contact"
                   className="inline-flex w-full items-center justify-center gap-2 bg-white px-6 py-3 font-body text-[14px] font-semibold text-navy transition-all hover:bg-white/85 active:scale-[0.97]"
                 >
                   <span className="material-symbols-outlined text-[18px]">call_made</span>
-                  Contact us
+                  Contact details
                 </Link>
               </div>
             </div>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/app/components/content/blog";
 import { siteConfig } from "@/app/components/content/site";
@@ -30,13 +29,13 @@ export function generateMetadata({
       publishedTime: post.date,
       authors: [post.author],
       section: post.category,
-      images: [{ url: post.cover, width: 800, height: 400, alt: post.title }],
+      images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [post.cover],
+      images: [siteConfig.ogImage],
     },
   };
 }
@@ -54,7 +53,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: `${siteConfig.url}${post.cover}`,
+    image: siteConfig.schema.image,
     datePublished: post.date,
     dateModified: post.date,
     author: { "@type": "Person", name: post.author },
@@ -73,22 +72,14 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <section className="grain relative overflow-hidden bg-navy py-20 md:py-28">
-        <Image
-          src="/images/work-contract.jpg"
-          alt="Legal contract and pen on a desk"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/90 to-navy" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <Link
             href="/blog"
             className="mb-8 inline-flex items-center gap-2 font-body text-[13px] font-medium text-white/60 transition-colors hover:text-gold"
           >
             <span className="material-symbols-outlined text-[16px]">arrow_back</span>
-            All Notes
+            All Articles
           </Link>
           <div className="mx-auto max-w-3xl">
             <div className="mb-5 flex flex-wrap items-center gap-3">
@@ -168,7 +159,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
               <div className="rounded-sm border border-navy/8 bg-white p-6 shadow-sm">
                 <p className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.12em] text-navy/55">
-                  In this note
+                    In this article
                 </p>
                 <ul className="space-y-2">
                   {post.content.map((_, i) => (
@@ -188,7 +179,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               {relatedPosts.length > 0 && (
                 <div className="rounded-sm border border-navy/8 bg-white p-6 shadow-sm">
                   <p className="mb-4 font-body text-[11px] font-bold uppercase tracking-[0.12em] text-navy/55">
-                    Related notes
+                    Related articles
                   </p>
                   <div className="space-y-3">
                     {relatedPosts.map((related) => (
@@ -220,7 +211,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   href="/contact"
                   className="inline-flex w-full items-center justify-center gap-2 bg-white px-5 py-2.5 font-body text-[13px] font-semibold text-navy transition-all hover:bg-white/85"
                 >
-                  Get in touch
+                  Contact information
                 </Link>
               </div>
             </aside>

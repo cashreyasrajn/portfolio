@@ -38,7 +38,6 @@ export const siteConfig = {
     memberOf: "Institute of Chartered Accountants of India (ICAI)",
     logo: `${siteUrl}/icon.png`,
     image: `${siteUrl}/opengraph-image`,
-    priceRange: "₹₹",
     areaServed: [
       { "@type": "City", name: "Bengaluru" },
       { "@type": "State", name: "Karnataka" },

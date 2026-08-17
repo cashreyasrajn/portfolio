@@ -9,15 +9,3 @@ export const credentials: Credential[] = [
     subtitle: "Institute of Chartered Accountants of India",
   },
 ];
-
-export const whyChooseUs = {
-  headline: "Our approach",
-  description:
-    "We focus on accurate filings, clear communication, and being available when you need us.",
-  pillars: [
-    "Timely filings",
-    "Clear advice",
-    "Confidential handling",
-    "Direct access",
-  ],
-};

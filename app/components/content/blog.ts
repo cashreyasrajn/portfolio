@@ -7,22 +7,20 @@ export interface BlogPost {
   date: string;
   readTime: string;
   author: string;
-  cover: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "new-tax-regime-vs-old",
     title: "New Tax Regime vs Old: Which One Saves You More in 2026?",
-    cover: "/blog/cover-tax-regime.jpg",
     excerpt:
-      "A side-by-side comparison for salaried professionals and business owners, with real numbers, not opinion.",
+      "A comparison for salaried professionals and business owners, including common deductions and applicable provisions.",
     content: [
       "The new tax regime has lower slab rates but removes most deductions. The old regime keeps the higher rates but allows you to claim 80C, 80D, HRA, LTA, and home loan interest.",
       "For a salaried person claiming full 80C (Rs 1.5 lakh), standard deduction (Rs 50,000), and home loan interest or HRA, the old regime is usually better up to an income of around Rs 15-18 lakh.",
       "For freelancers, consultants, and those with no major deductions, the new regime often wins because of simplicity and lower headline rates.",
       "The default regime is now the new one. If you want the old regime, you must opt in while filing. We review every client's deductions first and then recommend the regime that actually leaves more money in their pocket.",
-      "Need help choosing? Send us your Form 16 and investment proofs and we'll run both calculations for you.",
+      "The comparison should be made using the taxpayer's income, deductions, exemptions, and applicable assessment-year provisions.",
     ],
     category: "Income Tax",
     date: "2026-07-02",
@@ -32,7 +30,6 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "gst-annual-return-deadline",
     title: "GSTR-9 & 9C Due Date: What Happens If You File Late",
-    cover: "/blog/cover-gst-deadline.jpg",
     excerpt:
       "The annual GST return and reconciliation statement are due soon. Here's what to check before you submit.",
     content: [
@@ -50,9 +47,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "section-44ad-presumptive",
     title: "Section 44AD: Presumptive Taxation for Small Businesses",
-    cover: "/blog/cover-44ad.jpg",
     excerpt:
-      "If your turnover is under Rs 3 crore and most receipts are digital, 44AD might be the simplest way to file.",
+      "Section 44AD may apply where turnover and digital receipt conditions are met. This article outlines the relevant provisions.",
     content: [
       "Section 44AD lets eligible resident individuals, HUFs, and partnerships pay tax on a presumptive income of 8% (6% for digital receipts) instead of maintaining full books of account.",
       "Eligibility: turnover up to Rs 3 crore in a financial year (increased from Rs 2 crore if 95% receipts are through banking channels).",
@@ -68,12 +64,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "private-limited-vs-llp",
     title: "Pvt Ltd vs LLP: Which Structure Should You Pick in 2026?",
-    cover: "/blog/cover-pvtltd-llp.jpg",
     excerpt:
-      "A practical comparison for founders: tax, compliance cost, fundraising, and liability.",
+      "A comparison for founders covering tax, compliance, fundraising, and liability considerations.",
     content: [
       "Private Limited Companies are better if you plan to raise venture capital, issue ESOPs, or eventually list. Investors prefer shares over LLP partnership units.",
-      "LLPs are cheaper to run. There is no mandatory audit below Rs 40 lakh turnover, and compliance is lighter. They are ideal for bootstrapped service businesses and professional partnerships.",
+      "LLPs have different audit and compliance requirements from private limited companies. The applicable requirements depend on turnover, contribution, and activities.",
       "Tax rates differ too. A domestic company can opt for a 22% flat rate (25.17% with cess) under Section 115BAA, but must forgo exemptions. LLPs are taxed at normal slab rates, 30% above Rs 1 crore profit.",
       "For a solo founder with no immediate fundraising plans, an OPC (One Person Company) is also worth considering, though it converts to a Pvt Ltd once paid-up capital crosses Rs 50 lakh.",
       "We help founders model the first three years under each structure before they incorporate. The right choice at the start saves lakhs later.",
@@ -86,7 +81,6 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "nri-sell-property-india",
     title: "NRI Guide: Selling Property in India and Repatriating Funds",
-    cover: "/blog/cover-nri-property.jpg",
     excerpt:
       "The exact steps, forms, and tax implications when an NRI sells house property in India.",
     content: [
@@ -104,7 +98,6 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "roc-compliance-checklist",
     title: "Annual ROC Compliance Checklist for Private Limited Companies",
-    cover: "/blog/cover-roc-checklist.jpg",
     excerpt:
       "The six filings and board processes every Pvt Ltd must complete each year.",
     content: [

@@ -78,7 +78,7 @@ export default function PrivacyPage() {
               6. Contact
             </h2>
             <p>
-              If you have questions about this policy, please write to cashreyasrajn@gmail.com.
+              If you have questions about this policy, please write to cashreyasraj@outlook.com.
             </p>
           </div>
         </div>

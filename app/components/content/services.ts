@@ -30,7 +30,7 @@ export const services: Service[] = [
     tagline: "Registration to Refunds",
     slug: "gst",
     description:
-      "Complete GST compliance made simple, accurate filings, timely reconciliations, and dispute resolution handled by specialists.",
+      "GST registration, periodic returns, reconciliations, refunds, and related correspondence.",
     points: [
       "GST registration",
       "Monthly & annual returns",
@@ -45,7 +45,7 @@ export const services: Service[] = [
     tagline: "Statutory & Tax Audit",
     slug: "audit-assurance",
     description:
-      "Independent audits that give your stakeholders confidence, conducted with the rigour expected by ICAI and the Companies Act, 2013.",
+      "Independent audits conducted under applicable ICAI Standards on Auditing and the Companies Act, 2013.",
     points: [
       "Statutory audit (u/s 139)",
       "Tax audit (u/s 44AB)",
@@ -75,7 +75,7 @@ export const services: Service[] = [
     tagline: "Start to Scale",
     slug: "business-setup",
     description:
-      "From choosing the right structure to raising your first round, practical advice for setting up your business.",
+      "Business structure, incorporation, registrations, and related compliance requirements.",
     points: [
       "Pvt Ltd, LLP & OPC registration",
       "Udyam / MSME registration",
@@ -104,5 +104,5 @@ export const services: Service[] = [
 export const servicesHero = {
   headline: "Chartered accountancy services",
   subheadline:
-    "Shreyas Raj & Co. is a Bengaluru-based chartered accountancy practice. We help individuals, professionals, and businesses stay on top of their tax, GST, audit, and compliance.",
+    "Shreyas Raj & Co. is a Bengaluru-based chartered accountancy practice undertaking tax, GST, audit, and compliance assignments for individuals, professionals, and businesses.",
 };

@@ -7,10 +7,10 @@ export function CtaQuote() {
     <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
       <div className="relative mx-auto max-w-[1280px] px-6 text-center md:px-12">
         <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/50">
-          Get in touch
+           Contact information
         </p>
         <h2 className="mx-auto mb-6 max-w-2xl font-headline text-[34px] font-medium leading-[1.08] tracking-[-0.02em] md:text-[46px]">
-          The fastest way to reach us is <em className="font-light italic">the way you prefer</em>
+           Published contact <em className="font-light italic">channels</em>
         </h2>
 
         <div className="flex flex-wrap items-center justify-center gap-3">
@@ -19,7 +19,7 @@ export function CtaQuote() {
             className="inline-flex items-center gap-2.5 bg-white px-7 py-3.5 font-body text-[14px] font-semibold text-navy transition-all hover:bg-white/85 active:scale-[0.98]"
           >
             <Phone className="h-4 w-4" />
-            Call
+             Phone
           </a>
           <a
             href={firm.contact.whatsapp}
@@ -40,14 +40,14 @@ export function CtaQuote() {
         </div>
 
         <p className="mt-8 font-body text-[13px] text-white/45">
-          Prefer a form?{" "}
+           A contact form is also available{" "}
           <Link
             href="/contact"
             className="font-semibold text-white underline decoration-white/40 underline-offset-4 transition-colors hover:decoration-white"
           >
-            Send us your details
+             Contact form
           </Link>{" "}
-          and we respond within one business day.
+           for correspondence.
         </p>
       </div>
     </section>

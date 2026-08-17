@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { services } from "@/app/components/content/services";
 import { siteConfig } from "@/app/components/content/site";
 import { ServiceCard } from "@/app/components/sections/service-card";
@@ -17,15 +16,7 @@ export default function ServicesPage() {
   return (
     <>
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
-        <Image
-          src="/images/work-desk.jpg"
-          alt="Accountant's desk with laptop and calculator"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-25"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
@@ -35,9 +26,7 @@ export default function ServicesPage() {
               Everything you need to stay compliant
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Six focused practice areas, one point of contact. Whether you're
-              an individual, a startup, or a growing company, I've got it
-              covered.
+              Six practice areas for individuals, professionals, and businesses.
             </p>
           </div>
         </div>

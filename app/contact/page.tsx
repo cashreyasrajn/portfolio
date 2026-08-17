@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ContactForm } from "@/app/components/sections/contact-form";
 import { CredentialsSidebar } from "@/app/components/sections/credentials-sidebar";
 import { firm } from "@/app/components/content/firm";
@@ -9,14 +8,14 @@ import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch for tax, GST, audit, international tax, or compliance advisory. Call, WhatsApp, email, or fill the form, replies within one business day.",
+    "Contact details and correspondence form for Shreyas Raj & Co. regarding tax, GST, audit, international tax, and compliance matters.",
   alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
 const channels = [
   {
     icon: Phone,
-    label: "Call",
+    label: "Phone",
     value: firm.contact.phone,
     href: firm.contact.phoneHref,
     external: false,
@@ -41,27 +40,18 @@ export default function ContactPage() {
   return (
     <>
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
-        <Image
-          src="/images/bengaluru-ub-city.jpg"
-          alt="UB City towers, Bengaluru"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-25"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
-              Get in touch
+              Contact information
             </p>
             <h1 className="mb-5 font-headline text-[40px] font-medium leading-[1.08] tracking-[-0.02em] md:text-[56px]">
               The fastest way to reach us
               is <em className="font-light italic">the way you prefer</em>
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Call, WhatsApp, email, or the form below, whichever is easiest
-              for you. Plain answers on the first response.
+              Phone, WhatsApp, email, and a contact form are available below.
             </p>
           </div>
         </div>
@@ -72,10 +62,10 @@ export default function ContactPage() {
           <div className="lg:col-span-7">
             <div className="mb-10 border border-navy/8 bg-white p-8 md:p-10">
               <h2 className="mb-2 font-headline text-[26px] font-medium tracking-[-0.01em] text-navy">
-                Send us your details
+                Contact form
               </h2>
               <p className="mb-8 font-body text-[14px] text-navy/70">
-                Fill this in and we'll get back within one business day.
+                Submit correspondence through the form below.
               </p>
               <ContactForm />
             </div>
@@ -134,7 +124,7 @@ export default function ContactPage() {
                       Response time
                     </p>
                     <p className="font-body text-[14px] leading-relaxed text-navy/70">
-                      Within one business day, usually sooner on WhatsApp
+                       During published office hours
                     </p>
                   </div>
                 </div>

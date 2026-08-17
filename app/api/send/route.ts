@@ -131,7 +131,7 @@ export async function POST(request: Request) {
     if (!resend) {
       console.error("RESEND_API_KEY is not configured");
       return NextResponse.json(
-        { error: "Email service is not configured. Please call or WhatsApp us instead." },
+        { error: "Email service is not configured. Please use the published contact details." },
         { status: 500 }
       );
     }

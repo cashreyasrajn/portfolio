@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { articles } from "@/app/components/content/articles";
 import { siteConfig } from "@/app/components/content/site";
@@ -16,15 +15,7 @@ export default function ExpertiseHubPage() {
   return (
     <>
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
-        <Image
-          src="/images/work-contract.jpg"
-          alt="Legal contract under a spotlight on a desk"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-22"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/50" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
