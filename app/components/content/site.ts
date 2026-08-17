@@ -11,6 +11,7 @@ export const siteConfig = {
   links: {
     email: `mailto:${firm.contact.gmail}`,
     phone: `tel:${firm.contact.phone.replace(/-/g, "").replace(/\s/g, "")}`,
+    linkedin: "https://www.linkedin.com/in/shreyas-raj-n-8345a8214/",
   },
   locale: "en_IN",
   schema: {
@@ -61,5 +62,6 @@ export const siteConfig = {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "NRI & FEMA Advisory" } },
       ],
     },
+    sameAs: ["https://www.linkedin.com/in/shreyas-raj-n-8345a8214/"],
   },
 };

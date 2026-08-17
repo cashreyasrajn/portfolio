@@ -132,6 +132,7 @@ const jsonLd = {
   areaServed: siteConfig.schema.areaServed,
   openingHoursSpecification: siteConfig.schema.openingHoursSpecification,
   hasOfferCatalog: siteConfig.schema.hasOfferCatalog,
+  sameAs: siteConfig.schema.sameAs,
 };
 
 export default function RootLayout({
