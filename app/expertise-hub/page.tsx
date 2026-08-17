@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { articles } from "@/app/components/content/articles";
 import { siteConfig } from "@/app/components/content/site";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
@@ -73,7 +74,7 @@ export default function ExpertiseHubPage() {
                 </span>
                 <span className="inline-flex items-center gap-1 font-body text-[13px] font-semibold text-navy transition-all group-hover:gap-2 group-hover:text-gold-dark">
                   Read
-                  <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </span>
               </div>
             </article>

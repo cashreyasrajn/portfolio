@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import type { Service } from "@/app/components/content/services";
 
 interface ServiceCardProps {
@@ -42,9 +43,7 @@ export function ServiceCard({ service, index = 0 }: ServiceCardProps) {
         className="inline-flex items-center gap-1.5 font-body text-[14px] font-semibold text-navy underline decoration-navy/25 underline-offset-4 transition-all group-hover:gap-2.5 group-hover:decoration-navy"
       >
         Learn more
-        <span className="material-symbols-outlined text-[16px]">
-          arrow_forward
-        </span>
+        <ArrowRight className="h-4 w-4" aria-hidden="true" />
       </Link>
     </div>
   );

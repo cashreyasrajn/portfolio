@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { blogPosts, blogCategories } from "@/app/components/content/blog";
 import { siteConfig } from "@/app/components/content/site";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
@@ -123,9 +124,7 @@ export default function BlogPage() {
                     </p>
                     <div className="mt-auto flex items-center gap-2 font-body text-[13px] font-semibold text-navy/70 transition-all group-hover:gap-3 group-hover:text-gold-dark">
                       Read note
-                      <span className="material-symbols-outlined text-[16px]">
-                        arrow_forward
-                      </span>
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </div>
                   </div>
                 </Link>

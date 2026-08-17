@@ -42,9 +42,8 @@ export function ProcessSection() {
                 Bhagavad Gita · 3.21
               </p>
               <p className="mt-6 max-w-md border-l border-gold/60 pl-4 font-body text-[14px] leading-relaxed text-white/65">
-                We believe trust is earned through the details: clear advice,
-                timely work, and the same standard applied whether the matter
-                is routine or complex.
+                Great people don't just influence others through what they say;
+                they influence them through what they do.
               </p>
             </div>
           </div>
