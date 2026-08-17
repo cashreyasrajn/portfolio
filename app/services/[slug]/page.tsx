@@ -48,7 +48,7 @@ const extendedContent: Record<
 > = {
   "income-tax": {
     intro:
-      "Income tax is complicated, but missing a deadline or a deduction is expensive. We handle returns, planning, TDS, assessment notices and appeals for individuals, firms and companies. No jargon, no last-minute scrambling.",
+      "Income tax matters may involve returns, tax planning, TDS, assessment notices, and appeals for individuals, firms, and companies.",
     whatWeDo: [
       "ITR filing, all forms (ITR-1 through ITR-7) for salaried, business, capital gains, foreign assets",
       "Tax planning, legitimate deductions, exemptions, and structuring to minimise liability",
