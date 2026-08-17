@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/app/components/content/site";
 
 export const metadata: Metadata = {
   title: "ICAI Disclaimer",
   description:
     "As per the provisions of The Chartered Accountants Act, 1949, we are not permitted to solicit work and advertise.",
+  alternates: { canonical: `${siteConfig.url}/disclaimer` },
 };
 
 export default function DisclaimerPage() {
@@ -54,7 +56,7 @@ export default function DisclaimerPage() {
           </p>
 
           <p>
-            Shreyas Raj & Co. is a proprietary concern registered with the Institute of Chartered Accountants of India. The proprietor, CA Shreyas Raj N. (Membership No. to be updated), bears full professional responsibility for the practice.
+            Shreyas Raj & Co. is a proprietary concern registered with the Institute of Chartered Accountants of India.
           </p>
         </div>
       </section>

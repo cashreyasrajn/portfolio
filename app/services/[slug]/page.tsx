@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { services } from "@/app/components/content/services";
+import { siteConfig } from "@/app/components/content/site";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export function generateStaticParams() {
@@ -16,9 +17,24 @@ export function generateMetadata({
 }): Metadata {
   const service = services.find((s) => s.slug === params.slug);
   if (!service) return { title: "Not Found" };
+  const url = `${siteConfig.url}/services/${service.slug}`;
   return {
     title: `${service.title} | ${service.tagline}`,
     description: service.description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "website",
+      url,
+      title: `${service.title} | ${siteConfig.name}`,
+      description: service.description,
+      images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: service.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} | ${siteConfig.name}`,
+      description: service.description,
+      images: [siteConfig.ogImage],
+    },
   };
 }
 
@@ -233,8 +249,42 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   const detail = extendedContent[params.slug];
   if (!detail) notFound();
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: detail.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    serviceType: service.tagline,
+    description: service.description,
+    provider: {
+      "@type": "ProfessionalService",
+      name: siteConfig.schema.name,
+      url: siteConfig.url,
+      telephone: siteConfig.schema.telephone,
+      areaServed: siteConfig.schema.areaServed,
+    },
+    areaServed: siteConfig.schema.areaServed,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
         <Image
           src="/images/work-desk.jpg"

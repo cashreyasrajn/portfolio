@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { articles } from "@/app/components/content/articles";
+import { siteConfig } from "@/app/components/content/site";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
   title: "Expertise Hub, Insights & Updates",
   description:
     "Plain-English briefings on income tax, GST, audit, MSME registration and more, written for clients, not accountants.",
+  alternates: { canonical: `${siteConfig.url}/expertise-hub` },
 };
 
 export default function ExpertiseHubPage() {

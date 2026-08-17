@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/app/components/content/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Terms governing the use of the Shreyas Raj & Co. website. By accessing this site you agree to these terms.",
+  alternates: { canonical: `${siteConfig.url}/terms` },
 };
 
 export default function TermsPage() {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/app/components/content/blog";
+import { siteConfig } from "@/app/components/content/site";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export function generateStaticParams() {
@@ -16,9 +17,27 @@ export function generateMetadata({
 }): Metadata {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return { title: "Not Found" };
+  const url = `${siteConfig.url}/blog/${post.slug}`;
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      url,
+      title: post.title,
+      description: post.excerpt,
+      publishedTime: post.date,
+      authors: [post.author],
+      section: post.category,
+      images: [{ url: post.cover, width: 800, height: 400, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.cover],
+    },
   };
 }
 
@@ -30,8 +49,29 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     .filter((p) => p.slug !== post.slug && p.category === post.category)
     .slice(0, 3);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: `${siteConfig.url}${post.cover}`,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { "@type": "Person", name: post.author },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.schema.name,
+      logo: { "@type": "ImageObject", url: siteConfig.schema.logo },
+    },
+    mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <section className="grain relative overflow-hidden bg-navy py-20 md:py-28">
         <Image
           src="/images/work-contract.jpg"

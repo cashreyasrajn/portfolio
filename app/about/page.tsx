@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { firm } from "@/app/components/content/firm";
+import { siteConfig } from "@/app/components/content/site";
 import { CredentialsSidebar } from "@/app/components/sections/credentials-sidebar";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   title: "About | Shreyas Raj & Co., Chartered Accountants",
   description:
     "Shreyas Raj & Co., Chartered Accountants based in Bengaluru. Over five years of experience in direct taxation, international tax, FEMA, US tax advisory, and corporate compliance.",
+  alternates: { canonical: `${siteConfig.url}/about` },
 };
 
 export default function AboutPage() {

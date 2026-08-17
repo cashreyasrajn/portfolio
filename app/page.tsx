@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import { services } from "@/app/components/content/services";
+import { siteConfig } from "@/app/components/content/site";
 import { Hero } from "@/app/components/sections/hero";
 import { ServiceCard } from "@/app/components/sections/service-card";
 import { ProcessSection } from "@/app/components/sections/process";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
+
+export const metadata: Metadata = {
+  alternates: { canonical: siteConfig.url },
+};
 
 export default function HomePage() {
   return (

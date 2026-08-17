@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Archivo, IBM_Plex_Mono } from "next/font/google";
 import { SiteHeader } from "@/app/components/site-header";
 import { SiteFooter } from "@/app/components/site-footer";
@@ -28,6 +28,11 @@ const monoFont = IBM_Plex_Mono({
   variable: "--font-mono",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#0b1e3d",
+  colorScheme: "light",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -85,8 +90,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: siteConfig.url,
+  icons: {
+    icon: [{ url: "/icon.png", sizes: "512x512", type: "image/png" }],
+    shortcut: "/icon.png",
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  appleWebApp: {
+    capable: true,
+    title: siteConfig.name,
+    statusBarStyle: "default",
+  },
+  category: "finance",
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 };
 
@@ -94,10 +110,14 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: siteConfig.schema.name,
+  alternateName: siteConfig.schema.alternateName,
   description: siteConfig.schema.description,
   url: siteConfig.url,
   telephone: siteConfig.schema.telephone,
   email: siteConfig.schema.email,
+  image: siteConfig.schema.image,
+  logo: siteConfig.schema.logo,
+  priceRange: siteConfig.schema.priceRange,
   foundingDate: siteConfig.schema.foundingDate,
   memberOf: { "@type": "Organization", name: siteConfig.schema.memberOf },
   address: {
@@ -108,7 +128,10 @@ const jsonLd = {
     postalCode: siteConfig.schema.address.postalCode,
     addressCountry: siteConfig.schema.address.addressCountry,
   },
-  sameAs: [],
+  geo: siteConfig.schema.geo,
+  areaServed: siteConfig.schema.areaServed,
+  openingHoursSpecification: siteConfig.schema.openingHoursSpecification,
+  hasOfferCatalog: siteConfig.schema.hasOfferCatalog,
 };
 
 export default function RootLayout({

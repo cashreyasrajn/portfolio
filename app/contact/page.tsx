@@ -3,12 +3,14 @@ import Image from "next/image";
 import { ContactForm } from "@/app/components/sections/contact-form";
 import { CredentialsSidebar } from "@/app/components/sections/credentials-sidebar";
 import { firm } from "@/app/components/content/firm";
+import { siteConfig } from "@/app/components/content/site";
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch for tax, GST, audit, international tax, or compliance advisory. Call, WhatsApp, email, or fill the form, replies within one business day.",
+  alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
 const channels = [

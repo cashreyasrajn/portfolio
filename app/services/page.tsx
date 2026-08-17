@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { services } from "@/app/components/content/services";
+import { siteConfig } from "@/app/components/content/site";
 import { ServiceCard } from "@/app/components/sections/service-card";
 import { CredentialsSidebar } from "@/app/components/sections/credentials-sidebar";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   title: "Services, Income Tax, GST, Audit & Compliance",
   description:
     "Six practice areas: income tax, GST, statutory and tax audit, ROC corporate compliance, business setup, and NRI / FEMA advisory. Servicing individuals and businesses across Bengaluru.",
+  alternates: { canonical: `${siteConfig.url}/services` },
 };
 
 export default function ServicesPage() {

@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { blogPosts, blogCategories } from "@/app/components/content/blog";
+import { siteConfig } from "@/app/components/content/site";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
   title: "Blog | Practical Tax & Compliance Insights",
   description:
     "Plain-English articles on income tax, GST, audit, corporate compliance, business setup, and NRI taxation from CA Shreyas Raj.",
+  alternates: { canonical: `${siteConfig.url}/blog` },
 };
 
 export default function BlogPage() {

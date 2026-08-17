@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/app/components/content/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How Shreyas Raj & Co. collects, uses, and protects your personal information through this website.",
+  alternates: { canonical: `${siteConfig.url}/privacy` },
 };
 
 export default function PrivacyPage() {

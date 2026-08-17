@@ -10,7 +10,7 @@ export function CtaQuote() {
           Get in touch
         </p>
         <h2 className="mx-auto mb-6 max-w-2xl font-headline text-[34px] font-medium leading-[1.08] tracking-[-0.02em] md:text-[46px]">
-          Let's get your <em className="font-light italic">filings in order</em>
+          The fastest way to reach us is <em className="font-light italic">the way you prefer</em>
         </h2>
 
         <div className="flex flex-wrap items-center justify-center gap-3">
