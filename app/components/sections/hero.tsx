@@ -9,11 +9,6 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-[1280px] px-6 pb-20 pt-24 md:px-12 md:pb-28 md:pt-36">
         <div className="max-w-3xl">
-          <p className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-[12px] font-semibold uppercase tracking-[0.2em] text-white/60">
-            <span className="inline-block h-1.5 w-1.5 bg-white/70" />
-            Chartered Accountants
-          </p>
-
           <h1 className="mb-6 font-headline text-[44px] font-medium leading-[1.04] tracking-[-0.02em] text-white md:text-[68px]">
             Advisory, Business Consultancy and Tax
           </h1>
