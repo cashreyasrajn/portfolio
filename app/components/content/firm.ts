@@ -42,7 +42,7 @@ export const firm = {
 export const firmStats = [
   { value: "2025", label: "Practice Since" },
   { value: "Bengaluru", label: "Based In" },
-  { value: "6", label: "Practice Areas" },
+  { value: "9", label: "Practice Areas" },
 ];
 
 export const values = [

@@ -39,7 +39,7 @@ export default function AboutPage() {
             <div className="mb-14 grid grid-cols-2 gap-px border border-navy/8 bg-navy/8 md:grid-cols-4">
               {[
                 { icon: "calendar_month", label: "In practice since", value: firm.founded.toString() },
-                { icon: "tactic", label: "Practice areas", value: "6" },
+                { icon: "tactic", label: "Practice areas", value: "9" },
                 { icon: "location_on", label: "Based in", value: firm.address.city },
                 { icon: "language", label: "Focus", value: "Tax & Compliance" },
               ].map((item) => (

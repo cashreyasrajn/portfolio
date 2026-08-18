@@ -43,200 +43,152 @@ const extendedContent: Record<
     intro: string;
     whatWeDo: string[];
     whoFor: string[];
-    faqs: { q: string; a: string }[];
   }
 > = {
-  "income-tax": {
+  "corporate-compliance": {
     intro:
-      "Income tax matters may involve returns, tax planning, TDS, assessment notices, and appeals for individuals, firms, and companies.",
+      "Comprehensive corporate compliance services to ensure adherence to regulatory requirements and maintain proper governance practices for a company. This includes routine filings with the Registrar of Companies (ROC), timely submission of compliance reports and fulfilling mandatory legal obligations. Regular reviews and updates and end-to-end maintenance of your company's legal standing.",
     whatWeDo: [
-      "ITR filing, all forms (ITR-1 through ITR-7) for salaried, business, capital gains, foreign assets",
-      "Tax planning, legitimate deductions, exemptions, and structuring to minimise liability",
-      "TDS, deduction calculation, quarterly returns (24Q, 26Q, 27Q), Form 16/16A issuance",
-      "Assessment & scrutiny, responding to notices u/s 143(2), 148, 156; representation before AO, CIT(A), ITAT",
-      "Rectification & refunds, 154 applications, refund tracking, interest calculation",
+      "Routine filings with the Registrar of Companies (ROC)",
+      "Timely submission of compliance reports and returns",
+      "Fulfilling mandatory legal obligations",
+      "Regular reviews and updates of compliance records",
+      "End-to-end maintenance of the company's legal standing",
     ],
     whoFor: [
-      "Salaried professionals with multiple income sources",
-      "Small business owners & proprietorships",
-      "Partnership firms & LLPs",
-      "Private limited companies",
-      "NRIs with Indian income",
-    ],
-    faqs: [
-      {
-        q: "What documents do I need for ITR filing?",
-        a: "Form 16 (salaried), bank statements, investment proofs (ELSS, PPF, insurance, etc.), home loan certificate, rent receipts, AIS/TIS from the Income Tax portal, and last year's acknowledgement.",
-      },
-      {
-        q: "Can you handle old pending returns?",
-        a: "Yes. We can file belated returns for up to 3 previous assessment years (subject to late fees) and update returns under Section 139(8A). We also handle re-assessment cases.",
-      },
-      {
-        q: "What if I received a notice from the IT department?",
-        a: "The notice, grounds, supporting documents, and any response are reviewed as part of the applicable assessment or appeal process.",
-      },
-    ],
-  },
-  gst: {
-    intro:
-      "GST filing is monthly, it's detail-heavy, and the department sends notices fast. We take over the entire compliance cycle, registration, monthly returns, annual returns, reconciliation, audit and refunds, so you can focus on your business.",
-    whatWeDo: [
-      "GST registration, new registration, amendment, cancellation, and migration from old regimes",
-      "Monthly/quarterly returns, GSTR-1 (sales), GSTR-3B (summary) filed on time every cycle",
-      "Input tax credit reconciliation, matching GSTR-2A/2B with purchase register, following up with vendors",
-      "Annual return, GSTR-9 and GSTR-9C (reconciliation statement and audit, where applicable)",
-      "E-way bills, setup, generation, and compliance support for goods transport",
-      "Refund claims, export refunds, inverted duty structure refunds, excess payment claims",
-    ],
-    whoFor: [
-      "Manufacturers and traders registered under GST",
-      "Service providers with inter-state operations",
-      "E-commerce sellers (Amazon, Flipkart, own website)",
-      "Exporters claiming refunds and LUT",
-      "Composition scheme dealers",
-    ],
-    faqs: [
-      {
-        q: "What happens if I miss a GST return?",
-        a: "Late fees apply (Rs 20/day for GSTR-3B, Rs 10 CGST + Rs 10 SGST), plus 18% interest on net liability. More importantly, your GSTR-1 being blocked means your buyers lose input credit, they won't be happy. We help bring you back on track.",
-      },
-      {
-        q: "Do I need GST registration if my turnover is below Rs 40 lakh?",
-        a: "Not as a general rule, but there are exceptions: inter-state supply, e-commerce selling, agent of a supplier, and certain notified categories. We can confirm based on your specific case.",
-      },
-      {
-        q: "How do you reconcile input tax credit?",
-        a: "We pull your GSTR-2A/2B from the portal every month, match line-by-line with your purchase register, flag discrepancies, and follow up with vendors for corrections. Reconciliation is the most important step to avoid demand notices.",
-      },
+      "Companies required to maintain ROC and MCA compliance",
+      "Boards and management overseeing governance",
+      "Organizations managing statutory registers and records",
+      "Growing companies scaling compliance responsibilities",
     ],
   },
   "audit-assurance": {
     intro:
-      "Audits aren't just a statutory checkbox, they're your stakeholders' assurance that the numbers are right. We conduct audits as per ICAI Standards on Auditing for companies, firms and trusts across sectors.",
+      "Our assurance services offer an independent evaluation of financial statements, internal controls, and business operations. This includes statutory audits, internal audits, and tax audits to ensure accuracy and reliability in financial reporting. These services along with our independent and unbiased opinions enhance investor confidence, safeguard assets, and help organizations identify operational inefficiencies.",
     whatWeDo: [
-      "Statutory audit, under Section 139 of Companies Act, 2013 for private limited companies, including CARO reporting where applicable",
-      "Tax audit, under Section 44AB of the Income Tax Act for businesses and professionals exceeding the prescribed turnover/gross receipts limits",
-      "Internal audit, periodic reviews of your internal processes, accounting systems, inventory, and controls",
-      "Stock & branch audit, for bank-financed working capital limits and multi-location businesses",
-      "Due diligence, pre-investment financial review, M&A support, and net worth certifications",
-      "Trust & society audit, for charitable trusts, NGOs, and housing societies under applicable laws",
+      "Statutory audits of financial statements",
+      "Internal audits of controls and business operations",
+      "Tax audits for applicable assessments",
+      "Independent and unbiased opinion on financial reporting",
+      "Identification of operational inefficiencies",
     ],
     whoFor: [
-      "Private limited companies (statutory audit mandatory)",
-      "Businesses with turnover above Rs 1 crore (tax audit threshold)",
-      "Professionals with gross receipts above Rs 50 lakh",
-      "Startups during funding rounds (investor due diligence)",
-      "Societies and charitable trusts",
-    ],
-    faqs: [
-      {
-        q: "How long does a statutory audit take?",
-        a: "For a small private limited company, the timeline depends on the completeness of records and documents submitted for review.",
-      },
-      {
-        q: "Do you audit the previous year's books?",
-        a: "Yes, most audit engagements are for the financial year just ended (e.g., audit of FY 2025-26 books in mid-2026). We can also handle pending audits for previous years.",
-      },
-      {
-        q: "What's the difference between statutory audit and tax audit?",
-        a: "Statutory audit is under the Companies Act, every company must get it done regardless of turnover. Tax audit is under the Income Tax Act, triggered when business turnover exceeds Rs 1 crore (or professional receipts > Rs 50 lakh). Many companies need both.",
-      },
-    ],
-  },
-  "corporate-compliance": {
-    intro:
-      "ROC filings, MCA deadlines, board resolutions, the compliance list for a private company is long and penalties for missing deadlines add up fast. We manage the entire cycle: annual filings, event-based filings, and ongoing corporate governance.",
-    whatWeDo: [
-      "Annual ROC filings, AOC-4 (financials), MGT-7 (annual return), DIR-3 KYC for directors",
-      "Director-related filings, DIN application, appointment (DIR-12), resignation, disqualification resolution",
-      "Share-related filings, share transfer, allotment (PAS-3), increase in authorised capital (SH-7)",
-      "Board resolutions & minutes, drafting, maintaining statutory registers, ensuring compliance with SS-1 and SS-2",
-      "Company strike-off & revival, voluntary closure (STK-2) and revival of struck-off companies",
-      "LLP compliance, Form 11 (annual return), Form 8 (statement of accounts & solvency)",
-    ],
-    whoFor: [
-      "Private limited companies of all sizes",
-      "Limited Liability Partnerships (LLPs)",
-      "Section 8 companies (non-profit)",
-      "Companies requiring director/KMP changes",
-      "Dormant and inactive companies needing strike-off",
-    ],
-    faqs: [
-      {
-        q: "What are the ROC filing deadlines?",
-        a: "AOC-4 is due within 30 days of the AGM. MGT-7 is due within 60 days of the AGM. DIR-3 KYC is due by 30th September each year for all directors holding DIN. Late filing attracts additional fees that escalate every day.",
-      },
-      {
-        q: "Can you handle ROC compliance for a company incorporated in another city?",
-        a: "Yes. The ROC jurisdiction is based on the company's registered office address, but we handle MCA filings for companies across India. Everything is online through the MCA portal.",
-      },
+      "Companies required to obtain statutory audits",
+      "Organizations seeking an independent financial review",
+      "Businesses needing internal control evaluation",
+      "Entities requiring tax audits",
     ],
   },
   "business-setup": {
     intro:
-      "The legal structure you choose, Pvt Ltd, LLP, OPC, or proprietorship, affects your tax, compliance burden, fundraising ability, and personal liability for years. We help you pick the right one and handle end-to-end registration.",
+      "Complete solutions for setting up businesses, including selecting the right legal structure, registering with the relevant authorities, and obtaining necessary licenses. Our services cover everything from documentation preparation to compliance with local, state, and central regulations. Our expertise is being a one stop solution enabling businesses to start on the right foot.",
     whatWeDo: [
-      "Private Limited Company, incorporation with MoA/AoA, PAN/TAN, GST registration, bank account opening, and initial ROC filings",
-      "LLP registration, LLP agreement, DPIN for designated partners, incorporation, and initial Form 3 filing",
-      "One Person Company (OPC), ideal for solo founders who want limited liability with simpler compliance",
-      "Udyam / MSME registration, eligibility assessment and online filing with the Udyam portal",
-      "Startup India recognition, DPIIT registration, eligibility for tax holiday, and angel tax exemption",
-      "Post-incorporation compliance, first board meeting, auditor appointment (ADT-1), share certificates, and registered office compliance",
+      "Selection of the right legal structure",
+      "Registration with relevant authorities",
+      "Obtaining necessary licenses",
+      "Documentation preparation and review",
+      "Compliance with local, state, and central regulations",
     ],
     whoFor: [
-      "First-time founders unsure about Pvt Ltd vs LLP vs OPC",
-      "Existing proprietorships wanting to incorporate",
-      "Startups seeking DPIIT recognition and tax benefits",
-      "Foreign nationals / NRIs setting up in India",
-      "MSMEs needing Udyam registration for scheme benefits",
-    ],
-    faqs: [
-      {
-        q: "Pvt Ltd, LLP, or OPC, which should I choose?",
-        a: "The choice depends on the proposed activities, ownership, funding plans, liability, and applicable compliance requirements. Pvt Ltd, LLP, and OPC structures have different legal and regulatory implications.",
-      },
-      {
-        q: "How long does company incorporation take?",
-        a: "With all documents ready, SPICe+ incorporation (Pvt Ltd) commonly takes 5-10 working days. Name approval and document verification affect the timeline. RUN refers to the Reserve Unique Name process.",
-      },
-      {
-        q: "Can NRIs be directors or shareholders?",
-        a: "Yes. At least one director must be an Indian resident. NRIs/foreign nationals can be directors and shareholders. Additional requirements (DSC, notarised documents, FEMA reporting) apply, we handle those too.",
-      },
+      "New business founders and entrepreneurs",
+      "Professionals and partnerships seeking incorporation",
+      "Businesses needing registrations and licenses",
     ],
   },
-  "nri-fema": {
+  "management-consultancy": {
     intro:
-      "Cross-border tax involves DTAA provisions, NRI status determination, and FEMA rules on property and bank accounts. This practice area covers matters relating to NRIs and foreign entities in India.",
+      "Strategic advice aimed at improving business performance, driving growth, and enhancing operational efficiency. Services include business diagnostics, change management, and process optimization tailored to meet specific organizational goals. This consultancy service helps streamline operations, improve profitability, and navigate business challenges at both levels of transactional & structural.",
     whatWeDo: [
-      "NRI income tax returns, ITR-2 filing for NRIs with Indian income (rent, capital gains, interest, dividends)",
-      "DTAA relief, claiming treaty benefits to avoid double taxation on the same income in India and your country of residence",
-      "FEMA compliance, reporting for NRI bank accounts (NRE/NRO/FCNR), property transactions, repatriation rules",
-      "Sale of Indian property, capital gains computation, TDS u/s 195, lower deduction certificate, repatriation of sale proceeds",
-      "Inheritance & succession, tax implications of inherited Indian assets and succession planning advisory for NRIs",
-      "Foreign company setup in India, subsidiary incorporation, FDI compliance, RBI reporting (FC-GPR, FLA returns)",
+      "Business diagnostics",
+      "Change management",
+      "Process optimization",
+      "Operational and profitability improvement",
+      "Guidance on transactional and structural challenges",
     ],
     whoFor: [
-      "NRIs with rental property or capital gains in India",
-      "NRIs selling inherited property in India",
-      "NRIs repatriating funds from NRO to NRE accounts",
-      "Foreign companies setting up a subsidiary in India",
-      "Returning NRIs (RNOR status planning)",
+      "Business owners seeking performance improvement",
+      "Organizations undergoing growth or restructuring",
+      "Management teams navigating operational challenges",
     ],
-    faqs: [
-      {
-        q: "Do I need to file an ITR in India if I'm an NRI?",
-        a: "Only if your Indian income (rent, capital gains, interest, etc.) exceeds the basic exemption limit (currently Rs 3 lakh under the new regime). But even below that, filing is recommended if TDS has been deducted, to claim a refund.",
-      },
-      {
-        q: "What's the difference between NRE and NRO accounts for tax?",
-        a: "NRE account, fully and freely repatriable, interest is tax-free in India. NRO account, for depositing Indian earnings (rent, dividends), interest is taxable, repatriation is capped at USD 1 million per year with CA certificate. We handle the repatriation paperwork.",
-      },
-      {
-        q: "Can I sell my Indian property and take the money abroad?",
-        a: "Yes, subject to limits including USD 1 million per financial year per NRI. Applicable capital gains tax, filing requirements, Form 15CA/15CB, and bank procedures apply before remittance.",
-      },
+  },
+  "virtual-cfo": {
+    intro:
+      "A star service offering of Shreyas Raj & Co for your businesses, which includes but not limited to book-keeping, compliance management, MIS reporting, financial analysis, and strategic decision-making, without the need for a full-time CFO. These services offer high-level financial expertise for small to mid-sized businesses, enabling better cash flow management and financial strategy.",
+    whatWeDo: [
+      "Book-keeping",
+      "Compliance management",
+      "MIS reporting",
+      "Financial analysis",
+      "Strategic decision-making and cash flow management",
+    ],
+    whoFor: [
+      "Small to mid-sized businesses without a full-time CFO",
+      "Startups and growing companies needing financial leadership",
+      "Businesses seeking structured financial reporting",
+    ],
+  },
+  "business-process-reengineering": {
+    intro:
+      "Revamping/Restructuring business processes to increase efficiency or reduce redundancies. Developing SOPs for your processes. This involves analyzing existing workflows, identifying bottlenecks, and re-engineering processes for optimal performance. By leveraging modern tools and methodologies, we ensure your business processes are agile, cost-effective, and aligned with business goals.",
+    whatWeDo: [
+      "Analysis of existing workflows",
+      "Identification of bottlenecks",
+      "Re-engineering processes for optimal efficiency",
+      "Development of standard operating procedures (SOPs)",
+      "Reduction of redundancies",
+    ],
+    whoFor: [
+      "Organizations seeking to reduce redundancies",
+      "Businesses standardizing processes with SOPs",
+      "Companies modernizing workflows with new tools",
+    ],
+  },
+  "taxation-consultancy": {
+    intro:
+      "Expert guidance on tax planning, compliance, and strategic tax solutions to ensure regulatory adherence. Services include assistance with direct and indirect tax filings, tax audits, and representation before tax authorities. We also help clients make use of available incentives to optimize their tax position.",
+    whatWeDo: [
+      "Tax planning and strategic tax solutions",
+      "Direct and indirect tax filings",
+      "Tax audits",
+      "Representation before tax authorities",
+      "Assistance with available incentives",
+    ],
+    whoFor: [
+      "Individuals and businesses requiring tax compliance",
+      "Taxpayers seeking representation before authorities",
+      "Entities looking to make use of tax incentives",
+    ],
+  },
+  "payroll-processing": {
+    intro:
+      "End-to-end payroll services, ensuring accurate and timely payment of salaries, deductions, and compliance with statutory requirements. Our services also include preparing and filing payroll-related tax returns, managing employee benefits, and handling any regulatory updates. This helps businesses stay compliant while reducing administrative burdens and improving employee satisfaction.",
+    whatWeDo: [
+      "Accurate and timely salary payment processing",
+      "Deduction management",
+      "Payroll-related tax return preparation and filing",
+      "Employee benefits management",
+      "Handling regulatory updates",
+    ],
+    whoFor: [
+      "Businesses managing in-house payroll",
+      "Companies seeking statutory payroll compliance",
+      "Organizations aiming to reduce administrative burden",
+    ],
+  },
+  "technology-innovation": {
+    intro:
+      "We provide end-to-end ERP selection and implementation services, guiding organizations through platform evaluation, system configuration, and seamless deployment across Finance, HRMS, CRM, Supply Chain, and Workforce Management. Our services encompass process mapping, custom system integration, statutory compliance alignment, and ongoing change management to accelerate user adoption. By bridging technical deployment with operational workflows, we help businesses eliminate data silos, reduce administrative overhead, and drive scalable efficiency across every department.",
+    whatWeDo: [
+      "ERP platform selection and evaluation",
+      "System configuration and deployment across Finance, HRMS, CRM, Supply Chain, and Workforce Management",
+      "Process mapping and custom system integration",
+      "Statutory compliance alignment",
+      "Change management to accelerate user adoption",
+    ],
+    whoFor: [
+      "Organizations selecting and implementing ERP systems",
+      "Businesses eliminating data silos",
+      "Companies standardizing operations across departments",
     ],
   },
 };

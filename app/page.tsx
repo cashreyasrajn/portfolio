@@ -32,7 +32,7 @@ export default function HomePage() {
               </p>
             </div>
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-navy/40">
-              06 practice areas
+              09 practice areas
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

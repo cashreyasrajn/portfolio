@@ -6,9 +6,9 @@ import { CredentialsSidebar } from "@/app/components/sections/credentials-sideba
 import { CtaQuote } from "@/app/components/sections/cta-quote";
 
 export const metadata: Metadata = {
-  title: "Services, Income Tax, GST, Audit & Compliance",
+  title: "Services, Assurance, Tax, Compliance & Advisory",
   description:
-    "Six practice areas: income tax, GST, statutory and tax audit, ROC corporate compliance, business setup, and NRI / FEMA advisory. Servicing individuals and businesses across Bengaluru.",
+    "Nine practice areas: corporate compliance, assurance, business setup, management consultancy, virtual CFO, process reengineering, taxation, payroll, and technology services in Bengaluru.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };
 
@@ -26,7 +26,7 @@ export default function ServicesPage() {
               Everything you need to stay compliant
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Six practice areas for individuals, professionals, and businesses.
+              Nine practice areas for individuals, professionals, and businesses.
             </p>
           </div>
         </div>
