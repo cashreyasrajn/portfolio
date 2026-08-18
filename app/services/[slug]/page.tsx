@@ -175,6 +175,23 @@ const extendedContent: Record<
       "Organizations aiming to reduce administrative burden",
     ],
   },
+  "aif-compliance-structuring": {
+    intro:
+      "We provide end-to-end Alternative Investment Fund (AIF) compliance and structuring services, supporting fund managers and investors through fund setup, regulatory structuring, documentation, and ongoing compliance requirements. Our services encompass fund structure evaluation, SEBI regulatory compliance, contribution and investment documentation, investor reporting, tax and accounting considerations, and coordination with legal and regulatory stakeholders. By combining regulatory expertise with commercial and operational insights, we help fund managers establish robust governance frameworks, maintain compliance, and efficiently manage the evolving requirements of their investment vehicles.",
+    whatWeDo: [
+      "Fund structure evaluation",
+      "SEBI regulatory compliance",
+      "Contribution and investment documentation",
+      "Investor reporting and governance",
+      "Tax and accounting considerations",
+      "Coordination with legal and regulatory stakeholders",
+    ],
+    whoFor: [
+      "Fund managers and alternative investment funds",
+      "Investors and intermediaries in AIF structures",
+      "Organizations establishing or maintaining compliant investment vehicles",
+    ],
+  },
   "technology-innovation": {
     intro:
       "We provide end-to-end ERP selection and implementation services, guiding organizations through platform evaluation, system configuration, and seamless deployment across Finance, HRMS, CRM, Supply Chain, and Workforce Management. Our services encompass process mapping, custom system integration, statutory compliance alignment, and ongoing change management to accelerate user adoption. By bridging technical deployment with operational workflows, we help businesses eliminate data silos, reduce administrative overhead, and drive scalable efficiency across every department.",

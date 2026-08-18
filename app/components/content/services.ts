@@ -130,6 +130,21 @@ export const services: Service[] = [
     href: "/services/payroll-processing",
   },
   {
+    icon: "pie_chart",
+    title: "AIF Compliance & Structuring",
+    tagline: "AI Funds & SEBI Compliance",
+    slug: "aif-compliance-structuring",
+    description:
+      "We provide end-to-end Alternative Investment Fund (AIF) compliance and structuring services, supporting fund managers and investors through fund setup, regulatory structuring, documentation, and ongoing compliance requirements. Our services encompass fund structure evaluation, SEBI regulatory compliance, contribution and investment documentation, investor reporting, tax and accounting considerations, and coordination with legal and regulatory stakeholders. By combining regulatory expertise with commercial and operational insights, we help fund managers establish robust governance frameworks, maintain compliance, and efficiently manage the evolving requirements of their investment vehicles.",
+    points: [
+      "Fund structuring & setup",
+      "SEBI regulatory compliance",
+      "Fund & investor documentation",
+      "Investor reporting & governance",
+    ],
+    href: "/services/aif-compliance-structuring",
+  },
+  {
     icon: "terminal",
     title: "Technology & Innovation Services",
     tagline: "ERP Selection & Implementation",

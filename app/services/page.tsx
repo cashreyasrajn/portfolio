@@ -8,7 +8,7 @@ import { CtaQuote } from "@/app/components/sections/cta-quote";
 export const metadata: Metadata = {
   title: "Services, Assurance, Tax, Compliance & Advisory",
   description:
-    "Nine practice areas: corporate compliance, assurance, business setup, management consultancy, virtual CFO, process reengineering, taxation, payroll, and technology services in Bengaluru.",
+    "Ten practice areas: corporate compliance, assurance, business setup, management consultancy, virtual CFO, process reengineering, taxation, payroll, AIF compliance, and technology services in Bengaluru.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };
 
@@ -26,7 +26,7 @@ export default function ServicesPage() {
               Everything you need to stay compliant
             </h1>
             <p className="max-w-xl font-body text-[17px] leading-relaxed text-white/70">
-              Nine practice areas for individuals, professionals, and businesses.
+              Ten practice areas for individuals, professionals, and businesses.
             </p>
           </div>
         </div>
