@@ -1,4 +1,5 @@
 import { values } from "@/app/components/content/firm";
+import { Reveal } from "@/app/components/ui/reveal";
 
 export function ValuesSection() {
   return (
@@ -19,25 +20,24 @@ export function ValuesSection() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {values.map((value, i) => (
-            <div
-              key={value.title}
-              className="group border border-navy/8 bg-white p-8 transition-all duration-300 hover:border-navy hover:bg-navy"
-            >
-              <div className="mb-6 flex items-center justify-between">
-                <span className="material-symbols-outlined text-[26px] text-navy transition-colors duration-300 group-hover:text-white">
-                  {value.icon}
-                </span>
-                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-navy/35 transition-colors duration-300 group-hover:text-white/40">
-                  0{i + 1}
-                </span>
+            <Reveal key={value.title} delay={(i % 4) * 80}>
+              <div className="group h-full border border-navy/8 bg-white p-8 transition-all duration-300 hover:border-navy hover:bg-navy">
+                <div className="mb-6 flex items-center justify-between">
+                  <span className="material-symbols-outlined text-[26px] text-navy transition-colors duration-300 group-hover:text-white">
+                    {value.icon}
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-navy/35 transition-colors duration-300 group-hover:text-white/40">
+                    0{i + 1}
+                  </span>
+                </div>
+                <h3 className="mb-2 font-headline text-[20px] font-medium tracking-[-0.01em] text-navy transition-colors duration-300 group-hover:text-white">
+                  {value.title}
+                </h3>
+                <p className="font-body text-[13px] leading-relaxed text-navy/65 transition-colors duration-300 group-hover:text-white/65">
+                  {value.description}
+                </p>
               </div>
-              <h3 className="mb-2 font-headline text-[20px] font-medium tracking-[-0.01em] text-navy transition-colors duration-300 group-hover:text-white">
-                {value.title}
-              </h3>
-              <p className="font-body text-[13px] leading-relaxed text-navy/65 transition-colors duration-300 group-hover:text-white/65">
-                {value.description}
-              </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

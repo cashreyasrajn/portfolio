@@ -15,7 +15,7 @@ export default function ExpertiseHubPage() {
   return (
     <>
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
+        <div className="absolute inset-0 bg-hero-navy" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">

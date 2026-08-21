@@ -9,7 +9,7 @@ export default function Image() {
     (
       <div
         style={{
-          background: "#131313",
+          background: "#0b1e3d",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -43,7 +43,7 @@ export default function Image() {
             style={{
               fontSize: 22,
               fontWeight: 400,
-              color: "#a3a3a3",
+              color: "#d9bd86",
               fontFamily: "Segoe UI, -apple-system, sans-serif",
             }}
           >

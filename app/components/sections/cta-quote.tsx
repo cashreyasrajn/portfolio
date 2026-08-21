@@ -5,6 +5,7 @@ import { Phone, MessageCircle, Mail } from "lucide-react";
 export function CtaQuote() {
   return (
     <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
+      <div className="absolute inset-0 bg-hero-navy" />
       <div className="relative mx-auto max-w-[1280px] px-6 text-center md:px-12">
         <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/50">
            Contact information

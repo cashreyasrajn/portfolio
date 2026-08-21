@@ -3,8 +3,11 @@ import { services } from "@/app/components/content/services";
 import { siteConfig } from "@/app/components/content/site";
 import { Hero } from "@/app/components/sections/hero";
 import { ServiceCard } from "@/app/components/sections/service-card";
+import { StatsBar } from "@/app/components/sections/stats-bar";
+import { ValuesSection } from "@/app/components/sections/values";
 import { ProcessSection } from "@/app/components/sections/process";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
+import { Reveal } from "@/app/components/ui/reveal";
 
 export const metadata: Metadata = {
   alternates: { canonical: siteConfig.url },
@@ -14,10 +17,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <StatsBar />
 
       <section className="border-b border-navy/8 bg-white py-24 md:py-32">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
-          <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
+          <Reveal className="mb-14 flex flex-wrap items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-gold-dark">
                 How we can help
@@ -34,15 +38,18 @@ export default function HomePage() {
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-navy/40">
               10 practice areas
             </p>
-          </div>
+          </Reveal>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
-              <ServiceCard key={service.title} service={service} index={i} />
+              <Reveal key={service.title} delay={(i % 3) * 80}>
+                <ServiceCard service={service} index={i} />
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
+      <ValuesSection />
       <ProcessSection />
       <CtaQuote />
     </>

@@ -1,8 +1,10 @@
+import { Reveal } from "@/app/components/ui/reveal";
+
 export function ProcessSection() {
   return (
     <section className="overflow-hidden bg-white py-24 md:py-32">
       <div className="mx-auto max-w-[1280px] px-6 md:px-12">
-        <div className="mb-12 max-w-2xl md:mb-16">
+        <Reveal className="mb-12 max-w-2xl md:mb-16">
           <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-gold-dark">
             Practice information
           </p>
@@ -14,10 +16,10 @@ export function ProcessSection() {
             compliance, and business advisory, subject to applicable law and
             agreed engagement terms.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="relative isolate grid min-h-[480px] overflow-hidden bg-navy lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="relative min-h-[240px] bg-[radial-gradient(circle_at_30%_20%,rgba(184,146,75,0.24),transparent_32%),linear-gradient(135deg,#0b1e3d,#17365f)] sm:min-h-[280px] lg:min-h-0">
+        <Reveal className="relative isolate grid min-h-[480px] overflow-hidden bg-navy lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="relative min-h-[240px] bg-panel-navy sm:min-h-[280px] lg:min-h-0">
             <div className="absolute inset-8 border border-gold/30 sm:inset-12" />
             <div className="absolute bottom-10 left-10 font-mono text-[10px] uppercase tracking-[0.24em] text-white/45 sm:bottom-14 sm:left-14">
               Areas of work
@@ -42,7 +44,7 @@ export function ProcessSection() {
               </p>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

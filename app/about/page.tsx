@@ -4,6 +4,7 @@ import { firm } from "@/app/components/content/firm";
 import { siteConfig } from "@/app/components/content/site";
 import { CredentialsSidebar } from "@/app/components/sections/credentials-sidebar";
 import { CtaQuote } from "@/app/components/sections/cta-quote";
+import { Reveal } from "@/app/components/ui/reveal";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="grain relative overflow-hidden bg-navy py-24 text-white md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(184,146,75,0.16),transparent_32%),linear-gradient(115deg,#0b1e3d_0%,#132f59_55%,#0b1e3d_100%)]" />
+        <div className="absolute inset-0 bg-hero-navy" />
         <div className="relative mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
@@ -36,7 +37,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-[1280px] px-6 py-24 md:px-12 md:py-32">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <div className="mb-14 grid grid-cols-2 gap-px border border-navy/8 bg-navy/8 md:grid-cols-4">
+            <Reveal className="mb-14 grid grid-cols-2 gap-px border border-navy/8 bg-navy/8 md:grid-cols-4">
               {[
                 { icon: "calendar_month", label: "In practice since", value: firm.founded.toString() },
                 { icon: "tactic", label: "Practice areas", value: "10" },
@@ -58,7 +59,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               ))}
-            </div>
+            </Reveal>
 
             <div className="mb-14 flex flex-col items-center gap-10 md:flex-row md:items-start">
               <div className="relative flex-shrink-0">

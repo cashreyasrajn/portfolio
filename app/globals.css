@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    --navy: #131313;
-    --navy-light: #262626;
-    --navy-dark: #050505;
-    --gold: #a3a3a3;
-    --gold-light: #d4d4d4;
-    --gold-dark: #525252;
+    --navy: #132f59;
+    --navy-light: #1e4573;
+    --navy-dark: #0b1e3d;
+    --gold: #b8924b;
+    --gold-light: #d9bd86;
+    --gold-dark: #7c5e28;
     --cream: #f6f6f4;
     --font-brand: "Fraunces", "Georgia", serif;
 
     --background: #f6f6f4;
-    --foreground: #131313;
+    --foreground: #132f59;
     --card: #ffffff;
-    --card-foreground: #131313;
+    --card-foreground: #132f59;
     --popover: #ffffff;
-    --popover-foreground: #131313;
-    --primary: #131313;
+    --popover-foreground: #132f59;
+    --primary: #132f59;
     --primary-foreground: #ffffff;
-    --secondary: #525252;
+    --secondary: #7c5e28;
     --secondary-foreground: #ffffff;
     --muted: #f6f6f4;
-    --muted-foreground: rgba(19, 19, 19, 0.65);
-    --accent: #525252;
+    --muted-foreground: rgba(19, 47, 89, 0.65);
+    --accent: #7c5e28;
     --accent-foreground: #ffffff;
     --destructive: #b91c1c;
     --destructive-foreground: #ffffff;
-    --border: rgba(19, 19, 19, 0.12);
-    --input: rgba(19, 19, 19, 0.12);
-    --ring: #525252;
+    --border: rgba(19, 47, 89, 0.12);
+    --input: rgba(19, 47, 89, 0.12);
+    --ring: #7c5e28;
     --radius: 0;
   }
 
@@ -53,8 +53,15 @@
   }
 
   ::selection {
-    background: #131313;
+    background: #132f59;
     color: #f6f6f4;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  [href]:focus-visible {
+    outline: 2px solid var(--gold-dark);
+    outline-offset: 2px;
   }
 }
 
@@ -100,5 +107,43 @@
   .text-outline-light {
     -webkit-text-stroke: 1px rgba(246, 246, 244, 0.28);
     color: transparent;
+  }
+
+  /* Unified dark-section treatment, used by every full-bleed navy banner */
+  .bg-hero-navy {
+    background-image: radial-gradient(
+        circle at 75% 20%,
+        rgba(184, 146, 75, 0.16),
+        transparent 35%
+      ),
+      linear-gradient(115deg, var(--navy-dark) 0%, var(--navy) 55%, var(--navy-dark) 100%);
+  }
+
+  /* Same family, used by the smaller image panel in the process section */
+  .bg-panel-navy {
+    background-image: radial-gradient(
+        circle at 30% 20%,
+        rgba(184, 146, 75, 0.22),
+        transparent 32%
+      ),
+      linear-gradient(135deg, var(--navy-dark), var(--navy-light));
+  }
+
+  /* Scroll-reveal: fade + rise, resolved once the element enters view */
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 }

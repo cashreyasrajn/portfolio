@@ -1,6 +1,6 @@
 import { firm } from "@/app/components/content/firm";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://shreyasraj.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://magnafic.com";
 
 export const siteConfig = {
   name: "Shreyas Raj & Co.",
